@@ -1,0 +1,16 @@
+[Unit]
+Description=MakerbaseClient
+After=moonraker.service
+StartLimitIntervalSec=0
+
+[Service]
+Type=simple
+Restart=always
+RestartSec=1
+ExecStart=bash /home/mks/Desktop/myfile/znp/znp_tjc_klipper/build/start.sh
+
+[Install]
+WantedBy=multi-user.target
+
+
+

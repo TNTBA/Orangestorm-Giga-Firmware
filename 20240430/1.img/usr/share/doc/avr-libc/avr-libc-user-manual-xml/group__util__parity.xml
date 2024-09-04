@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="group__util__parity" kind="group">
+    <compoundname>util_parity</compoundname>
+    <title>&lt;util/parity.h&gt;: Parity bit generation</title>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group__util__parity_1ga4180eaa9b8f27f8efc589f3a3ba1724c" prot="public" static="no">
+        <name>parity_even_bit</name>
+        <param><defname>val</defname></param>
+        <initializer>(__extension__({					\
+	unsigned char __t;				\
+	__asm__ (					\
+		&quot;mov __tmp_reg__,%0&quot; &quot;\n\t&quot;		\
+		&quot;swap %0&quot; &quot;\n\t&quot;			\
+		&quot;eor %0,__tmp_reg__&quot; &quot;\n\t&quot;		\
+		&quot;mov __tmp_reg__,%0&quot; &quot;\n\t&quot;		\
+		&quot;lsr %0&quot; &quot;\n\t&quot;				\
+		&quot;lsr %0&quot; &quot;\n\t&quot;				\
+		&quot;eor %0,__tmp_reg__&quot; 			\
+		: &quot;=r&quot; (__t)				\
+		: &quot;0&quot; ((unsigned char)(val))		\
+		: &quot;r0&quot;					\
+	);						\
+	(((__t + 1) &gt;&gt; 1) &amp; 1);				\
+ }))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>1 if <computeroutput>val</computeroutput> has an odd number of bits set. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/build/avr-libc-2.0.0+Atmel3.6.1/libc/avr-libc/include/util/parity.h" line="47" column="9" bodyfile="/build/avr-libc-2.0.0+Atmel3.6.1/libc/avr-libc/include/util/parity.h" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><programlisting><codeline><highlight class="normal">#include<sp/>&lt;util/parity.h&gt;<sp/></highlight></codeline>
+</programlisting></para><para>This header file contains optimized assembler code to calculate the parity bit for a byte. </para>    </detaileddescription>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,2 @@
+# Appstream not relevant for sunxi-tools
+sunxi-tools: appstream-metadata-missing-modalias-provide lib/udev/rules.d/60-sunxi-tools.rules match rule usb:v1F3ApEFE8d*

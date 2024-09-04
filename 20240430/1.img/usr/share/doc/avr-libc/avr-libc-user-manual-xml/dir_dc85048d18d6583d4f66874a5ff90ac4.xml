@@ -1,0 +1,55 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="dir_dc85048d18d6583d4f66874a5ff90ac4" kind="dir">
+    <compoundname>time</compoundname>
+    <innerfile refid="asc__store_8c">asc_store.c</innerfile>
+    <innerfile refid="asctime_8c">asctime.c</innerfile>
+    <innerfile refid="asctime__r_8c">asctime_r.c</innerfile>
+    <innerfile refid="ctime_8c">ctime.c</innerfile>
+    <innerfile refid="ctime__r_8c">ctime_r.c</innerfile>
+    <innerfile refid="daylight__seconds_8c">daylight_seconds.c</innerfile>
+    <innerfile refid="difftime_8c">difftime.c</innerfile>
+    <innerfile refid="dst__pointer_8c">dst_pointer.c</innerfile>
+    <innerfile refid="ephemera__common_8h">ephemera_common.h</innerfile>
+    <innerfile refid="equation__of__time_8c">equation_of_time.c</innerfile>
+    <innerfile refid="fatfs__time_8c">fatfs_time.c</innerfile>
+    <innerfile refid="geo__location_8c">geo_location.c</innerfile>
+    <innerfile refid="gm__sidereal_8c">gm_sidereal.c</innerfile>
+    <innerfile refid="gmtime_8c">gmtime.c</innerfile>
+    <innerfile refid="gmtime__r_8c">gmtime_r.c</innerfile>
+    <innerfile refid="isLeap_8c">isLeap.c</innerfile>
+    <innerfile refid="iso__week__date_8c">iso_week_date.c</innerfile>
+    <innerfile refid="iso__week__date__r_8c">iso_week_date_r.c</innerfile>
+    <innerfile refid="isotime_8c">isotime.c</innerfile>
+    <innerfile refid="isotime__r_8c">isotime_r.c</innerfile>
+    <innerfile refid="lm__sidereal_8c">lm_sidereal.c</innerfile>
+    <innerfile refid="localtime_8c">localtime.c</innerfile>
+    <innerfile refid="localtime__r_8c">localtime_r.c</innerfile>
+    <innerfile refid="mk__gmtime_8c">mk_gmtime.c</innerfile>
+    <innerfile refid="mktime_8c">mktime.c</innerfile>
+    <innerfile refid="month__length_8c">month_length.c</innerfile>
+    <innerfile refid="moon__phase_8c">moon_phase.c</innerfile>
+    <innerfile refid="print__lz_8c">print_lz.c</innerfile>
+    <innerfile refid="set__dst_8c">set_dst.c</innerfile>
+    <innerfile refid="set__position_8c">set_position.c</innerfile>
+    <innerfile refid="set__system__time_8c">set_system_time.c</innerfile>
+    <innerfile refid="set__zone_8c">set_zone.c</innerfile>
+    <innerfile refid="solar__declination_8c">solar_declination.c</innerfile>
+    <innerfile refid="solar__noon_8c">solar_noon.c</innerfile>
+    <innerfile refid="strftime_8c">strftime.c</innerfile>
+    <innerfile refid="sun__rise_8c">sun_rise.c</innerfile>
+    <innerfile refid="sun__set_8c">sun_set.c</innerfile>
+    <innerfile refid="system__tick_8S">system_tick.S</innerfile>
+    <innerfile refid="system__time_8c">system_time.c</innerfile>
+    <innerfile refid="time_8c">time.c</innerfile>
+    <innerfile refid="tm__store_8c">tm_store.c</innerfile>
+    <innerfile refid="utc__offset_8c">utc_offset.c</innerfile>
+    <innerfile refid="week__of__month_8c">week_of_month.c</innerfile>
+    <innerfile refid="week__of__year_8c">week_of_year.c</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/build/avr-libc-2.0.0+Atmel3.6.1/libc/avr-libc/libc/time/"/>
+  </compounddef>
+</doxygen>

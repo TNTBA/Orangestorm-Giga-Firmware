@@ -1,0 +1,60 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="dir_5f5508d11e3e647f632e0b46102de23e" kind="dir">
+    <compoundname>stdlib</compoundname>
+    <innerfile refid="abort_8c">abort.c</innerfile>
+    <innerfile refid="abort_8S">abort.S</innerfile>
+    <innerfile refid="abs_8c">abs.c</innerfile>
+    <innerfile refid="assert_8c">assert.c</innerfile>
+    <innerfile refid="atexit_8c">atexit.c</innerfile>
+    <innerfile refid="atof_8S">atof.S</innerfile>
+    <innerfile refid="atoi_8c">atoi.c</innerfile>
+    <innerfile refid="atoi_8S">atoi.S</innerfile>
+    <innerfile refid="atol_8c">atol.c</innerfile>
+    <innerfile refid="atol_8S">atol.S</innerfile>
+    <innerfile refid="bsearch_8c">bsearch.c</innerfile>
+    <innerfile refid="calloc_8c">calloc.c</innerfile>
+    <innerfile refid="cty__isfalse_8S">cty_isfalse.S</innerfile>
+    <innerfile refid="ctype_8S">ctype.S</innerfile>
+    <innerfile refid="div_8S">div.S</innerfile>
+    <innerfile refid="dtoa__conv_8h">dtoa_conv.h</innerfile>
+    <innerfile refid="dtoa__prf_8c">dtoa_prf.c</innerfile>
+    <innerfile refid="dtostre_8c">dtostre.c</innerfile>
+    <innerfile refid="dtostrf_8c">dtostrf.c</innerfile>
+    <innerfile refid="errno_8c">errno.c</innerfile>
+    <innerfile refid="exit_8S">exit.S</innerfile>
+    <innerfile refid="ftoa__engine_8S">ftoa_engine.S</innerfile>
+    <innerfile refid="getenv_8c">getenv.c</innerfile>
+    <innerfile refid="isalnum_8S">isalnum.S</innerfile>
+    <innerfile refid="isalpha_8S">isalpha.S</innerfile>
+    <innerfile refid="isascii_8S">isascii.S</innerfile>
+    <innerfile refid="isblank_8S">isblank.S</innerfile>
+    <innerfile refid="iscntrl_8S">iscntrl.S</innerfile>
+    <innerfile refid="isdigit_8S">isdigit.S</innerfile>
+    <innerfile refid="isprint_8S">isprint.S</innerfile>
+    <innerfile refid="ispunct_8S">ispunct.S</innerfile>
+    <innerfile refid="isspace_8S">isspace.S</innerfile>
+    <innerfile refid="isxdigit_8S">isxdigit.S</innerfile>
+    <innerfile refid="labs_8c">labs.c</innerfile>
+    <innerfile refid="ldiv_8S">ldiv.S</innerfile>
+    <innerfile refid="malloc_8c">malloc.c</innerfile>
+    <innerfile refid="qsort_8c">qsort.c</innerfile>
+    <innerfile refid="rand_8c">rand.c</innerfile>
+    <innerfile refid="random_8c">random.c</innerfile>
+    <innerfile refid="realloc_8c">realloc.c</innerfile>
+    <innerfile refid="setjmp_8S">setjmp.S</innerfile>
+    <innerfile refid="stdlib__private_8h">stdlib_private.h</innerfile>
+    <innerfile refid="strtod_8c">strtod.c</innerfile>
+    <innerfile refid="strtol_8c">strtol.c</innerfile>
+    <innerfile refid="strtoul_8c">strtoul.c</innerfile>
+    <innerfile refid="system_8c">system.c</innerfile>
+    <innerfile refid="toascii_8S">toascii.S</innerfile>
+    <innerfile refid="tolower_8S">tolower.S</innerfile>
+    <innerfile refid="toupper_8S">toupper.S</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/build/avr-libc-2.0.0+Atmel3.6.1/libc/avr-libc/libc/stdlib/"/>
+  </compounddef>
+</doxygen>

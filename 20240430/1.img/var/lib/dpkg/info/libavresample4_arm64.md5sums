@@ -1,0 +1,5 @@
+77e4e89e1e2475cc3403db11f246d63c  usr/lib/aarch64-linux-gnu/libavresample.so.4.0.0
+4aee8536adec12f24b4ccf36bfdcba02  usr/share/doc/libavresample4/changelog.Debian.gz
+02d2d998fff09e8aba40a651debd6003  usr/share/doc/libavresample4/changelog.gz
+61af5f05179be74293344b58d088a393  usr/share/doc/libavresample4/copyright
+5d571cf65619f895ed14a10e05d2160c  usr/share/lintian/overrides/libavresample4

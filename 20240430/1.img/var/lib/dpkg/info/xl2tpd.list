@@ -1,0 +1,8 @@
+/etc
+/etc/default
+/etc/default/xl2tpd
+/etc/init.d
+/etc/init.d/xl2tpd
+/etc/xl2tpd
+/etc/xl2tpd/l2tp-secrets
+/etc/xl2tpd/xl2tpd.conf

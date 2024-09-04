@@ -1,0 +1,7 @@
+/etc
+/etc/strongswan.d
+/etc/strongswan.d/charon
+/etc/strongswan.d/charon/bypass-lan.conf
+/etc/strongswan.d/charon/counters.conf
+/etc/strongswan.d/charon/socket-default.conf
+/etc/strongswan.d/charon/updown.conf

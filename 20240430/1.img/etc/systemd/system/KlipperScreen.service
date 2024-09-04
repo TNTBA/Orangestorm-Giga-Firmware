@@ -1,0 +1,16 @@
+[Unit]
+Description=KlipperScreen
+After=moonraker.service
+StartLimitIntervalSec=0
+
+[Service]
+Type=simple
+Restart=always
+RestartSec=1
+User=mks
+WorkingDirectory=/home/mks/KlipperScreen
+Environment="KS_XCLIENT=/home/mks/.KlipperScreen-env/bin/python /home/mks/KlipperScreen/screen.py"
+ExecStart="/home/mks/KlipperScreen/scripts/KlipperScreen-start.sh"
+
+[Install]
+WantedBy=multi-user.target

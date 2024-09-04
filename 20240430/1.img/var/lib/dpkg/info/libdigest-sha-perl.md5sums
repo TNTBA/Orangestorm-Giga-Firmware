@@ -1,0 +1,11 @@
+066b71708f0b6310feee0cb557b598f3  usr/bin/shasum
+00b35f65c881fa6db2940e462485fdf8  usr/lib/aarch64-linux-gnu/perl5/5.28/Digest/SHA.pm
+56e9a18d038b5fabc23cbc5b8ca8aa82  usr/lib/aarch64-linux-gnu/perl5/5.28/auto/Digest/SHA/SHA.so
+e75f535e178f09d0ef88d79a792fabf0  usr/share/doc/libdigest-sha-perl/changelog.Debian.arm64.gz
+68978eb23fe4db7b04bdb836d8a73d5f  usr/share/doc/libdigest-sha-perl/changelog.Debian.gz
+14b1ea3ee713a4ee94e4f52562d1575d  usr/share/doc/libdigest-sha-perl/changelog.gz
+ed5ad5f9cea6187db1f2b8bc7759dd91  usr/share/doc/libdigest-sha-perl/copyright
+d771196492b4abbbcd3fce87d12a1510  usr/share/doc/libdigest-sha-perl/examples/dups
+b44077d38d0d4f57f7da8cad968c6bda  usr/share/lintian/overrides/libdigest-sha-perl
+c04b89aacfa14f0070dd98c42040ad71  usr/share/man/man1/shasum.1p.gz
+eae18306dd4c70bc2f59dee090a669d0  usr/share/man/man3/Digest::SHA.3pm.gz

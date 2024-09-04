@@ -1,0 +1,17 @@
+738b94534be07bd216feeafed860fa3d  usr/bin/exo-csource
+4e6630225e3f2721b0d69b03a72feb57  usr/bin/exo-desktop-item-edit
+6d49f16f047c2fbdcd2380ef7bb25bf1  usr/bin/exo-open
+f2ea8baaefa4fc67c1a72bffc2541af7  usr/bin/exo-preferred-applications
+82eab51e356ab46c47bc58565def3828  usr/share/applications/exo-file-manager.desktop
+fa39f096eb4906e2d53a1cf3f0e52317  usr/share/applications/exo-mail-reader.desktop
+6948fdfad75691de672b36e972fac50f  usr/share/applications/exo-preferred-applications.desktop
+f799c71e8ca96bb32f996593b804d46e  usr/share/applications/exo-terminal-emulator.desktop
+e0a2b30bb55e03045704669bd6ccd9cf  usr/share/applications/exo-web-browser.desktop
+55aeda1b8d67d3aa3245a24efc947e43  usr/share/doc/exo-utils/NEWS.Debian.gz
+c8f1470c10be4916005d78f0cf8f7f03  usr/share/doc/exo-utils/changelog.Debian.gz
+663a60d21eaa4dbfb53209531b5868f3  usr/share/doc/exo-utils/changelog.gz
+c12d701878ec9bf80920e309155a0d76  usr/share/doc/exo-utils/copyright
+76df29b9c58588cad6729b7a4e04f08a  usr/share/man/man1/exo-csource.1.gz
+1ac75050a1b047d16d9ff11337972112  usr/share/man/man1/exo-desktop-item-edit.1.gz
+999ebda4e3b3e01e32dfeb44b133eb18  usr/share/man/man1/exo-open.1.gz
+00a2dea95fcbc414aeccce494e4e6232  usr/share/man/man1/exo-preferred-applications.1.gz

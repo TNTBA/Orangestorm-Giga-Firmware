@@ -1,0 +1,5 @@
+b5f8ff196a4effe9b78573089b8d71cb  lib/aarch64-linux-gnu/libnss_myhostname.so.2
+324665fe76b91e7627a5207b758507e0  usr/share/doc/libnss-myhostname/changelog.Debian.gz
+bac4ecd2051a2313f03ac6abfdb303ec  usr/share/doc/libnss-myhostname/copyright
+f1bdcfc5bbadff0f44cf42f1fd98955c  usr/share/lintian/overrides/libnss-myhostname
+2aee11fd55744ed23c1f1761b8ab76f5  usr/share/man/man8/nss-myhostname.8.gz

@@ -1,0 +1,11 @@
+profile-sync-daemon for Debian
+------------------------------
+
+This package provides "systemctl --user" systemd services files. It is  expected that
+systemd/logind-managed user session is used if the tool is supposed to work out-of-the-box.
+
+If this particular type of user session is not used, the user will have to call
+"psd resync" upon login and "psd unsync" upon logout using custom scripts or
+by running the commands manually.
+
+ -- Jan Luca Naumann <j.naumann@fu-berlin.de>  Mon, 27 Jun 2016 22:24:20 +0200

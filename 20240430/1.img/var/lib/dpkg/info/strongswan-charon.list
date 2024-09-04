@@ -1,0 +1,6 @@
+/etc
+/etc/apparmor.d
+/etc/apparmor.d/usr.lib.ipsec.charon
+/etc/strongswan.d
+/etc/strongswan.d/charon-logging.conf
+/etc/strongswan.d/charon.conf

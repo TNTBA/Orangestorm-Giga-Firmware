@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="dir_6902457ea614a53d7355b44f7513f695" kind="dir">
+    <compoundname>compat</compoundname>
+    <innerfile refid="deprecated_8h">deprecated.h</innerfile>
+    <innerfile refid="ina90_8h">ina90.h</innerfile>
+    <innerfile refid="compat_2twi_8h">compat/twi.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/build/avr-libc-2.0.0+Atmel3.6.1/libc/avr-libc/include/compat/"/>
+  </compounddef>
+</doxygen>

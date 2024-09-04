@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="dir_74edb07caae428933d09e0931d8b44f5" kind="dir">
+    <compoundname>avr</compoundname>
+    <innerfile refid="boot_8h">boot.h</innerfile>
+    <innerfile refid="cpufunc_8h">cpufunc.h</innerfile>
+    <innerfile refid="eeprom_8h">eeprom.h</innerfile>
+    <innerfile refid="fuse_8h">fuse.h</innerfile>
+    <innerfile refid="interrupt_8h">interrupt.h</innerfile>
+    <innerfile refid="io_8h">io.h</innerfile>
+    <innerfile refid="lock_8h">lock.h</innerfile>
+    <innerfile refid="pgmspace_8h">pgmspace.h</innerfile>
+    <innerfile refid="portpins_8h">portpins.h</innerfile>
+    <innerfile refid="power_8h">power.h</innerfile>
+    <innerfile refid="sfr__defs_8h">sfr_defs.h</innerfile>
+    <innerfile refid="signal_8h">signal.h</innerfile>
+    <innerfile refid="signature_8h">signature.h</innerfile>
+    <innerfile refid="sleep_8h">sleep.h</innerfile>
+    <innerfile refid="version_8h">version.h</innerfile>
+    <innerfile refid="wdt_8h">wdt.h</innerfile>
+    <innerfile refid="xmega_8h">xmega.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/build/avr-libc-2.0.0+Atmel3.6.1/libc/avr-libc/include/avr/"/>
+  </compounddef>
+</doxygen>

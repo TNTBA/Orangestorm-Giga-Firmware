@@ -1,0 +1,17 @@
+/.
+/usr
+/usr/bin
+/usr/bin/stm32flash
+/usr/share
+/usr/share/doc
+/usr/share/doc/stm32flash
+/usr/share/doc/stm32flash/AUTHORS
+/usr/share/doc/stm32flash/HOWTO
+/usr/share/doc/stm32flash/I2C.txt
+/usr/share/doc/stm32flash/changelog.Debian.arm64.gz
+/usr/share/doc/stm32flash/changelog.Debian.gz
+/usr/share/doc/stm32flash/copyright
+/usr/share/doc/stm32flash/protocol.txt
+/usr/share/man
+/usr/share/man/man1
+/usr/share/man/man1/stm32flash.1.gz

@@ -1,0 +1,37 @@
+/var/log.hdd/syslog
+{
+	rotate 7
+	daily
+	missingok
+	notifempty
+	delaycompress
+	compress
+	postrotate
+		/usr/lib/rsyslog/rsyslog-rotate
+	endscript
+}
+
+/var/log.hdd/mail.info
+/var/log.hdd/mail.warn
+/var/log.hdd/mail.err
+/var/log.hdd/mail.log
+/var/log.hdd/daemon.log
+/var/log.hdd/kern.log
+/var/log.hdd/auth.log
+/var/log.hdd/user.log
+/var/log.hdd/lpr.log
+/var/log.hdd/cron.log
+/var/log.hdd/debug
+/var/log.hdd/messages
+{
+	rotate 4
+	weekly
+	missingok
+	notifempty
+	compress
+	delaycompress
+	sharedscripts
+	postrotate
+		/usr/lib/rsyslog/rsyslog-rotate
+	endscript
+}

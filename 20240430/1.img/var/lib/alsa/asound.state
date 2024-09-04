@@ -1,0 +1,12 @@
+Mar 15
+10:18:23 mkspi
+kernel: {
+	0 0
+}
+pcpu-alloc: s80856
+r8192 d29736
+u118784 allo
+state.SPDIF {
+	control {
+	}
+}

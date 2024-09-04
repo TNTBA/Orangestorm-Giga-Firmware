@@ -1,0 +1,10 @@
+f71033172cfd6ecbfe3f980415ae13c4  usr/bin/cachedel
+fde2d328a87797c5f345a2e9c4d2d68e  usr/bin/cachestats
+c25c5c6600e285f203386a52951e5df0  usr/bin/nocache
+e773719ad36fb72f97274ce5963a2537  usr/lib/nocache/nocache.so
+c54c82372f3d8808ae83c5882465fe3a  usr/share/doc/nocache/README.gz
+1a44c3141c198c98ae60220c9a8b724f  usr/share/doc/nocache/changelog.Debian.gz
+6e6167b7b99e356ebb931118969a2a5f  usr/share/doc/nocache/copyright
+aef9ef8e141bb22972418b2d4a0bb06a  usr/share/man/man1/cachedel.1.gz
+52292c441f4167bde9a8253a7719f169  usr/share/man/man1/cachestats.1.gz
+caee8bfe2a995a2cba3b5acdf45e2468  usr/share/man/man1/nocache.1.gz

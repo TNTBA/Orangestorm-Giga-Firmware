@@ -1,0 +1,7 @@
+92ce0bbb50e7f6da6573ea5517178d3b  usr/bin/iperf3
+259f1b154114c70355e499c3254fc3fe  usr/share/doc/iperf3/README.md.gz
+dbd1c6f3f12bf5caee3ee0924c6c6cde  usr/share/doc/iperf3/changelog.Debian.gz
+2cc07d9c191a0e0e2c2358d79ab0d738  usr/share/doc/iperf3/changelog.gz
+9814d9e4592686e0bc1b991a97d425c4  usr/share/doc/iperf3/copyright
+78d9bcf544f30dd2898e11aad9e201cf  usr/share/lintian/overrides/iperf3
+8ae062a86c566c6876e7b780c3b885e7  usr/share/man/man1/iperf3.1.gz

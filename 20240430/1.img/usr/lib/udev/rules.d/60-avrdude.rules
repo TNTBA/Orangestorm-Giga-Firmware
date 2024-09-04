@@ -1,0 +1,106 @@
+ACTION!="add|change", GOTO="avrdude_end"
+
+# /dev/ttyUSB
+SUBSYSTEMS=="usb-serial", TAG+="uaccess"
+
+# /dev/ttyACM
+SUBSYSTEMS=="usb", DRIVERS=="cdc_acm", TAG+="uaccess"
+
+SUBSYSTEM!="usb", GOTO="avrdude_end"
+
+# JTAG ICE mkII
+SUBSYSTEM=="usb", ATTR{idVendor}=="03eb", ATTR{idProduct}=="2103", TAG+="uaccess"
+# AVR ISP mkII
+SUBSYSTEM=="usb", ATTR{idVendor}=="03eb", ATTR{idProduct}=="2104", TAG+="uaccess"
+# STK600
+SUBSYSTEM=="usb", ATTR{idVendor}=="03eb", ATTR{idProduct}=="2106", TAG+="uaccess"
+# AVR Dragon
+SUBSYSTEM=="usb", ATTR{idVendor}=="03eb", ATTR{idProduct}=="2107", TAG+="uaccess"
+# AVR JTAGICE3
+SUBSYSTEM=="usb", ATTR{idVendor}=="03eb", ATTR{idProduct}=="2110", TAG+="uaccess"
+# Xplained Pro board
+SUBSYSTEM=="usb", ATTR{idVendor}=="03eb", ATTR{idProduct}=="2111", TAG+="uaccess"
+# AVR JTAGICE3 (v3.x)
+SUBSYSTEM=="usb", ATTR{idVendor}=="03eb", ATTR{idProduct}=="2140", TAG+="uaccess"
+# Atmel-ICE
+SUBSYSTEM=="usb", ATTR{idVendor}=="03eb", ATTR{idProduct}=="2141", TAG+="uaccess"
+# Atmel Power Debugger
+SUBSYSTEM=="usb", ATTR{idVendor}=="03eb", ATTR{idProduct}=="2144", TAG+="uaccess"
+# Xplained Mini board
+SUBSYSTEM=="usb", ATTR{idVendor}=="03eb", ATTR{idProduct}=="2145", TAG+="uaccess"
+# ATxmega64C3 DFU
+SUBSYSTEM=="usb", ATTR{idVendor}=="03eb", ATTR{idProduct}=="2fd6", TAG+="uaccess"
+# ATxmega128C3 DFU
+SUBSYSTEM=="usb", ATTR{idVendor}=="03eb", ATTR{idProduct}=="2fd7", TAG+="uaccess"
+# ATxmega256C3 DFU
+SUBSYSTEM=="usb", ATTR{idVendor}=="03eb", ATTR{idProduct}=="2fda", TAG+="uaccess"
+# ATxmega384C3 DFU
+SUBSYSTEM=="usb", ATTR{idVendor}=="03eb", ATTR{idProduct}=="2fdb", TAG+="uaccess"
+# ATxmega128A4U DFU
+SUBSYSTEM=="usb", ATTR{idVendor}=="03eb", ATTR{idProduct}=="2fde", TAG+="uaccess"
+# ATxmega64B3 DFU
+SUBSYSTEM=="usb", ATTR{idVendor}=="03eb", ATTR{idProduct}=="2fdf", TAG+="uaccess"
+# ATxmega128B3 DFU
+SUBSYSTEM=="usb", ATTR{idVendor}=="03eb", ATTR{idProduct}=="2fe0", TAG+="uaccess"
+# ATxmega64B1 DFU
+SUBSYSTEM=="usb", ATTR{idVendor}=="03eb", ATTR{idProduct}=="2fe1", TAG+="uaccess"
+# ATxmega256A3BU DFU
+SUBSYSTEM=="usb", ATTR{idVendor}=="03eb", ATTR{idProduct}=="2fe2", TAG+="uaccess"
+# ATxmega16A4U DFU
+SUBSYSTEM=="usb", ATTR{idVendor}=="03eb", ATTR{idProduct}=="2fe3", TAG+="uaccess"
+# ATxmega32A4U DFU
+SUBSYSTEM=="usb", ATTR{idVendor}=="03eb", ATTR{idProduct}=="2fe4", TAG+="uaccess"
+# ATxmega64A4U DFU
+SUBSYSTEM=="usb", ATTR{idVendor}=="03eb", ATTR{idProduct}=="2fe5", TAG+="uaccess"
+# Cactus V6 DFU
+SUBSYSTEM=="usb", ATTR{idVendor}=="03eb", ATTR{idProduct}=="2fe6", TAG+="uaccess"
+# ATxmega192A3U DFU
+SUBSYSTEM=="usb", ATTR{idVendor}=="03eb", ATTR{idProduct}=="2fe7", TAG+="uaccess"
+# ATxmega64A1U DFU
+SUBSYSTEM=="usb", ATTR{idVendor}=="03eb", ATTR{idProduct}=="2fe8", TAG+="uaccess"
+# Cactus RF60 DFU
+SUBSYSTEM=="usb", ATTR{idVendor}=="03eb", ATTR{idProduct}=="2fea", TAG+="uaccess"
+# ATxmega256A3U DFU
+SUBSYSTEM=="usb", ATTR{idVendor}=="03eb", ATTR{idProduct}=="2fec", TAG+="uaccess"
+# ATxmega128A1U DFU
+SUBSYSTEM=="usb", ATTR{idVendor}=="03eb", ATTR{idProduct}=="2fed", TAG+="uaccess"
+# atmega8u2 DFU
+SUBSYSTEM=="usb", ATTR{idVendor}=="03eb", ATTR{idProduct}=="2fee", TAG+="uaccess"
+# atmega16u2 DFU
+SUBSYSTEM=="usb", ATTR{idVendor}=="03eb", ATTR{idProduct}=="2fef", TAG+="uaccess"
+# atmega32u2 DFU
+SUBSYSTEM=="usb", ATTR{idVendor}=="03eb", ATTR{idProduct}=="2ff0", TAG+="uaccess"
+# at32uc3a3 DFU
+SUBSYSTEM=="usb", ATTR{idVendor}=="03eb", ATTR{idProduct}=="2ff1", TAG+="uaccess"
+# atmega16u4 DFU
+SUBSYSTEM=="usb", ATTR{idVendor}=="03eb", ATTR{idProduct}=="2ff3", TAG+="uaccess"
+# atmega32u4 DFU
+SUBSYSTEM=="usb", ATTR{idVendor}=="03eb", ATTR{idProduct}=="2ff4", TAG+="uaccess"
+# at32uc3b0/1 DFU
+SUBSYSTEM=="usb", ATTR{idVendor}=="03eb", ATTR{idProduct}=="2ff6", TAG+="uaccess"
+# at90usb82 DFU
+SUBSYSTEM=="usb", ATTR{idVendor}=="03eb", ATTR{idProduct}=="2ff7", TAG+="uaccess"
+# at32uc3a0/1 DFU
+SUBSYSTEM=="usb", ATTR{idVendor}=="03eb", ATTR{idProduct}=="2ff8", TAG+="uaccess"
+# at90usb646/647 DFU
+SUBSYSTEM=="usb", ATTR{idVendor}=="03eb", ATTR{idProduct}=="2ff9", TAG+="uaccess"
+# at90usb162 DFU
+SUBSYSTEM=="usb", ATTR{idVendor}=="03eb", ATTR{idProduct}=="2ffa", TAG+="uaccess"
+# at90usb1286/1287 AVR DFU
+SUBSYSTEM=="usb", ATTR{idVendor}=="03eb", ATTR{idProduct}=="2ffb", TAG+="uaccess"
+# at89c5130/c5131 DFU
+SUBSYSTEM=="usb", ATTR{idVendor}=="03eb", ATTR{idProduct}=="2ffd", TAG+="uaccess"
+# at89c5132/c51snd1c DFU
+SUBSYSTEM=="usb", ATTR{idVendor}=="03eb", ATTR{idProduct}=="2fff", TAG+="uaccess"
+# PICkit2
+SUBSYSTEM=="usb", ATTR{idVendor}=="04d8", ATTR{idProduct}=="0033", TAG+="uaccess"
+# USBasp
+SUBSYSTEM=="usb", ATTR{idVendor}=="16c0", ATTR{idProduct}=="05dc", TAG+="uaccess"
+# NIBObee
+SUBSYSTEM=="usb", ATTR{idVendor}=="16c0", ATTR{idProduct}=="092f", TAG+="uaccess"
+# eHaJo
+SUBSYSTEM=="usb", ATTR{idVendor}=="16d0", ATTR{idProduct}=="0ba5", TAG+="uaccess"
+# USBtinyISP
+SUBSYSTEM=="usb", ATTR{idVendor}=="1781", ATTR{idProduct}=="0c9f", TAG+="uaccess"
+
+LABEL="avrdude_end"

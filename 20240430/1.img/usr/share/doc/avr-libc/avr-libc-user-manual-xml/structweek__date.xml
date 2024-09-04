@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="structweek__date" kind="struct" language="C++" prot="public">
+    <compoundname>week_date</compoundname>
+    <includes refid="time_8h" local="no">time.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structweek__date_1a678eb6d982a51d7d398bbad118039850" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int week_date::year</definition>
+        <argsstring></argsstring>
+        <name>year</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>year number (Gregorian calendar) </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/build/avr-libc-2.0.0+Atmel3.6.1/libc/avr-libc/include/time.h" line="381" column="1" bodyfile="/build/avr-libc-2.0.0+Atmel3.6.1/libc/avr-libc/include/time.h" bodystart="381" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structweek__date_1a6d4c72e158cf8bf308b268c49759b948" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int week_date::week</definition>
+        <argsstring></argsstring>
+        <name>week</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>week number (#1 is where first Thursday is in) </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/build/avr-libc-2.0.0+Atmel3.6.1/libc/avr-libc/include/time.h" line="382" column="1" bodyfile="/build/avr-libc-2.0.0+Atmel3.6.1/libc/avr-libc/include/time.h" bodystart="382" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structweek__date_1af5099315e3a2e5afb43701de953d712e" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int week_date::day</definition>
+        <argsstring></argsstring>
+        <name>day</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>day within week </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/build/avr-libc-2.0.0+Atmel3.6.1/libc/avr-libc/include/time.h" line="383" column="1" bodyfile="/build/avr-libc-2.0.0+Atmel3.6.1/libc/avr-libc/include/time.h" bodystart="383" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Structure which represents a date as a year, week number of that year, and day of week. See <ulink url="http://en.wikipedia.org/wiki/ISO_week_date">http://en.wikipedia.org/wiki/ISO_week_date</ulink> for more information. </para>    </detaileddescription>
+    <location file="/build/avr-libc-2.0.0+Atmel3.6.1/libc/avr-libc/include/time.h" line="380" column="1" bodyfile="/build/avr-libc-2.0.0+Atmel3.6.1/libc/avr-libc/include/time.h" bodystart="380" bodyend="384"/>
+    <listofallmembers>
+      <member refid="structweek__date_1af5099315e3a2e5afb43701de953d712e" prot="public" virt="non-virtual"><scope>week_date</scope><name>day</name></member>
+      <member refid="structweek__date_1a6d4c72e158cf8bf308b268c49759b948" prot="public" virt="non-virtual"><scope>week_date</scope><name>week</name></member>
+      <member refid="structweek__date_1a678eb6d982a51d7d398bbad118039850" prot="public" virt="non-virtual"><scope>week_date</scope><name>year</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,15 @@
+TODO:
+verify all mouse bindings works
+
+BUGS:
+mouse bindings, modifiers don't work with appindicator
+placement of device rename dialog close to systray
+
+FEATURES:
+allow manual adding of servers
+module-device-manager autoload
+
+FUTURE:
+load avahi/notify support at runtime
+settings dialog
+gettext and translations

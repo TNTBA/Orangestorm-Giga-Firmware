@@ -1,0 +1,6 @@
+/etc/fonts/conf.avail/25-arphic-uming-bitmaps.conf
+/etc/fonts/conf.avail/25-arphic-uming-render.conf
+/etc/fonts/conf.avail/35-arphic-uming-aliases.conf
+/etc/fonts/conf.avail/41-arphic-uming.conf
+/etc/fonts/conf.avail/64-arphic-uming.conf
+/etc/fonts/conf.avail/90-arphic-uming-embolden.conf

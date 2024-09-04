@@ -1,0 +1,83 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<!-- Created by GNU Texinfo 6.5, http://www.gnu.org/software/texinfo/ -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Event Handling (The Python X Library)</title>
+
+<meta name="description" content="Event Handling (The Python X Library)">
+<meta name="keywords" content="Event Handling (The Python X Library)">
+<meta name="resource-type" content="document">
+<meta name="distribution" content="global">
+<meta name="Generator" content="makeinfo">
+<link href="index.html#Top" rel="start" title="Top">
+<link href="index.html#SEC_Contents" rel="contents" title="Table of Contents">
+<link href="index.html#Top" rel="up" title="Top">
+<link href="Getting-Events.html#Getting-Events" rel="next" title="Getting Events">
+<link href="CatchError.html#CatchError" rel="prev" title="CatchError">
+<style type="text/css">
+<!--
+a.summary-letter {text-decoration: none}
+blockquote.indentedblock {margin-right: 0em}
+blockquote.smallindentedblock {margin-right: 0em; font-size: smaller}
+blockquote.smallquotation {font-size: smaller}
+div.display {margin-left: 3.2em}
+div.example {margin-left: 3.2em}
+div.lisp {margin-left: 3.2em}
+div.smalldisplay {margin-left: 3.2em}
+div.smallexample {margin-left: 3.2em}
+div.smalllisp {margin-left: 3.2em}
+kbd {font-style: oblique}
+pre.display {font-family: inherit}
+pre.format {font-family: inherit}
+pre.menu-comment {font-family: serif}
+pre.menu-preformatted {font-family: serif}
+pre.smalldisplay {font-family: inherit; font-size: smaller}
+pre.smallexample {font-size: smaller}
+pre.smallformat {font-family: inherit; font-size: smaller}
+pre.smalllisp {font-size: smaller}
+span.nolinebreak {white-space: nowrap}
+span.roman {font-family: initial; font-weight: normal}
+span.sansserif {font-family: sans-serif; font-weight: normal}
+ul.no-bullet {list-style: none}
+-->
+</style>
+
+
+</head>
+
+<body lang="en">
+<a name="Event-Handling"></a>
+<div class="header">
+<p>
+Next: <a href="X-Objects.html#X-Objects" accesskey="n" rel="next">X Objects</a>, Previous: <a href="Error-Handling.html#Error-Handling" accesskey="p" rel="prev">Error Handling</a>, Up: <a href="index.html#Top" accesskey="u" rel="up">Top</a> &nbsp; [<a href="index.html#SEC_Contents" title="Table of contents" rel="contents">Contents</a>]</p>
+</div>
+<hr>
+<a name="Event-Handling-1"></a>
+<h2 class="chapter">5 Event Handling</h2>
+
+<p>Events are sent from the X server to the X client.  Most of the event
+types deal with user input, but there are also event types used for
+inter-client communication.
+</p>
+<p>Most X applications are built around an event loop, where the client
+waits for the server to send events.  The client responds to the events,
+typically by doing one or more X requests.
+</p>
+<table class="menu" border="0" cellspacing="0">
+<tr><td align="left" valign="top">&bull; <a href="Getting-Events.html#Getting-Events" accesskey="1">Getting Events</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">Waiting for events.
+</td></tr>
+<tr><td align="left" valign="top">&bull; <a href="Selecting-Events.html#Selecting-Events" accesskey="2">Selecting Events</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">Selecting interesting events.
+</td></tr>
+<tr><td align="left" valign="top">&bull; <a href="Event-Types.html#Event-Types" accesskey="3">Event Types</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">Details on all event types.
+</td></tr>
+<tr><td align="left" valign="top">&bull; <a href="Sending-Events.html#Sending-Events" accesskey="4">Sending Events</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">Clients sending events to other clients.
+</td></tr>
+</table>
+
+
+
+
+
+</body>
+</html>

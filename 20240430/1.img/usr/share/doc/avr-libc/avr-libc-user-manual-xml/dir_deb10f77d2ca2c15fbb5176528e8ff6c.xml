@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="dir_deb10f77d2ca2c15fbb5176528e8ff6c" kind="dir">
+    <compoundname>stdio</compoundname>
+    <innerfile refid="clearerr_8c">clearerr.c</innerfile>
+    <innerfile refid="fclose_8c">fclose.c</innerfile>
+    <innerfile refid="fdevopen_8c">fdevopen.c</innerfile>
+    <innerfile refid="feof_8c">feof.c</innerfile>
+    <innerfile refid="ferror_8c">ferror.c</innerfile>
+    <innerfile refid="fgetc_8c">fgetc.c</innerfile>
+    <innerfile refid="fgets_8c">fgets.c</innerfile>
+    <innerfile refid="fprintf_8c">fprintf.c</innerfile>
+    <innerfile refid="fprintf__p_8c">fprintf_p.c</innerfile>
+    <innerfile refid="fputc_8c">fputc.c</innerfile>
+    <innerfile refid="fputs_8c">fputs.c</innerfile>
+    <innerfile refid="fputs__p_8c">fputs_p.c</innerfile>
+    <innerfile refid="fread_8c">fread.c</innerfile>
+    <innerfile refid="fscanf_8c">fscanf.c</innerfile>
+    <innerfile refid="fscanf__p_8c">fscanf_p.c</innerfile>
+    <innerfile refid="fwrite_8c">fwrite.c</innerfile>
+    <innerfile refid="getc_8S">getc.S</innerfile>
+    <innerfile refid="getchar_8c">getchar.c</innerfile>
+    <innerfile refid="gets_8c">gets.c</innerfile>
+    <innerfile refid="iob_8c">iob.c</innerfile>
+    <innerfile refid="printf_8c">printf.c</innerfile>
+    <innerfile refid="printf__p_8c">printf_p.c</innerfile>
+    <innerfile refid="putc_8S">putc.S</innerfile>
+    <innerfile refid="putchar_8c">putchar.c</innerfile>
+    <innerfile refid="puts_8c">puts.c</innerfile>
+    <innerfile refid="puts__p_8c">puts_p.c</innerfile>
+    <innerfile refid="scanf_8c">scanf.c</innerfile>
+    <innerfile refid="scanf__p_8c">scanf_p.c</innerfile>
+    <innerfile refid="snprintf_8c">snprintf.c</innerfile>
+    <innerfile refid="snprintf__p_8c">snprintf_p.c</innerfile>
+    <innerfile refid="sprintf_8c">sprintf.c</innerfile>
+    <innerfile refid="sprintf__p_8c">sprintf_p.c</innerfile>
+    <innerfile refid="sscanf_8c">sscanf.c</innerfile>
+    <innerfile refid="sscanf__p_8c">sscanf_p.c</innerfile>
+    <innerfile refid="stdio__private_8h">stdio_private.h</innerfile>
+    <innerfile refid="ultoa__invert_8S">ultoa_invert.S</innerfile>
+    <innerfile refid="ungetc_8c">ungetc.c</innerfile>
+    <innerfile refid="vfprintf_8c">vfprintf.c</innerfile>
+    <innerfile refid="vfprintf__p_8c">vfprintf_p.c</innerfile>
+    <innerfile refid="vfscanf_8c">vfscanf.c</innerfile>
+    <innerfile refid="vfscanf__p_8c">vfscanf_p.c</innerfile>
+    <innerfile refid="vprintf_8c">vprintf.c</innerfile>
+    <innerfile refid="vscanf_8c">vscanf.c</innerfile>
+    <innerfile refid="vsnprintf_8c">vsnprintf.c</innerfile>
+    <innerfile refid="vsnprintf__p_8c">vsnprintf_p.c</innerfile>
+    <innerfile refid="vsprintf_8c">vsprintf.c</innerfile>
+    <innerfile refid="vsprintf__p_8c">vsprintf_p.c</innerfile>
+    <innerfile refid="xtoa__fast_8h">xtoa_fast.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/build/avr-libc-2.0.0+Atmel3.6.1/libc/avr-libc/libc/stdio/"/>
+  </compounddef>
+</doxygen>

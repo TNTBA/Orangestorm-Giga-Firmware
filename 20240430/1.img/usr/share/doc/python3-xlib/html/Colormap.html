@@ -1,0 +1,139 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<!-- Created by GNU Texinfo 6.5, http://www.gnu.org/software/texinfo/ -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Colormap (The Python X Library)</title>
+
+<meta name="description" content="Colormap (The Python X Library)">
+<meta name="keywords" content="Colormap (The Python X Library)">
+<meta name="resource-type" content="document">
+<meta name="distribution" content="global">
+<meta name="Generator" content="makeinfo">
+<link href="index.html#Top" rel="start" title="Top">
+<link href="index.html#SEC_Contents" rel="contents" title="Table of Contents">
+<link href="X-Objects.html#X-Objects" rel="up" title="X Objects">
+<link href="Cursor.html#Cursor" rel="next" title="Cursor">
+<link href="Resource.html#Resource" rel="prev" title="Resource">
+<style type="text/css">
+<!--
+a.summary-letter {text-decoration: none}
+blockquote.indentedblock {margin-right: 0em}
+blockquote.smallindentedblock {margin-right: 0em; font-size: smaller}
+blockquote.smallquotation {font-size: smaller}
+div.display {margin-left: 3.2em}
+div.example {margin-left: 3.2em}
+div.lisp {margin-left: 3.2em}
+div.smalldisplay {margin-left: 3.2em}
+div.smallexample {margin-left: 3.2em}
+div.smalllisp {margin-left: 3.2em}
+kbd {font-style: oblique}
+pre.display {font-family: inherit}
+pre.format {font-family: inherit}
+pre.menu-comment {font-family: serif}
+pre.menu-preformatted {font-family: serif}
+pre.smalldisplay {font-family: inherit; font-size: smaller}
+pre.smallexample {font-size: smaller}
+pre.smallformat {font-family: inherit; font-size: smaller}
+pre.smalllisp {font-size: smaller}
+span.nolinebreak {white-space: nowrap}
+span.roman {font-family: initial; font-weight: normal}
+span.sansserif {font-family: sans-serif; font-weight: normal}
+ul.no-bullet {list-style: none}
+-->
+</style>
+
+
+</head>
+
+<body lang="en">
+<a name="Colormap"></a>
+<div class="header">
+<p>
+Next: <a href="Cursor.html#Cursor" accesskey="n" rel="next">Cursor</a>, Previous: <a href="Resource.html#Resource" accesskey="p" rel="prev">Resource</a>, Up: <a href="X-Objects.html#X-Objects" accesskey="u" rel="up">X Objects</a> &nbsp; [<a href="index.html#SEC_Contents" title="Table of contents" rel="contents">Contents</a>]</p>
+</div>
+<hr>
+<a name="Colormap-1"></a>
+<h3 class="section">6.3 Colormap</h3>
+
+<p>See <a href="Resource.html#Resource">Resource</a>, for additional methods on <code>Colormap</code> objects.
+</p>
+<dl>
+<dt><a name="index-free-on-Colormap"></a>Method on Colormap: <strong>free</strong> <em>( onerror = None )</em></dt>
+</dl>
+
+<dl>
+<dt><a name="index-copy_005fcolormap_005fand_005ffree-on-Colormap"></a>Method on Colormap: <strong>copy_colormap_and_free</strong> <em>( scr_cmap )</em></dt>
+<dd><p>Returns Colormap.
+</p></dd></dl>
+
+<dl>
+<dt><a name="index-install_005fcolormap-on-Colormap"></a>Method on Colormap: <strong>install_colormap</strong> <em>( onerror = None )</em></dt>
+</dl>
+
+<dl>
+<dt><a name="index-uninstall_005fcolormap-on-Colormap"></a>Method on Colormap: <strong>uninstall_colormap</strong> <em>( onerror = None )</em></dt>
+</dl>
+
+<dl>
+<dt><a name="index-alloc_005fcolor-on-Colormap"></a>Method on Colormap: <strong>alloc_color</strong> <em>( red, green, blue )</em></dt>
+</dl>
+
+<dl>
+<dt><a name="index-alloc_005fnamed_005fcolor-on-Colormap"></a>Method on Colormap: <strong>alloc_named_color</strong> <em>( name )</em></dt>
+<dd><p>Returns None or  Card32(&rsquo;pixel&rsquo;),
+Card16(&rsquo;exact_red&rsquo;),
+Card16(&rsquo;exact_green&rsquo;),
+Card16(&rsquo;exact_blue&rsquo;),
+Card16(&rsquo;screen_red&rsquo;),
+Card16(&rsquo;screen_green&rsquo;),
+Card16(&rsquo;screen_blue&rsquo;),
+</p></dd></dl>
+
+<dl>
+<dt><a name="index-alloc_005fcolor_005fcells-on-Colormap"></a>Method on Colormap: <strong>alloc_color_cells</strong> <em>( contiguous, colors, planes )</em></dt>
+<dd><p>Returns  List(&rsquo;pixels&rsquo;, Card32Obj),
+List(&rsquo;masks&rsquo;, Card32Obj),
+</p></dd></dl>
+
+<dl>
+<dt><a name="index-alloc_005fcolor_005fplanes-on-Colormap"></a>Method on Colormap: <strong>alloc_color_planes</strong> <em>( contiguous, colors, red, green, blue )</em></dt>
+<dd><p>Returns  Card32(&rsquo;red_mask&rsquo;),
+Card32(&rsquo;green_mask&rsquo;),
+Card32(&rsquo;blue_mask&rsquo;),
+List(&rsquo;pixels&rsquo;, Card32Obj),
+</p></dd></dl>
+
+<dl>
+<dt><a name="index-free_005fcolors-on-Colormap"></a>Method on Colormap: <strong>free_colors</strong> <em>( pixels, plane_mask, onerror = None )</em></dt>
+</dl>
+
+<dl>
+<dt><a name="index-store_005fcolors-on-Colormap"></a>Method on Colormap: <strong>store_colors</strong> <em>( items, onerror = None )</em></dt>
+</dl>
+
+<dl>
+<dt><a name="index-store_005fnamed_005fcolor-on-Colormap"></a>Method on Colormap: <strong>store_named_color</strong> <em>( name, pixel, flags, onerror = None )</em></dt>
+</dl>
+
+<dl>
+<dt><a name="index-query_005fcolors-on-Colormap"></a>Method on Colormap: <strong>query_colors</strong> <em>( pixels )</em></dt>
+<dd><p>Returns List(&rsquo;colors&rsquo;, structs.RGB),
+</p></dd></dl>
+
+<dl>
+<dt><a name="index-lookup_005fcolor-on-Colormap"></a>Method on Colormap: <strong>lookup_color</strong> <em>( name )</em></dt>
+<dd><p>Returns  Card16(&rsquo;exact_red&rsquo;),
+Card16(&rsquo;exact_green&rsquo;),
+Card16(&rsquo;exact_blue&rsquo;),
+Card16(&rsquo;screen_red&rsquo;),
+Card16(&rsquo;screen_green&rsquo;),
+Card16(&rsquo;screen_blue&rsquo;),
+</p></dd></dl>
+
+
+
+
+
+</body>
+</html>

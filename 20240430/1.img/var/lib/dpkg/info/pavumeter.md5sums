@@ -1,0 +1,10 @@
+a8b952a43a8bc2c087df0d24acdaef60  usr/bin/pavumeter
+d15c54c0a725822bb51e937d1c050a48  usr/share/applications/pavumeter-record.desktop
+f0b21510c1137ab028c393205c4be095  usr/share/applications/pavumeter.desktop
+230d325903afaba44362f816bdcb57dd  usr/share/doc/pavumeter/README.gz
+52fb588f7d2efde54547aac1b0406963  usr/share/doc/pavumeter/changelog.Debian.arm64.gz
+0b54c79793830064c0b4196a786cc627  usr/share/doc/pavumeter/changelog.Debian.gz
+057925119d773a38f3bfb7c50e421370  usr/share/doc/pavumeter/changelog.gz
+f8f50c4af8fb2d5e672f1d26fb95d86f  usr/share/doc/pavumeter/copyright
+e7e96c9c04687aa6135a001377e29edd  usr/share/man/man1/pavumeter.1.gz
+8191f84cc6ca810f46a31943e6bfed42  usr/share/menu/pavumeter

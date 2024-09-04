@@ -1,0 +1,11 @@
+prefix=/usr
+libdir=${prefix}/lib/aarch64-linux-gnu/atlas
+includedir=${prefix}/include/aarch64-linux-gnu
+Name: atlas-lapack
+Description: Automatically Tuned Linear Algebra Software, LAPACK
+Version: 3.10.3
+URL: http://math-atlas.sourceforge.net/
+Libs: -L${libdir} -llapack
+Libs.private: -L${libdir} -latlas -lm
+Requires.private: blas
+Cflags: -I${includedir}

@@ -1,0 +1,2 @@
+libsysfs 2 libsysfs2 (>= 2.1.0+repack)
+udeb: libsysfs 2 libsysfs2-udeb (>= 2.1.0+repack)

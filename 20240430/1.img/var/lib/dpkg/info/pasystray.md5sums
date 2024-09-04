@@ -1,0 +1,10 @@
+6a3f4b13851491e787db9736ae42d0b9  usr/bin/pasystray
+d624c2092cd9752f5d06286d43cb03c6  usr/share/applications/pasystray.desktop
+c392d0507d07faf71e9664285f105fdc  usr/share/doc/pasystray/README.md
+81e6dfb7ba0d3cfbf275f7c88eb70cce  usr/share/doc/pasystray/TODO
+309f42fdf6990b0c19d5f7e0857ef024  usr/share/doc/pasystray/changelog.Debian.gz
+eb3a4a12e5ccd3d8bcb48456e144c8e4  usr/share/doc/pasystray/copyright
+053682e4627950d90e74f3ffc74b519a  usr/share/icons/hicolor/scalable/apps/pasystray.svg
+6619adcff7def946bbcf56c08d43e9f0  usr/share/man/man1/pasystray.1.gz
+ec86c3d1fa785deb3a1e819947a7b35a  usr/share/pasystray/pasystray.gtk3.glade
+ab8537fa982a04ddf9d308ebca12e9ce  usr/share/pixmaps/pasystray.png

@@ -1,0 +1,75 @@
+#! /bin/bash
+
+UPDATE_PATH="/home/mks/gcode_files/sda1/ELEGOO_UPDATE_DIR"
+
+find /home -iname *.pyc|xargs rm -rf;
+
+if [ ! -e "/home/mks/cache_cleaned" ]; then
+    if [ -d "/home/mks/Desktop/myfile/znp/znp_tjc_klipper/.git" ]; then
+        rm -rf /home/mks/Desktop/myfile/znp/znp_tjc_klipper/.git
+    fi
+    if [ -e "/home/mks/.gitconfig" ]; then
+        rm -rf /home/mks/.gitconfig
+    fi
+    if [ -e "/home/mks/.git-credentials" ]; then
+        rm -rf /home/mks/.git-credentials
+    fi
+    if [ -e "/home/mks/.bash_history" ]; then
+        rm -rf /home/mks/.bash_history
+    fi
+    touch /home/mks/cache_cleaned
+fi
+
+if ls ${UPDATE_PATH} | grep -q -E '\.mark$';then
+    rm ${UPDATE_PATH}/*.mark
+fi
+
+if [ -e ${UPDATE_PATH}/elegoo_conf.ini ]; then
+    cp -f ${UPDATE_PATH}/elegoo_conf.ini /home/mks/Desktop/myfile/znp/znp_tjc_klipper/
+    touch "${UPDATE_PATH}/successed_cp_elegoo_conf$(date +%Y-%m-%d_%H-%M-%S).mark"
+else
+    touch "${UPDATE_PATH}/no_elegoo_conf$(date +%Y-%m-%d_%H-%M-%S).mark"
+fi
+
+if [ -e ${UPDATE_PATH}/printer.cfg ]; then
+    cp -f ${UPDATE_PATH}/printer.cfg /home/mks/klipper_config/
+    touch "${UPDATE_PATH}/successed_cp_printer_conf$(date +%Y-%m-%d_%H-%M-%S).mark"
+else
+    touch "${UPDATE_PATH}/no_printer_conf$(date +%Y-%m-%d_%H-%M-%S).mark"
+fi
+
+if [ -e ${UPDATE_PATH}/wpa_supplicant-wlan0.conf ]; then
+    cp -f ${UPDATE_PATH}/wpa_supplicant-wlan0.conf /etc/wpa_supplicant/
+    chmod 755 /etc/wpa_supplicant/wpa_supplicant-wlan0.conf
+    cp -f ${UPDATE_PATH}/wpa_supplicant-wlan0.conf /boot/
+    chmod 755 /boot/wpa_supplicant-wlan0.conf
+    touch "${UPDATE_PATH}/successed_cp_wpa_supplicant-wlan0_conf$(date +%Y-%m-%d_%H-%M-%S).mark"
+else
+    touch "${UPDATE_PATH}/no_wpa_supplicant-wlan0_conf$(date +%Y-%m-%d_%H-%M-%S).mark"
+fi
+
+if [ -e ${UPDATE_PATH}/elegoo_conf.ini.bak ]; then
+    cp -f ${UPDATE_PATH}/elegoo_conf.ini.bak /home/mks/Desktop/myfile/znp/znp_tjc_klipper/
+    touch "${UPDATE_PATH}/successed_cp_elegoo_conf_bak$(date +%Y-%m-%d_%H-%M-%S).mark"
+else
+    touch "${UPDATE_PATH}/no_elegoo_conf_bak$(date +%Y-%m-%d_%H-%M-%S).mark"
+fi
+
+if [ -e ${UPDATE_PATH}/printer.cfg.bak ]; then
+    cp -f ${UPDATE_PATH}/printer.cfg.bak /home/mks/Desktop/myfile/znp/znp_tjc_klipper/
+    touch "${UPDATE_PATH}/successed_cp_printer_conf_bak$(date +%Y-%m-%d_%H-%M-%S).mark"
+else
+    touch "${UPDATE_PATH}/no_printer_conf_bak$(date +%Y-%m-%d_%H-%M-%S).mark"
+fi
+
+if [ ! -e /home/mks/update.sh ]; then
+    touch /home/mks/update.sh
+    echo '#!/bin/bash' >> /home/mks/update.sh
+    echo 'sudo dpkg -i --force-overwrite /home/mks/gcode_files/sda1/ELEGOO_UPDATE_DIR/ELEGOO_APP.deb && echo Update completed ' >> /home/mks/update.sh
+    chmod 755 /home/mks/update.sh
+else
+    echo '#!/bin/bash' > /home/mks/update.sh
+    echo 'sudo dpkg -i --force-overwrite /home/mks/gcode_files/sda1/ELEGOO_UPDATE_DIR/ELEGOO_APP.deb && echo Update completed ' >> /home/mks/update.sh
+    chmod 755 /home/mks/update.sh
+fi
+    

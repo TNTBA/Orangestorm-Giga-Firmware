@@ -1,0 +1,12 @@
+/.
+/lib
+/lib/aarch64-linux-gnu
+/lib/aarch64-linux-gnu/libf2fs.so.5.0.0
+/usr
+/usr/share
+/usr/share/doc
+/usr/share/doc/libf2fs5
+/usr/share/doc/libf2fs5/changelog.Debian.gz
+/usr/share/doc/libf2fs5/changelog.gz
+/usr/share/doc/libf2fs5/copyright
+/lib/aarch64-linux-gnu/libf2fs.so.5

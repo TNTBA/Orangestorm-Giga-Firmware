@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="dir_fc1eb218ab426e5adb60367f98438da0" kind="dir">
+    <compoundname>libc</compoundname>
+    <innerdir refid="dir_f3e09d3f6a1a467443c2d3dc67ac393d">misc</innerdir>
+    <innerdir refid="dir_4172b9c0d0fab59de5df39beb506ecc6">pmstring</innerdir>
+    <innerdir refid="dir_deb10f77d2ca2c15fbb5176528e8ff6c">stdio</innerdir>
+    <innerdir refid="dir_5f5508d11e3e647f632e0b46102de23e">stdlib</innerdir>
+    <innerdir refid="dir_9c99158f21f12d76100305e616b7d1f5">string</innerdir>
+    <innerdir refid="dir_dc85048d18d6583d4f66874a5ff90ac4">time</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/build/avr-libc-2.0.0+Atmel3.6.1/libc/avr-libc/libc/"/>
+  </compounddef>
+</doxygen>

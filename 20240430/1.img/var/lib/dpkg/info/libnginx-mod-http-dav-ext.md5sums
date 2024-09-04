@@ -1,0 +1,5 @@
+837bdae6a51977694395c2c2efe7be10  usr/lib/nginx/modules/ngx_http_dav_ext_module.so
+5d29e808fd9dd03bfef217269fd3f926  usr/share/doc/libnginx-mod-http-dav-ext/changelog.Debian.gz
+11f2b9048392b278abeec7521347a418  usr/share/doc/libnginx-mod-http-dav-ext/changelog.gz
+f89bef9fa1d22af419e5154ad3966930  usr/share/doc/libnginx-mod-http-dav-ext/copyright
+e39ab22a139115138551cf77deab82be  usr/share/nginx/modules-available/mod-http-dav-ext.conf

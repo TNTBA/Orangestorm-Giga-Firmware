@@ -1,0 +1,89 @@
+[+0.07s] DEBUG: settings.vala:157: Overriding dconf setting for background with /usr/share/backgrounds/armbian-lightdm/armbian03-Dre0x-Minum-dark-blurred-3840x2160.jpg
+[+0.07s] DEBUG: settings.vala:166: Resetting dconf setting for background-color to default
+[+0.07s] DEBUG: settings.vala:166: Resetting dconf setting for logo to default
+[+0.07s] DEBUG: posix_spawn avoided (fd close requested) 
+[+0.07s] DEBUG: settings.vala:166: Resetting dconf setting for other-monitors-logo to default
+[+0.07s] DEBUG: settings.vala:157: Overriding dconf setting for theme-name with Numix
+[+0.07s] DEBUG: settings.vala:157: Overriding dconf setting for icon-theme-name with Numix
+[+0.07s] DEBUG: settings.vala:157: Overriding dconf setting for font-name with Sans 11
+[+0.07s] DEBUG: settings.vala:166: Resetting dconf setting for play-ready-sound to default
+[+0.07s] DEBUG: settings.vala:166: Resetting dconf setting for xft-hintstyle to default
+[+0.07s] DEBUG: settings.vala:166: Resetting dconf setting for xft-rgba to default
+[+0.07s] DEBUG: settings.vala:166: Resetting dconf setting for enable-hidpi to default
+[+0.07s] DEBUG: settings.vala:166: Resetting dconf setting for only-on-monitor to default
+[+0.07s] DEBUG: settings.vala:184: Resetting dconf setting for draw-user-backgrounds to default
+[+0.07s] DEBUG: settings.vala:175: Overriding dconf setting for draw-grid
+[+0.07s] DEBUG: settings.vala:184: Resetting dconf setting for show-hostname to default
+[+0.07s] DEBUG: settings.vala:184: Resetting dconf setting for show-power to default
+[+0.07s] DEBUG: settings.vala:184: Resetting dconf setting for show-a11y to default
+[+0.07s] DEBUG: settings.vala:184: Resetting dconf setting for show-clock to default
+[+0.07s] DEBUG: settings.vala:175: Overriding dconf setting for show-keyboard
+[+0.07s] DEBUG: settings.vala:184: Resetting dconf setting for show-quit to default
+[+0.07s] DEBUG: settings.vala:184: Resetting dconf setting for xft-antialias to default
+[+0.07s] DEBUG: settings.vala:184: Resetting dconf setting for activate-numlock to default
+[+0.07s] DEBUG: settings.vala:202: Resetting dconf setting for xft-dpi to default
+[+0.07s] DEBUG: settings.vala:220: Resetting dconf setting for hidden-users to default
+[+0.07s] DEBUG: settings.vala:220: Resetting dconf setting for group-filter to default
+[+0.07s] DEBUG: slick-greeter.vala:597: HiDPI support: auto
+[+0.07s] DEBUG: posix_spawn avoided (fd close requested) 
+/usr/bin/slick-greeter-check-hidpi:17: DeprecationWarning: Gdk.Screen.get_primary_monitor is deprecated
+  primary = screen.get_primary_monitor()
+/usr/bin/slick-greeter-check-hidpi:19: DeprecationWarning: Gdk.Screen.get_monitor_geometry is deprecated
+  rect = screen.get_monitor_geometry(primary)
+/usr/bin/slick-greeter-check-hidpi:20: DeprecationWarning: Gdk.Screen.get_monitor_width_mm is deprecated
+  width_mm = screen.get_monitor_width_mm(primary)
+/usr/bin/slick-greeter-check-hidpi:21: DeprecationWarning: Gdk.Screen.get_monitor_height_mm is deprecated
+  height_mm = screen.get_monitor_height_mm(primary)
+/usr/bin/slick-greeter-check-hidpi:22: DeprecationWarning: Gdk.Screen.get_monitor_scale_factor is deprecated
+  monitor_scale = screen.get_monitor_scale_factor(primary)
+[+2.18s] DEBUG: posix_spawn avoided (fd close requested) 
+[+2.60s] DEBUG: posix_spawn avoided (automatic reaping requested) (fd close requested) 
+[+2.61s] DEBUG: slick-greeter.vala:629: Launched at-spi-bus-launcher. PID: 1483
+[+2.76s] DEBUG: slick-greeter.vala:638: Starting slick-greeter 1.2.4 UID=115 LANG=en_US.UTF-8
+[+2.76s] DEBUG: slick-greeter.vala:641: Setting cursor
+dbus-daemon[1489]: Activating service name='org.a11y.atspi.Registry' requested by ':1.0' (uid=115 pid=1449 comm="/usr/sbin/slick-greeter ")
+[+2.79s] DEBUG: slick-greeter.vala:655: Loading command line options
+[+2.80s] DEBUG: slick-greeter.vala:682: Setting GTK+ settings
+dbus-daemon[1489]: Successfully activated service 'org.a11y.atspi.Registry'
+[+3.26s] DEBUG: slick-greeter.vala:705: Creating Slick Greeter
+[+3.26s] DEBUG: slick-greeter.vala:55: Creating background surface
+[+3.27s] DEBUG: Connecting to display manager...
+[+3.27s] DEBUG: Wrote 26 bytes to daemon
+[+3.27s] DEBUG: Read 8 bytes from daemon
+[+3.27s] DEBUG: Read 157 bytes from daemon
+[+3.27s] DEBUG: Connected api=1 version=1.26.0 default-session=xfce show-manual-login=false hide-users=false has-guest-account=false show-remote-login=true
+[+3.96s] WARNING: Error getting user list from org.freedesktop.Accounts: GDBus.Error:org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.Accounts was not provided by any .service files
+[+3.96s] DEBUG: Loading user config from /etc/lightdm/users.conf
+[+3.97s] DEBUG: User mks added
+[+3.97s] DEBUG: user-list.vala:1032: Adding/updating user mks (Mks)
+[+3.97s] DEBUG: Loading sessions from org.freedesktop.DisplayManager
+[+3.98s] DEBUG: slick-greeter.vala:216: Using default session: 'xfce'
+[+3.98s] DEBUG: main-window.vala:235: Monitor 0 is 480x320 pixels at 0,0
+[+3.98s] DEBUG: main-window.vala:261: MainWindow is 480x320 pixels
+[+3.98s] DEBUG: slick-greeter.vala:708: Showing greeter
+[+3.98s] DEBUG: slick-greeter.vala:294: Showing main window
+[+4.27s] DEBUG: background.vala:68: Making background #000000 at 480x320
+[+4.27s] DEBUG: background.vala:79: Render of background #000000 complete
+[+4.29s] DEBUG: Loaded session /usr/share/xsessions/lightdm-xsession.desktop (Default Xsession, )
+[+4.29s] DEBUG: Loaded session /usr/share/xsessions/xfce.desktop (Xfce Session, Use this session to run Xfce as your desktop environment)
+[+4.29s] DEBUG: Starting authentication for user mks...
+[+4.29s] DEBUG: Wrote 19 bytes to daemon
+[+4.30s] DEBUG: slick-greeter.vala:718: Starting main loop
+[+4.33s] DEBUG: background.vala:571: Regenerating backgrounds
+[+4.33s] DEBUG: background.vala:68: Making background #000000 at 480x320
+[+4.33s] DEBUG: background.vala:79: Render of background #000000 complete
+[+4.33s] DEBUG: background.vala:68: Making background /usr/share/backgrounds/armbian-lightdm/armbian03-Dre0x-Minum-dark-blurred-3840x2160.jpg at 480x320
+[+4.33s] DEBUG: background.vala:571: Regenerating backgrounds
+[+4.33s] DEBUG: background.vala:68: Making background #000000 at 480x320
+[+4.33s] DEBUG: background.vala:79: Render of background #000000 complete
+[+4.33s] DEBUG: background.vala:68: Making background /usr/share/backgrounds/armbian-lightdm/armbian03-Dre0x-Minum-dark-blurred-3840x2160.jpg at 480x320
+[+4.36s] DEBUG: Read 8 bytes from daemon
+[+4.36s] DEBUG: Read 33 bytes from daemon
+[+4.36s] DEBUG: Prompt user with 1 message(s)
+[+4.75s] DEBUG: slick-greeter.vala:282: starting system-ready sound
+[+5.02s] DEBUG: background.vala:121: Render of background /usr/share/backgrounds/armbian-lightdm/armbian03-Dre0x-Minum-dark-blurred-3840x2160.jpg complete
+[+5.13s] DEBUG: background.vala:121: Render of background /usr/share/backgrounds/armbian-lightdm/armbian03-Dre0x-Minum-dark-blurred-3840x2160.jpg complete
+[+113.44s] DEBUG: slick-greeter.vala:713: Got a SIGTERM
+[+113.44s] DEBUG: slick-greeter.vala:721: Cleaning up
+[+113.44s] DEBUG: slick-greeter.vala:729: AT-SPI exited with return value 0
+[+113.45s] DEBUG: slick-greeter.vala:746: Exiting

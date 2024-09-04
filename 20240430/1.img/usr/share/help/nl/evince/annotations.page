@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" type="guide" style="task" id="annotations" xml:lang="nl">
+
+  <info>
+    <link type="guide" xref="index#annotations"/>
+    <desc>Hoe u annotaties kunt maken en aanpassen.</desc>
+
+    <revision pkgversion="3.2" version="0.1" date="2011-09-05" status="final"/>
+    <revision pkgversion="3.26" version="0.2" date="2017-08-03" status="final"/>
+    <credit type="author">
+      <name>Tiffany Antopolski</name>
+      <email>tiffany@antopolski.com</email>
+    </credit>
+    <credit type="author">
+      <name>Andre Klapper</name>
+      <email>ak-47@gmx.net</email>
+    </credit>
+    <license>
+      <p>Creative Commons GelijkDelen 3.0</p>
+    </license>
+
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Justin van Steijn</mal:name>
+      <mal:email>jvs@fsfe.org</mal:email>
+      <mal:years>2016, 2017, 2018.</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Annotaties toevoegen</title>
+<p>Een annotatie is een notitie of commentaar dat is toegevoegd aan een PDF-document. U kunt annotaties toevoegen met de <app>documentenweergave</app>.</p>
+<p>Als u een bestand opent, zou u een zijpaneel aan de linkerkant van het venster moeten hebben. Als u geen zichtbaar zijpaneel heeft, druk dan op het menu <gui>Weergaveopties</gui> in de rechterbovenhoek en selecteer <gui>Zijpaneel</gui> of druk op <key>F9</key> op het toetsenbord.</p>
+
+<p>Aan de bovenkant van dit zijpaneel is er een keuzemenu met opties als <gui>Miniaturen</gui>, <gui>Inhoud</gui> en <gui>Annotaties</gui> (sommige kunnen <em>uitgegrijsd</em> zijn voor sommige documenten).</p>
+<p>Om een annotatie te maken:</p>
+<steps>
+ <item>
+  <p>Selecteer <gui>Het document annoteren</gui> vanuit de titelbalk.</p>
+    <media type="image" src="figures/add-text-annotation.png"/>
+    <list>
+     <item>
+      <p>U zou nu de knoppen <gui>Tekstannotatie toevoegen</gui> en <gui>Markeerannotatie toevoegen</gui> moeten zien onder de titelbalk.</p>
+       <media type="image" src="figures/list-add-tabs.png"/>
+     </item>
+    </list>
+ </item>
+ <item>
+  <p>Klik op het eerste pictogram om een tekstannotatie toe te voegen.</p>
+ </item>
+ <item>
+  <p>Klik op de plek in het documentvenster waar u de annotatie wilt toevoegen. Uw <em>annotatie</em>-venster zal openen.</p>
+ </item>
+ <item>
+  <p>Typ uw tekst in het <em>annotatie</em>-venster.</p>
+   <note>
+    <p>U kunt de notitie van grootte veranderen door op één van de onderste hoeken van de notitie te klikken en te blijven vasthouden, waarna u het versleept.</p>
+   </note>
+ </item>
+ <item>
+  <p>Sluit de notitie door te klikken op de <gui>x</gui> aan de bovenkant van de notitie.</p>
+ </item>
+</steps>
+
+
+</page>

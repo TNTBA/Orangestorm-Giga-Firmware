@@ -1,0 +1,5 @@
+dd273df0290fd83d3ea82dbec5ab96ab  usr/include/lmdb.h
+f91b085f44bbf1ed71ed573075105781  usr/lib/aarch64-linux-gnu/liblmdb.a
+b99c2b1f529c062ae19b4f7d3922ae2f  usr/lib/aarch64-linux-gnu/pkgconfig/lmdb.pc
+876d50ad51807233a17cf54a732cda86  usr/share/doc/liblmdb-dev/changelog.Debian.gz
+a702cacbc6fa0d5311c07b3cb9a1264a  usr/share/doc/liblmdb-dev/copyright

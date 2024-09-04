@@ -1,0 +1,20 @@
+#Systemd Moonraker Service
+
+[Unit]
+Description=Systemd Moonraker Service
+Documentation=https://moonraker.readthedocs.io/
+After=network.target
+
+[Install]
+WantedBy=multi-user.target
+
+[Service]
+Environment=MOONRAKER_CONF=/home/mks/klipper_config/moonraker.conf
+Environment=MOONRAKER_LOG=/home/mks/klipper_logs/moonraker.log
+Type=simple
+SupplementaryGroups=moonraker-admin
+User=elegoo
+RemainAfterExit=yes
+ExecStart=/home/mks/moonraker-env/bin/python /home/mks/moonraker/moonraker/moonraker.py -c ${MOONRAKER_CONF} -l ${MOONRAKER_LOG}
+Restart=always
+RestartSec=10

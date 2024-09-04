@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="structldiv__t" kind="struct" language="C++" prot="public">
+    <compoundname>ldiv_t</compoundname>
+    <includes refid="stdlib_8h" local="no">stdlib.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structldiv__t_1a73efd59c176304c327cb4214d0e5e5c9" prot="public" static="no" mutable="no">
+        <type>long</type>
+        <definition>long ldiv_t::quot</definition>
+        <argsstring></argsstring>
+        <name>quot</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The Quotient. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/build/avr-libc-2.0.0+Atmel3.6.1/libc/avr-libc/include/stdlib.h" line="77" column="1" bodyfile="/build/avr-libc-2.0.0+Atmel3.6.1/libc/avr-libc/include/stdlib.h" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structldiv__t_1a0f217ff62b8640aa945ec84d6d0bd000" prot="public" static="no" mutable="no">
+        <type>long</type>
+        <definition>long ldiv_t::rem</definition>
+        <argsstring></argsstring>
+        <name>rem</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The Remainder. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/build/avr-libc-2.0.0+Atmel3.6.1/libc/avr-libc/include/stdlib.h" line="78" column="1" bodyfile="/build/avr-libc-2.0.0+Atmel3.6.1/libc/avr-libc/include/stdlib.h" bodystart="78" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Result type for function <ref refid="group__avr__stdlib_1ga5b688b463f9faaa82f31ac7587e06849" kindref="member">ldiv()</ref>. </para>    </detaileddescription>
+    <location file="/build/avr-libc-2.0.0+Atmel3.6.1/libc/avr-libc/include/stdlib.h" line="76" column="1" bodyfile="/build/avr-libc-2.0.0+Atmel3.6.1/libc/avr-libc/include/stdlib.h" bodystart="76" bodyend="79"/>
+    <listofallmembers>
+      <member refid="structldiv__t_1a73efd59c176304c327cb4214d0e5e5c9" prot="public" virt="non-virtual"><scope>ldiv_t</scope><name>quot</name></member>
+      <member refid="structldiv__t_1a0f217ff62b8640aa945ec84d6d0bd000" prot="public" virt="non-virtual"><scope>ldiv_t</scope><name>rem</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

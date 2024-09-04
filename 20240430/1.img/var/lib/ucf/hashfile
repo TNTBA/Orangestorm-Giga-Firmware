@@ -1,0 +1,8 @@
+6f015cbda1bb151c4bcd0ba1b84c2568  /etc/default/sysstat
+2cd28b9ea2133676fd51565128b12d29  /etc/chrony/chrony.conf
+73804919088bf06f338cc03296eb0bcf  /etc/chrony/chrony.keys
+1c261d6541420797f8b824d65ac5c197  /etc/apt/apt.conf.d/20auto-upgrades
+16a42c3bbce2144e6d19788a670de8b0  /etc/apt/apt.conf.d/50unattended-upgrades
+2f1ad364c25bfd8dcee21c2d6ea97a3a  /etc/papersize
+5bc2e51bdcd5cee5dea43eec0ee16022  /etc/samba/smb.conf
+0b8a28dca5cdbace0cd85fcd7794cba8  /etc/ssh/sshd_config

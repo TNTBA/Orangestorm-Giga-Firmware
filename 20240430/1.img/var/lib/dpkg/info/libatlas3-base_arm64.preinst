@@ -1,0 +1,14 @@
+#!/bin/sh
+
+set -e
+
+# Cleanup pre-multiarch alternative
+if [ "$1" = "upgrade" ] && dpkg --compare-versions "$2" lt 3.10.3-4~
+then
+    update-alternatives --remove libblas.so.3 /usr/lib/atlas-base/atlas/libblas.so.3
+    update-alternatives --remove liblapack.so.3 /usr/lib/atlas-base/atlas/liblapack.so.3
+fi
+
+
+
+exit 0

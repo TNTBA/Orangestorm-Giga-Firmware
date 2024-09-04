@@ -1,0 +1,143 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<!-- Created by GNU Texinfo 6.5, http://www.gnu.org/software/texinfo/ -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>CatchError (The Python X Library)</title>
+
+<meta name="description" content="CatchError (The Python X Library)">
+<meta name="keywords" content="CatchError (The Python X Library)">
+<meta name="resource-type" content="document">
+<meta name="distribution" content="global">
+<meta name="Generator" content="makeinfo">
+<link href="index.html#Top" rel="start" title="Top">
+<link href="index.html#SEC_Contents" rel="contents" title="Table of Contents">
+<link href="Error-Handling.html#Error-Handling" rel="up" title="Error Handling">
+<link href="Event-Handling.html#Event-Handling" rel="next" title="Event Handling">
+<link href="X-Error-Classes.html#X-Error-Classes" rel="prev" title="X Error Classes">
+<style type="text/css">
+<!--
+a.summary-letter {text-decoration: none}
+blockquote.indentedblock {margin-right: 0em}
+blockquote.smallindentedblock {margin-right: 0em; font-size: smaller}
+blockquote.smallquotation {font-size: smaller}
+div.display {margin-left: 3.2em}
+div.example {margin-left: 3.2em}
+div.lisp {margin-left: 3.2em}
+div.smalldisplay {margin-left: 3.2em}
+div.smallexample {margin-left: 3.2em}
+div.smalllisp {margin-left: 3.2em}
+kbd {font-style: oblique}
+pre.display {font-family: inherit}
+pre.format {font-family: inherit}
+pre.menu-comment {font-family: serif}
+pre.menu-preformatted {font-family: serif}
+pre.smalldisplay {font-family: inherit; font-size: smaller}
+pre.smallexample {font-size: smaller}
+pre.smallformat {font-family: inherit; font-size: smaller}
+pre.smalllisp {font-size: smaller}
+span.nolinebreak {white-space: nowrap}
+span.roman {font-family: initial; font-weight: normal}
+span.sansserif {font-family: sans-serif; font-weight: normal}
+ul.no-bullet {list-style: none}
+-->
+</style>
+
+
+</head>
+
+<body lang="en">
+<a name="CatchError"></a>
+<div class="header">
+<p>
+Previous: <a href="X-Error-Classes.html#X-Error-Classes" accesskey="p" rel="prev">X Error Classes</a>, Up: <a href="Error-Handling.html#Error-Handling" accesskey="u" rel="up">Error Handling</a> &nbsp; [<a href="index.html#SEC_Contents" title="Table of contents" rel="contents">Contents</a>]</p>
+</div>
+<hr>
+<a name="CatchError-1"></a>
+<h3 class="section">4.2 CatchError</h3>
+
+<p><code>error.CatchError</code> is an object which can be used as an error
+handler.  It collects an error matching any of the specified types,
+which can be retrieved later.  If several errors occur, only the last
+one is remembered.
+</p>
+
+<dl>
+<dt><a name="index-CatchError"></a>Class: <strong>CatchError</strong> <em>( *errors )</em></dt>
+<dd>
+<p>Create a new error handler object.  Initialize by providing all error
+classes you are interested in as arguments.  If no error classes are
+provided at all, this means that all errors will be considered.
+</p>
+</dd></dl>
+
+
+<p>Pass the <code>error.CatchError</code> object as the <code>onerror</code> parameter
+to X object methods.  If these methods generated any errors matching the
+ones specified, it can be retrieved with the following functions:
+</p>
+<dl>
+<dt><a name="index-get_005ferror-on-CatchError"></a>Method on CatchError: <strong>get_error</strong> <em>( )</em></dt>
+<dd>
+<p>Return the last error object caught, or None if no matching errors has
+occured.
+</p>
+</dd></dl>
+
+<dl>
+<dt><a name="index-get_005frequest-on-CatchError"></a>Method on CatchError: <strong>get_request</strong> <em>( )</em></dt>
+<dd>
+<p>Return the request object for the last error caught, or None if no
+matching errors has occured.
+</p>
+</dd></dl>
+
+<p><code>error.CatchError</code> objects can be reused:
+</p>
+<dl>
+<dt><a name="index-reset-on-CatchError"></a>Method on CatchError: <strong>reset</strong> <em>( )</em></dt>
+<dd>
+<p>Forget any caught error.
+</p>
+</dd></dl>
+
+
+<p>Since the X protocol is mostly asynchronous any error we&rsquo;re watching for
+might not have been recieved when we call <code>get_error</code>.  To make
+sure that the request has been processed by the server and any error
+generated has been received by the Xlib, we must synchronize with the
+server.
+</p>
+<p>An example of using <code>error.CatchError</code>:
+</p>
+<div class="example">
+<pre class="example"># Resize and the foo window
+# If it has been destroyed since we looked at it the last time,
+# reset variable foo to None
+
+# Create a error handler for BadWindow errors
+ec = error.CatchError(error.BadWindow)
+
+# Perform the operation
+foo.configure(width = 100, height = 200, onerror = ec)
+
+# Sync communication with server
+display.sync()
+
+# And check if there was any error
+if ec.get_error():
+    foo = None
+</pre></div>
+
+               
+
+<hr>
+<div class="header">
+<p>
+Previous: <a href="X-Error-Classes.html#X-Error-Classes" accesskey="p" rel="prev">X Error Classes</a>, Up: <a href="Error-Handling.html#Error-Handling" accesskey="u" rel="up">Error Handling</a> &nbsp; [<a href="index.html#SEC_Contents" title="Table of contents" rel="contents">Contents</a>]</p>
+</div>
+
+
+
+</body>
+</html>

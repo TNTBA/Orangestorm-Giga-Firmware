@@ -1,0 +1,17 @@
+/.
+/usr
+/usr/bin
+/usr/bin/pavucontrol-qt
+/usr/share
+/usr/share/applications
+/usr/share/applications/pavucontrol-qt.desktop
+/usr/share/doc
+/usr/share/doc/pavucontrol-qt
+/usr/share/doc/pavucontrol-qt/AUTHORS
+/usr/share/doc/pavucontrol-qt/README.md
+/usr/share/doc/pavucontrol-qt/changelog.Debian.gz
+/usr/share/doc/pavucontrol-qt/changelog.gz
+/usr/share/doc/pavucontrol-qt/copyright
+/usr/share/lintian
+/usr/share/lintian/overrides
+/usr/share/lintian/overrides/pavucontrol-qt

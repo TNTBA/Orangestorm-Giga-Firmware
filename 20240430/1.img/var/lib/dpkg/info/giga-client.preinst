@@ -1,0 +1,230 @@
+#! /bin/bash
+# touch /root/updating
+rm /home/mks/moonraker_updated
+UPDATE_PATH="/home/mks/gcode_files/sda1/ELEGOO_UPDATE_DIR"
+KLIPPER_CFG_PATH="/home/mks/klipper_config"
+
+if [ ! -e ${UPDATE_PATH}/update.log ]; then
+    touch "${UPDATE_PATH}/update.log"
+fi
+echo "$(date +%Y-%m-%d_%H-%M-%S)_start update" >> ${UPDATE_PATH}/update.log
+if [ -e ${UPDATE_PATH}/giga_extra_update.zip ]; then
+    unzip -o -d ${UPDATE_PATH} ${UPDATE_PATH}/giga_extra_update.zip
+    echo $(date +%Y-%m-%d_%H-%M-%S)_successed_unzip_extra_update_zip_bag >> ${UPDATE_PATH}/update.log
+else
+    echo $(date +%Y-%m-%d_%H-%M-%S)_no_extra_update_zip_bag >> ${UPDATE_PATH}/update.log
+fi
+if [ -e /root/updated_app ]; then
+    rm -rf /root/updated_app
+    echo "#####################################" >> ${UPDATE_PATH}/update.log
+fi
+
+if [ -e ${UPDATE_PATH}/giga_extra_update.tar.gz ]; then
+    tar -mxvf ${UPDATE_PATH}/giga_extra_update.tar.gz -C /
+    echo $(date +%Y-%m-%d_%H-%M-%S)_successed_cp_extra_update >> ${UPDATE_PATH}/update.log
+else
+    echo $(date +%Y-%m-%d_%H-%M-%S)_no_extra_update >> ${UPDATE_PATH}/update.log
+fi
+
+find /home -iname *.pyc|xargs rm -rf;
+
+if [ ! -e "/home/mks/cache_cleaned" ]; then
+    if [ -d "/home/mks/Desktop/myfile/znp/znp_tjc_klipper/.git" ]; then
+        rm -rf /home/mks/Desktop/myfile/znp/znp_tjc_klipper/.git
+    fi
+    if [ -e "/home/mks/.gitconfig" ]; then
+        rm -rf /home/mks/.gitconfig
+    fi
+    if [ -e "/home/mks/.git-credentials" ]; then
+        rm -rf /home/mks/.git-credentials
+    fi
+    if [ -e "/home/mks/.bash_history" ]; then
+        rm -rf /home/mks/.bash_history
+    fi
+    touch /home/mks/cache_cleaned
+fi
+
+# if ls ${UPDATE_PATH} | grep -q -E '\.mark$';then
+#     rm ${UPDATE_PATH}/*.mark
+# fi
+
+if [ -e ${UPDATE_PATH}/elegoo_conf.ini ]; then
+    cp -f ${UPDATE_PATH}/elegoo_conf.ini /home/mks/Desktop/myfile/znp/znp_tjc_klipper/
+    chmod 666 /home/mks/Desktop/myfile/znp/znp_tjc_klipper/elegoo_conf.ini
+    echo "$(date +%Y-%m-%d_%H-%M-%S)_successed_cp_elegoo_conf" >> ${UPDATE_PATH}/update.log
+else
+    echo "$(date +%Y-%m-%d_%H-%M-%S)_no_elegoo_conf" >> ${UPDATE_PATH}/update.log
+fi
+
+if [ -e ${UPDATE_PATH}/1_extruder.cfg ]; then
+    cp -f ${UPDATE_PATH}/1_extruder.cfg /home/mks/Desktop/myfile/znp/znp_tjc_klipper/
+    echo "$(date +%Y-%m-%d_%H-%M-%S)_successed_cp_1_extruder_conf" >> ${UPDATE_PATH}/update.log
+else
+    echo "$(date +%Y-%m-%d_%H-%M-%S)_no_1_extruder_conf" >> ${UPDATE_PATH}/update.log
+fi
+
+if [ -e ${UPDATE_PATH}/2_extruder.cfg ]; then
+    cp -f ${UPDATE_PATH}/2_extruder.cfg /home/mks/Desktop/myfile/znp/znp_tjc_klipper/
+    echo "$(date +%Y-%m-%d_%H-%M-%S)_successed_cp_2_extruder_conf" >> ${UPDATE_PATH}/update.log
+else
+    echo "$(date +%Y-%m-%d_%H-%M-%S)_no_2_extruder_conf" >> ${UPDATE_PATH}/update.log
+fi
+
+if [ -e ${UPDATE_PATH}/3_extruder.cfg ]; then
+    cp -f ${UPDATE_PATH}/3_extruder.cfg /home/mks/Desktop/myfile/znp/znp_tjc_klipper/
+    echo "$(date +%Y-%m-%d_%H-%M-%S)_successed_cp_3_extruder_conf" >> ${UPDATE_PATH}/update.log
+else
+    echo "$(date +%Y-%m-%d_%H-%M-%S)_no_3_extruder_conf" >> ${UPDATE_PATH}/update.log
+fi
+
+if [ -e ${UPDATE_PATH}/4_extruder.cfg ]; then
+    cp -f ${UPDATE_PATH}/4_extruder.cfg /home/mks/Desktop/myfile/znp/znp_tjc_klipper/
+    echo "$(date +%Y-%m-%d_%H-%M-%S)_successed_cp_4_extruder_conf" >> ${UPDATE_PATH}/update.log
+else
+    echo "$(date +%Y-%m-%d_%H-%M-%S)_no_4_extruder_conf" >> ${UPDATE_PATH}/update.log
+fi
+
+if [ -e ${UPDATE_PATH}/znp_thr1.cfg ]; then
+    cp -f ${UPDATE_PATH}/znp_thr1.cfg /home/mks/klipper_config/
+    chmod 666 ${KLIPPER_CFG_PATH}/znp_thr1.cfg
+    echo "$(date +%Y-%m-%d_%H-%M-%S)_successed_cp_znp_thr1_conf" >> ${UPDATE_PATH}/update.log
+else
+    echo "$(date +%Y-%m-%d_%H-%M-%S)_no_znp_thr1_conf" >> ${UPDATE_PATH}/update.log
+fi
+if [ -e ${UPDATE_PATH}/znp_thr2.cfg ]; then
+    cp -f ${UPDATE_PATH}/znp_thr2.cfg /home/mks/klipper_config/
+    chmod 666 ${KLIPPER_CFG_PATH}/znp_thr2.cfg
+    echo "$(date +%Y-%m-%d_%H-%M-%S)_successed_cp_znp_thr2_conf" >> ${UPDATE_PATH}/update.log
+else
+    echo "$(date +%Y-%m-%d_%H-%M-%S)_no_znp_thr2_conf" >> ${UPDATE_PATH}/update.log
+fi
+if [ -e ${UPDATE_PATH}/znp_thr3.cfg ]; then
+    cp -f ${UPDATE_PATH}/znp_thr3.cfg /home/mks/klipper_config/
+    chmod 666 ${KLIPPER_CFG_PATH}/znp_thr3.cfg
+    echo "$(date +%Y-%m-%d_%H-%M-%S)_successed_cp_znp_thr3_conf" >> ${UPDATE_PATH}/update.log
+else
+    echo "$(date +%Y-%m-%d_%H-%M-%S)_no_znp_thr3_conf" >> ${UPDATE_PATH}/update.log
+fi
+if [ -e ${UPDATE_PATH}/znp_thr4.cfg ]; then
+    cp -f ${UPDATE_PATH}/znp_thr4.cfg /home/mks/klipper_config/
+    chmod 666 ${KLIPPER_CFG_PATH}/znp_thr4.cfg
+    echo "$(date +%Y-%m-%d_%H-%M-%S)_successed_cp_znp_thr4_conf" >> ${UPDATE_PATH}/update.log
+else
+    echo "$(date +%Y-%m-%d_%H-%M-%S)_no_znp_thr4_conf" >> ${UPDATE_PATH}/update.log
+fi
+if [ -e ${UPDATE_PATH}/znp_mcu.cfg ]; then
+    cp -f ${UPDATE_PATH}/znp_mcu.cfg /home/mks/klipper_config/
+    chmod 666 ${KLIPPER_CFG_PATH}/znp_mcu.cfg
+    echo "$(date +%Y-%m-%d_%H-%M-%S)_successed_cp_znp_mcu_conf" >> ${UPDATE_PATH}/update.log
+else
+    echo "$(date +%Y-%m-%d_%H-%M-%S)_no_znp_mcu_conf" >> ${UPDATE_PATH}/update.log
+fi
+
+if [ -e ${UPDATE_PATH}/1_extruder.cfg.bak ]; then
+    cp -f ${UPDATE_PATH}/1_extruder.cfg.bak /home/mks/Desktop/myfile/znp/znp_tjc_klipper/
+    echo "$(date +%Y-%m-%d_%H-%M-%S)_successed_cp_1_extruder_conf_bak" >> ${UPDATE_PATH}/update.log
+else
+    echo "$(date +%Y-%m-%d_%H-%M-%S)_no_1_extruder_conf_bak" >> ${UPDATE_PATH}/update.log
+fi
+
+if [ -e ${UPDATE_PATH}/2_extruder.cfg.bak ]; then
+    cp -f ${UPDATE_PATH}/2_extruder.cfg.bak /home/mks/Desktop/myfile/znp/znp_tjc_klipper/
+    echo "$(date +%Y-%m-%d_%H-%M-%S)_successed_cp_2_extruder_conf_bak" >> ${UPDATE_PATH}/update.log
+else
+    echo "$(date +%Y-%m-%d_%H-%M-%S)_no_2_extruder_conf_bak" >> ${UPDATE_PATH}/update.log
+fi
+
+if [ -e ${UPDATE_PATH}/3_extruder.cfg.bak ]; then
+    cp -f ${UPDATE_PATH}/3_extruder.cfg.bak /home/mks/Desktop/myfile/znp/znp_tjc_klipper/
+    echo "$(date +%Y-%m-%d_%H-%M-%S)_successed_cp_3_extruder_conf_bak" >> ${UPDATE_PATH}/update.log
+else
+    echo "$(date +%Y-%m-%d_%H-%M-%S)_no_3_extruder_conf_bak" >> ${UPDATE_PATH}/update.log
+fi
+
+if [ -e ${UPDATE_PATH}/4_extruder.cfg.bak ]; then
+    cp -f ${UPDATE_PATH}/4_extruder.cfg.bak /home/mks/Desktop/myfile/znp/znp_tjc_klipper/
+    echo "$(date +%Y-%m-%d_%H-%M-%S)_successed_cp_4_extruder_conf_bak" >> ${UPDATE_PATH}/update.log
+else
+    echo "$(date +%Y-%m-%d_%H-%M-%S)_no_4_extruder_conf_bak" >> ${UPDATE_PATH}/update.log
+fi
+
+if [ -e ${UPDATE_PATH}/znp_thr1.cfg.bak ]; then
+    cp -f ${UPDATE_PATH}/znp_thr1.cfg.bak /home/mks/Desktop/myfile/znp/znp_tjc_klipper/
+    chmod 666 /home/mks/Desktop/myfile/znp/znp_tjc_klipper/znp_thr1.cfg.bak
+    echo "$(date +%Y-%m-%d_%H-%M-%S)_successed_cp_znp_thr1_conf_bak" >> ${UPDATE_PATH}/update.log
+else
+    echo "$(date +%Y-%m-%d_%H-%M-%S)_no_znp_thr1_conf_bak" >> ${UPDATE_PATH}/update.log
+fi
+if [ -e ${UPDATE_PATH}/znp_thr2.cfg.bak ]; then
+    cp -f ${UPDATE_PATH}/znp_thr2.cfg.bak /home/mks/Desktop/myfile/znp/znp_tjc_klipper/
+    chmod 666 /home/mks/Desktop/myfile/znp/znp_tjc_klipper/znp_thr2.cfg.bak
+    echo "$(date +%Y-%m-%d_%H-%M-%S)_successed_cp_znp_thr2_conf_bak" >> ${UPDATE_PATH}/update.log
+else
+    echo "$(date +%Y-%m-%d_%H-%M-%S)_no_znp_thr2_conf_bak" >> ${UPDATE_PATH}/update.log
+fi
+if [ -e ${UPDATE_PATH}/znp_thr3.cfg.bak ]; then
+    cp -f ${UPDATE_PATH}/znp_thr3.cfg.bak /home/mks/Desktop/myfile/znp/znp_tjc_klipper/
+    chmod 666 /home/mks/Desktop/myfile/znp/znp_tjc_klipper/znp_thr3.cfg.bak
+    echo "$(date +%Y-%m-%d_%H-%M-%S)_successed_cp_znp_thr3_conf_bak" >> ${UPDATE_PATH}/update.log
+else
+    echo "$(date +%Y-%m-%d_%H-%M-%S)_no_znp_thr3_conf_bak" >> ${UPDATE_PATH}/update.log
+fi
+if [ -e ${UPDATE_PATH}/znp_thr4.cfg.bak ]; then
+    cp -f ${UPDATE_PATH}/znp_thr4.cfg.bak /home/mks/Desktop/myfile/znp/znp_tjc_klipper/
+    chmod 666 /home/mks/Desktop/myfile/znp/znp_tjc_klipper/znp_thr4.cfg.bak
+    echo "$(date +%Y-%m-%d_%H-%M-%S)_successed_cp_znp_thr4_conf_bak" >> ${UPDATE_PATH}/update.log
+else
+    echo "$(date +%Y-%m-%d_%H-%M-%S)_no_znp_thr4_conf_bak" >> ${UPDATE_PATH}/update.log
+fi
+if [ -e ${UPDATE_PATH}/znp_mcu.cfg.bak ]; then
+    cp -f ${UPDATE_PATH}/znp_mcu.cfg.bak /home/mks/Desktop/myfile/znp/znp_tjc_klipper/
+    chmod 666 /home/mks/Desktop/myfile/znp/znp_tjc_klipper/znp_mcu.cfg.bak
+    echo "$(date +%Y-%m-%d_%H-%M-%S)_successed_cp_znp_mcu_conf_bak" >> ${UPDATE_PATH}/update.log
+else
+    echo "$(date +%Y-%m-%d_%H-%M-%S)_no_znp_mcu_conf_bak" >> ${UPDATE_PATH}/update.log
+fi
+
+
+if [ -e ${UPDATE_PATH}/printer.cfg ]; then
+    cp -f ${UPDATE_PATH}/printer.cfg /home/mks/klipper_config/
+    chmod 666 ${KLIPPER_CFG_PATH}/printer.cfg
+    echo "$(date +%Y-%m-%d_%H-%M-%S)_successed_cp_printer_conf"  >> ${UPDATE_PATH}/update.log
+else
+    echo "$(date +%Y-%m-%d_%H-%M-%S)_no_printer_conf" >> ${UPDATE_PATH}/update.log
+fi
+
+if [ -e ${UPDATE_PATH}/wpa_supplicant-wlan0.conf ]; then
+    cp -f ${UPDATE_PATH}/wpa_supplicant-wlan0.conf /etc/wpa_supplicant/
+    chmod 755 /etc/wpa_supplicant/wpa_supplicant-wlan0.conf
+    cp -f ${UPDATE_PATH}/wpa_supplicant-wlan0.conf /boot/
+    chmod 755 /boot/wpa_supplicant-wlan0.conf
+    echo "$(date +%Y-%m-%d_%H-%M-%S)_successed_cp_wpa_supplicant-wlan0_conf" >> ${UPDATE_PATH}/update.log
+else
+    echo "$(date +%Y-%m-%d_%H-%M-%S)_no_wpa_supplicant-wlan0_conf" >> ${UPDATE_PATH}/update.log
+fi
+
+if [ -e ${UPDATE_PATH}/elegoo_conf.ini.bak ]; then
+    cp -f ${UPDATE_PATH}/elegoo_conf.ini.bak /home/mks/Desktop/myfile/znp/znp_tjc_klipper/
+    echo "$(date +%Y-%m-%d_%H-%M-%S)_successed_cp_elegoo_conf_bak" >> ${UPDATE_PATH}/update.log
+else
+    echo "$(date +%Y-%m-%d_%H-%M-%S)_no_elegoo_conf_bak" >> ${UPDATE_PATH}/update.log
+fi
+
+if [ -e ${UPDATE_PATH}/printer.cfg.bak ]; then
+    cp -f ${UPDATE_PATH}/printer.cfg.bak /home/mks/Desktop/myfile/znp/znp_tjc_klipper/
+    echo "$(date +%Y-%m-%d_%H-%M-%S)_successed_cp_printer_conf_bak" >> ${UPDATE_PATH}/update.log
+else
+    echo "$(date +%Y-%m-%d_%H-%M-%S)_no_printer_conf_bak" >> ${UPDATE_PATH}/update.log
+fi
+
+if [ ! -e /home/mks/update.sh ]; then
+    touch /home/mks/update.sh
+    echo '#!/bin/bash' >> /home/mks/update.sh
+    echo 'sudo dpkg -i --force-overwrite /home/mks/gcode_files/sda1/ELEGOO_UPDATE_DIR/ELEGOO_APP.deb && echo Update completed ' >> /home/mks/update.sh
+    chmod 755 /home/mks/update.sh
+else
+    echo '#!/bin/bash' > /home/mks/update.sh
+    echo 'sudo dpkg -i --force-overwrite /home/mks/gcode_files/sda1/ELEGOO_UPDATE_DIR/ELEGOO_APP.deb && echo Update completed ' >> /home/mks/update.sh
+    chmod 755 /home/mks/update.sh
+fi
+    

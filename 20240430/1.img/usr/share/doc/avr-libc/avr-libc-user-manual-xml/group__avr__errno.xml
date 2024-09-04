@@ -1,0 +1,52 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="group__avr__errno" kind="group">
+    <compoundname>avr_errno</compoundname>
+    <title>&lt;errno.h&gt;: System Errors</title>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="group__avr__errno_1gad65a8842cc674e3ddf69355898c0ecbf" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int errno</definition>
+        <argsstring></argsstring>
+        <name>errno</name>
+        <briefdescription>
+<para>Error code for last error encountered by library. </para>        </briefdescription>
+        <detaileddescription>
+<para>The variable <computeroutput>errno</computeroutput> holds the last error code encountered by a library function. This variable must be cleared by the user prior to calling a library function.</para><para><simplesect kind="warning"><para>The <computeroutput>errno</computeroutput> global variable is not safe to use in a threaded or multi-task system. A race condition can occur if a task is interrupted between the call which sets <computeroutput>error</computeroutput> and when the task examines <computeroutput>errno</computeroutput>. If another task changes <computeroutput>errno</computeroutput> during this time, the result will be incorrect for the interrupted task. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/build/avr-libc-2.0.0+Atmel3.6.1/libc/avr-libc/include/errno.h" line="62" column="1" bodyfile="/build/avr-libc-2.0.0+Atmel3.6.1/libc/avr-libc/libc/stdlib/errno.c" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group__avr__errno_1ga5fe247e079b591a68e0fdbf7caec5b70" prot="public" static="no">
+        <name>EDOM</name>
+        <initializer>33</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Domain error. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/build/avr-libc-2.0.0+Atmel3.6.1/libc/avr-libc/include/errno.h" line="72" column="9" bodyfile="/build/avr-libc-2.0.0+Atmel3.6.1/libc/avr-libc/include/errno.h" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="group__avr__errno_1gaa1591a4f3a86360108de5b9ba34980ca" prot="public" static="no">
+        <name>ERANGE</name>
+        <initializer>34</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Range error. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/build/avr-libc-2.0.0+Atmel3.6.1/libc/avr-libc/include/errno.h" line="78" column="9" bodyfile="/build/avr-libc-2.0.0+Atmel3.6.1/libc/avr-libc/include/errno.h" bodystart="78" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><programlisting><codeline><highlight class="normal">#include<sp/>&lt;errno.h&gt;</highlight></codeline>
+</programlisting></para><para>Some functions in the library set the global variable <computeroutput>errno</computeroutput> when an error occurs. The file, <computeroutput>&lt;<ref refid="errno_8h" kindref="compound">errno.h</ref>&gt;</computeroutput>, provides symbolic names for various error codes. </para>    </detaileddescription>
+  </compounddef>
+</doxygen>

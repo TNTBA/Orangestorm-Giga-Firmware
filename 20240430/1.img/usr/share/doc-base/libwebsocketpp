@@ -1,0 +1,10 @@
+Document: libwebsocketpp
+Title: Websocketpp Developer library
+Author: Peter Thorson
+Abstract: This manual describes the websocketpp
+ library.
+Section: Programming
+
+Format: HTML
+Index: /usr/share/doc/libwebsocketpp-doc/html/index.html
+Files: /usr/share/doc/libwebsocketpp-doc/html/*

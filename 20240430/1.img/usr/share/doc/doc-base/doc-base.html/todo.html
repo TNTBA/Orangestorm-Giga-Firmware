@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Chapter 4. TODO List</title>
+    <meta name="generator" content="DocBook XSL Stylesheets V1.79.1" />
+    <link rel="home" href="index.html" title="Debian doc-base Manual" />
+    <link rel="up" href="index.html" title="Debian doc-base Manual" />
+    <link rel="prev" href="informations.html" title="Chapter 3. Getting information about installed documents" />
+  </head>
+  <body>
+    <div class="navheader">
+      <table width="100%" summary="Navigation header">
+        <tr>
+          <th colspan="3" align="center">Chapter 4. TODO List</th>
+        </tr>
+        <tr>
+          <td width="20%" align="left"><a accesskey="p" href="informations.html">Prev</a> </td>
+          <th width="60%" align="center"> </th>
+          <td width="20%" align="right"> </td>
+        </tr>
+      </table>
+      <hr />
+    </div>
+    <div class="chapter">
+      <div class="titlepage">
+        <div>
+          <div>
+            <h1 class="title"><a id="todo"></a>Chapter 4. TODO List</h1>
+          </div>
+        </div>
+      </div>
+      <div class="toc">
+        <p>
+          <strong>Table of Contents</strong>
+        </p>
+        <dl class="toc">
+          <dt>
+            <span class="section">
+              <a href="todo.html#s4.1">4.1. Roadmap for 0.9.* releases</a>
+            </span>
+          </dt>
+          <dt>
+            <span class="section">
+              <a href="todo.html#s4.2">4.2. Old TODO entries</a>
+            </span>
+          </dt>
+        </dl>
+      </div>
+      <div class="section">
+        <div class="titlepage">
+          <div>
+            <div>
+              <h2 class="title" style="clear: both"><a id="s4.1"></a>4.1. Roadmap for 0.9.* releases</h2>
+            </div>
+          </div>
+        </div>
+        <div class="itemizedlist">
+          <ul class="itemizedlist" style="list-style-type: disc; ">
+            <li class="listitem">
+              <p>
+          Internationalisation and po-debconf support.  Unfortunately this would require
+          merging <span class="emphasis"><em>Abstract</em></span> and <span class="emphasis"><em>Title</em></span> fields
+          into one <span class="emphasis"><em>Description</em></span> field.  See <a class="ulink" href="http://bugs.debian.org/171373" target="_top">Bug#171363</a>, <a class="ulink" href="http://bugs.debian.org/171375" target="_top">Bug#171375</a>, and <a class="ulink" href="http://bugs.debian.org/171378" target="_top">Bug#171378</a>.
+        </p>
+            </li>
+            <li class="listitem">
+              <p>
+          Introduce some new fields, like <span class="emphasis"><em>Package</em></span> (<a class="ulink" href="http://bugs.debian.org/71955" target="_top">Bug#71955</a>), or
+          <span class="emphasis"><em>SortSkip</em></span> (<a class="ulink" href="http://bugs.debian.org/187590" target="_top">Bug#187590</a>).
+        </p>
+            </li>
+            <li class="listitem">
+              <p>
+          Possibly allow documents to appear in multiple sections, see <a class="ulink" href="http://bugs.debian.org/cgi-bin/bugreport.cgi?msg=54;bug=109431" target="_top">Steve M.
+          Robbins' mail</a>.
+        </p>
+            </li>
+            <li class="listitem">
+              <p>
+          Possibly index documentation with swish++ that could be used by frontends like
+          <code class="systemitem">dhelp</code> or <code class="systemitem">dwww</code>.
+        </p>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="section">
+        <div class="titlepage">
+          <div>
+            <div>
+              <h2 class="title" style="clear: both"><a id="s4.2"></a>4.2. Old TODO entries</h2>
+            </div>
+          </div>
+        </div>
+        <div class="itemizedlist">
+          <ul class="itemizedlist" style="list-style-type: disc; ">
+            <li class="listitem">
+              <p>
+          Policy: document the <code class="systemitem">doc-base</code> document
+          registration file format separately (or SUBDOC it) as a proposed Debian
+          documentation system policy.
+        </p>
+            </li>
+            <li class="listitem">
+              <p>
+          Policy: define a first-cut standard as the document hierarchy.
+        </p>
+            </li>
+            <li class="listitem">
+              <p>
+          Documentation update: show clean and minimal use of
+          <span class="command"><strong>install-docs</strong></span> from maintainer script.
+        </p>
+            </li>
+            <li class="listitem">
+              <p>
+          It is <span class="emphasis"><em>extremely</em></span> difficult to deal coherently with a
+          misnamed control file, or a mismatch between a control file and the document
+          field.  This hit me in the transition between <code class="systemitem">doc-base</code> 0.4 to 0.5 (in 0.4 I had added, in a file
+          install-docs-man, a document ID named install-doc-man).  Something needs to be
+          done about that.
+        </p>
+            </li>
+            <li class="listitem">
+              <p>
+          Automated format conversion, including user preferences.  (For example, convert
+          texinfo source to GNU info or PostScript, optionally compress or remove HTML
+          manuals which are also available in GNU info format, etc.  etc.)
+        </p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="navfooter">
+      <hr />
+      <table width="100%" summary="Navigation footer">
+        <tr>
+          <td width="40%" align="left"><a accesskey="p" href="informations.html">Prev</a> </td>
+          <td width="20%" align="center"> </td>
+          <td width="40%" align="right"> </td>
+        </tr>
+        <tr>
+          <td width="40%" align="left" valign="top">Chapter 3. Getting information about installed documents </td>
+          <td width="20%" align="center">
+            <a accesskey="h" href="index.html">Home</a>
+          </td>
+          <td width="40%" align="right" valign="top"> </td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>

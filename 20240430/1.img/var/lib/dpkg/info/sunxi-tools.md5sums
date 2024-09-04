@@ -1,0 +1,11 @@
+3d6509a1efdc7dab4708639e1a710644  lib/udev/rules.d/60-sunxi-tools.rules
+ec1a926c5679242d1b8f279bd59f7e70  usr/bin/sunxi-bootinfo
+894617c8acae553afd4ef8eb530dd359  usr/bin/sunxi-fel
+033b124063316888caf570cd2b65eb75  usr/bin/sunxi-fexc
+530508e478478ed88652f71224a9ae32  usr/bin/sunxi-nand-part
+720b07eaf4f01ea341dae2d463ceb8f8  usr/bin/sunxi-pio
+752ae6ee95efd84107dd8ace3853aff6  usr/share/doc/sunxi-tools/README.md.gz
+ac05e73996948e08949e01affeca548d  usr/share/doc/sunxi-tools/changelog.Debian.gz
+61d1b4fc1587fbb5c309eb3e6d301f6c  usr/share/doc/sunxi-tools/copyright
+9d5adbdf56a4473d30307ad54df5c984  usr/share/lintian/overrides/sunxi-tools
+09fe0accf8a12c67162b60dff5dc664f  usr/share/sunxi-tools/ramboot.scr

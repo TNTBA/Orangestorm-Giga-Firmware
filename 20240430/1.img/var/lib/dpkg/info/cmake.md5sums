@@ -1,0 +1,13 @@
+837d97c4bc6ed354050aa20a3edff41f  usr/bin/cmake
+6feecd7672478377e721a9a5928f1606  usr/bin/cpack
+9a7dc00b14336b34f48a318b5754dd30  usr/bin/ctest
+3be1c1263249c072b000141c6f438df0  usr/share/bash-completion/completions/cmake
+74040c33ab4ab18c2b696d8b89e2076a  usr/share/bash-completion/completions/cpack
+8ff518d743b49ce166a8e4ee5bd5c8d2  usr/share/bash-completion/completions/ctest
+195cd26e9dc350f3e9c31619b0227cb3  usr/share/cmake/debtoolchainfilegen
+b1599fcbcb5cf1e0c8826d7617e69373  usr/share/doc/cmake/NEWS.Debian.gz
+2634cbe39c62520e182e9f77b4c6c0aa  usr/share/doc/cmake/changelog.Debian.gz
+eb9385dfadbe8a4073f10c5a4a5d9ec7  usr/share/doc/cmake/copyright
+b59d0d06a44805fc05421b6cdc26ad0c  usr/share/man/man1/cmake.1.gz
+3300d059e56c24c28e65af3c67da3f60  usr/share/man/man1/cpack.1.gz
+7df7b6ebb9661276fa190d3f9f7bf9a0  usr/share/man/man1/ctest.1.gz

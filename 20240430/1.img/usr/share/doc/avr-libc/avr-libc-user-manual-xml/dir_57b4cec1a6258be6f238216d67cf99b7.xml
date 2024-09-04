@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="dir_57b4cec1a6258be6f238216d67cf99b7" kind="dir">
+    <compoundname>stdiodemo</compoundname>
+    <innerfile refid="defines_8h">defines.h</innerfile>
+    <innerfile refid="hd44780_8c">hd44780.c</innerfile>
+    <innerfile refid="hd44780_8h">hd44780.h</innerfile>
+    <innerfile refid="lcd_8c">lcd.c</innerfile>
+    <innerfile refid="lcd_8h">lcd.h</innerfile>
+    <innerfile refid="stdiodemo_8c">stdiodemo.c</innerfile>
+    <innerfile refid="uart_8c">uart.c</innerfile>
+    <innerfile refid="uart_8h">uart.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/build/avr-libc-2.0.0+Atmel3.6.1/libc/avr-libc/doc/examples/stdiodemo/"/>
+  </compounddef>
+</doxygen>

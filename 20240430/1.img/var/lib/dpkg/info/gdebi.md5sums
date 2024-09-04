@@ -1,0 +1,13 @@
+d90bd13961f925a37cf1f311c9652b50  usr/share/application-registry/gdebi.applications
+62527776eb600b7eabad8e134a391804  usr/share/applications/gdebi.desktop
+62f4c8b18f052e2935380e8cfcc4415d  usr/share/doc/gdebi/README
+0f11730b9509e888c21d1e7556438064  usr/share/doc/gdebi/changelog.gz
+3d2f34087d8511f7b01a1a4c9d5ee35b  usr/share/doc/gdebi/copyright
+831490d27ae82037e9e1bd63c3f4810b  usr/share/gdebi/GDebi/GDebiGtk.py
+cc5df52f313344e9c8052ad69d1ab312  usr/share/gdebi/GDebi/SimpleGtkbuilderApp.py
+23a0d8ead7ec3fecacaeb3b9ef52d56f  usr/share/gdebi/gdebi-gtk
+490e33b3fcbe4a7d8c3f2581346f1839  usr/share/gdebi/gdebi.png
+11ca013e2ae477f49545c24e7afdbfaa  usr/share/gdebi/gdebi.ui
+216d5235bc5a448bebfcb232592ca6a0  usr/share/man/man1/gdebi-gtk.1.gz
+9c88b82f804e08207415eae2e8758199  usr/share/polkit-1/actions/com.ubuntu.pkexec.gdebi-gtk.policy
+0a589f411a04104c200589c48733aae2  usr/share/python3/runtime.d/gdebi.rtupdate

@@ -1,0 +1,6 @@
+74581118935bfab37755b10cefaab851  usr/lib/linux-u-boot-edge-mkspi_22.05.0-trunk_arm64/idbloader.bin
+105cbdddcb066dd021021f2f0dc5d935  usr/lib/linux-u-boot-edge-mkspi_22.05.0-trunk_arm64/trust.bin
+c899bd72e0ea0ab46d29afcddc00281f  usr/lib/linux-u-boot-edge-mkspi_22.05.0-trunk_arm64/uboot.img
+5a7450c57ffe5ae63fd732446b988025  usr/lib/u-boot/LICENSE
+3497d01edd9a54c47aff0852d28b94e5  usr/lib/u-boot/platform_install.sh
+420dd59a42b9415acf95cecb5d981860  usr/lib/u-boot/roc-cc-rk3328_defconfig

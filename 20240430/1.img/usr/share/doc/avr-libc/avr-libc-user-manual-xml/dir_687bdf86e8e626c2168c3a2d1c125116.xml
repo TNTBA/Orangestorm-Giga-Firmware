@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="dir_687bdf86e8e626c2168c3a2d1c125116" kind="dir">
+    <compoundname>examples</compoundname>
+    <innerdir refid="dir_fa681866679cba32bd0036e769149148">asmdemo</innerdir>
+    <innerdir refid="dir_eed8f1d749f716b40e52eb2f4ccc1142">demo</innerdir>
+    <innerdir refid="dir_5aea18f2a7c16b5f189632ad56775d74">largedemo</innerdir>
+    <innerdir refid="dir_57b4cec1a6258be6f238216d67cf99b7">stdiodemo</innerdir>
+    <innerdir refid="dir_35b7ea7e54a176718f61677324f80a92">twitest</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/build/avr-libc-2.0.0+Atmel3.6.1/libc/avr-libc/doc/examples/"/>
+  </compounddef>
+</doxygen>

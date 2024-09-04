@@ -1,0 +1,5 @@
+ece088a505ea76067068217257e262c9  usr/lib/aarch64-linux-gnu/libboost_prg_exec_monitor.a
+b37e61b3046edaf8fcb195a6d9ca5840  usr/lib/aarch64-linux-gnu/libboost_test_exec_monitor.a
+ec6bdc5a967f3aed51c159732fdb5546  usr/lib/aarch64-linux-gnu/libboost_unit_test_framework.a
+fd9fd87aca681e8911194b0265a932bd  usr/share/doc/libboost-test1.67-dev/changelog.Debian.gz
+190563c1ac07e6b6ab3c1b872d584bfe  usr/share/doc/libboost-test1.67-dev/copyright

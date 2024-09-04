@@ -1,0 +1,16 @@
+9cff50b6d79d8e57d5fc75d7f85d2a58  usr/bin/f3brew
+75102d21f78041a5c40b9d3ea34ed7b6  usr/bin/f3fix
+59005d744b7d57316c09c7131e16739f  usr/bin/f3probe
+52847bb0cf8acc29a90f2ce47e9a6059  usr/bin/f3read
+8909b5c85bf5534d8a052df740795a46  usr/bin/f3write
+bebf638299f29e9c5b2610d1391a3cfa  usr/share/doc/f3/README.Debian
+29e3fcc96a98e4ad1bc197ad1de83b51  usr/share/doc/f3/README.rst.gz
+cca25761896be7496ca3e88f46afc229  usr/share/doc/f3/changelog.Debian.gz
+fd515a6c65c87d0865aeed7e21db8c19  usr/share/doc/f3/changelog.gz
+3c0816158ee061cbbe039e3b81798a54  usr/share/doc/f3/copyright
+8fb2259da2700d0a466f5dcfc523b0ac  usr/share/f3/f3write.h2w
+7a0cb34c8c6bf1f71946949f06f748ec  usr/share/f3/log-f3wr
+f8d10c3174eb5f983d0521a3e700334a  usr/share/man/man1/f3brew.1.gz
+cad4b34042fd2b9ad74b6a3010b8502d  usr/share/man/man1/f3fix.1.gz
+c693c44d4f4f3b5d356e0287f362c791  usr/share/man/man1/f3probe.1.gz
+397446ef10443e06145b98d242dd0655  usr/share/man/man1/f3read.1.gz

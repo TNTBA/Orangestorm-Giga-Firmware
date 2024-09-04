@@ -1,0 +1,10 @@
+bullseye=supported
+impish=csc
+xenial=eos
+stretch=eos
+buster=supported
+hirsute=supported
+sid=csc
+jammy=csc
+focal=supported
+bionic=csc

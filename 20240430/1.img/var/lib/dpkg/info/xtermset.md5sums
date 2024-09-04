@@ -1,0 +1,10 @@
+58040cb9942ee4f1b15eddb8cfbd7bcd  usr/bin/xtermset
+acf852adec46a1ef42ef79626ff1054d  usr/share/doc/xtermset/NEWS.gz
+f3132f3741c0ea6587655ae19af7b656  usr/share/doc/xtermset/THANKS
+c7bc5aa78ab1edc07e87a9e585dbe4d6  usr/share/doc/xtermset/changelog.Debian.arm64.gz
+0f4a0559ca92d30660ec8dac267280da  usr/share/doc/xtermset/changelog.Debian.gz
+9e4e28316a83e29f06fca846ea4c9ced  usr/share/doc/xtermset/changelog.gz
+0c7d91ebff4aba9ec682cb6fcbbaa9be  usr/share/doc/xtermset/copyright
+fefaddb09bb93a8a04ae63b761191b20  usr/share/man/man1/xtermset.1.gz
+f017bc9f98c68e2173149448e6ef4aa3  usr/share/man/man5/terms.5.gz
+a51b52c4bb04d341263f5ab0c16eb086  usr/share/xtermset/terms

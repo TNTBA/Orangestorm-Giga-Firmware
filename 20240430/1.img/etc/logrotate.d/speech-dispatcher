@@ -1,0 +1,21 @@
+/var/log.hdd/speech-dispatcher/speech-dispatcher.log /var/log.hdd/speech-dispatcher/speech-dispatcher-protocol.log {
+  daily
+  compress
+  missingok
+  sharedscripts
+  rotate 7
+  postrotate
+    ! /usr/sbin/invoke-rc.d --quiet speech-dispatcher status > /dev/null || /usr/sbin/invoke-rc.d speech-dispatcher reload >/dev/null
+  endscript
+}
+
+/var/log.hdd/speech-dispatcher/debug-epos-generic /var/log.hdd/speech-dispatcher/debug-festival /var/log.hdd/speech-dispatcher/debug-flite {
+  daily
+  compress
+  missingok
+  sharedscripts
+  rotate 2
+  postrotate
+    ! /usr/sbin/invoke-rc.d --quiet speech-dispatcher status > /dev/null || /usr/sbin/invoke-rc.d speech-dispatcher reload >/dev/null
+  endscript
+}

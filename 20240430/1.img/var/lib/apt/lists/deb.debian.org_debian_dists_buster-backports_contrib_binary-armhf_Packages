@@ -1,0 +1,799 @@
+Package: boinc-client-nvidia-cuda
+Source: boinc
+Version: 7.16.15+dfsg.is.7.16.11+dfsg-1~bpo10+1
+Installed-Size: 92
+Maintainer: Debian BOINC Maintainers <pkg-boinc-devel@lists.alioth.debian.org>
+Architecture: armhf
+Replaces: boinc-nvidia-cuda
+Depends: boinc-client
+Recommends: libcuda1
+Breaks: boinc-nvidia-cuda
+Description: metapackage for CUDA-savvy BOINC client and manager
+Homepage: https://boinc.berkeley.edu/
+Description-md5: 9384e2173f2ed43c0d057c1770da614c
+Section: contrib/net
+Priority: optional
+Filename: pool/contrib/b/boinc/boinc-client-nvidia-cuda_7.16.15+dfsg.is.7.16.11+dfsg-1~bpo10+1_armhf.deb
+Size: 53840
+SHA256: 5e9c3500fa91236c19e0ed633c87e728a3931ed3f8bb8bbcb6c332ac48dead71
+
+Package: boinc-client-opencl
+Source: boinc
+Version: 7.16.15+dfsg.is.7.16.11+dfsg-1~bpo10+1
+Installed-Size: 92
+Maintainer: Debian BOINC Maintainers <pkg-boinc-devel@lists.alioth.debian.org>
+Architecture: armhf
+Replaces: boinc-amd-opencl
+Depends: ocl-icd-libopencl1
+Recommends: amd-opencl-icd | opencl-icd
+Breaks: boinc-amd-opencl
+Description: metapackage for AMD/ATI OpenCL-savvy BOINC client and manager
+Homepage: https://boinc.berkeley.edu/
+Description-md5: 1d8bb1ed221af82159a83aac2ed26b88
+Section: contrib/net
+Priority: optional
+Filename: pool/contrib/b/boinc/boinc-client-opencl_7.16.15+dfsg.is.7.16.11+dfsg-1~bpo10+1_armhf.deb
+Size: 53868
+SHA256: f94021431870c955e46839eb628908865fe17f0e3da340796239d6e461e3dceb
+
+Package: bumblebee-nvidia
+Source: bumblebee
+Version: 3.2.1-26~bpo10+1
+Installed-Size: 22
+Maintainer: Debian NVIDIA Maintainers <pkg-nvidia-devel@lists.alioth.debian.org>
+Architecture: armhf
+Depends: bumblebee (= 3.2.1-26~bpo10+1), glx-alternative-nvidia (>= 0.6.92), nvidia-legacy-390xx-driver | nvidia-legacy-340xx-driver | nvidia-driver-any
+Recommends: nvidia-primus-vk-wrapper
+Description: NVIDIA Optimus support using the proprietary NVIDIA driver
+Homepage: https://launchpad.net/~bumblebee
+Description-md5: 1590560d4120c0dce5a765cdd8ec59b7
+Section: contrib/utils
+Priority: optional
+Filename: pool/contrib/b/bumblebee/bumblebee-nvidia_3.2.1-26~bpo10+1_armhf.deb
+Size: 7008
+SHA256: b09d32777e68bb1b12ce532388d0a682b8c2284c4f72673d146771731f7756a5
+
+Package: diaspora-installer
+Version: 0.7.15.0+debian1~bpo10+1
+Installed-Size: 36
+Maintainer: Debian Ruby Extras Maintainers <pkg-ruby-extras-maintainers@lists.alioth.debian.org>
+Architecture: all
+Replaces: diaspora
+Depends: build-essential, diaspora-common (= 0.7.15.0+debian1~bpo10+1), ghostscript, imagemagick, libcurl4-openssl-dev, libmagickwand-dev, libpq-dev, libssl-dev, libxml2-dev, libxslt-dev, libffi-dev, zlib1g-dev, ruby (>= 2.2) | ruby-interpreter, ruby-dev, ruby-bundler, tzdata, wget, rsync
+Conflicts: diaspora
+Description: distributed social networking service - installer
+Homepage: https://wiki.debian.org/Diaspora
+Description-md5: 120c7fb469648e6eb3e942926e8b1ea0
+Ruby-Versions: all
+Section: contrib/net
+Priority: optional
+Filename: pool/contrib/d/diaspora-installer/diaspora-installer_0.7.15.0+debian1~bpo10+1_all.deb
+Size: 11588
+SHA256: b7868646d41783a41a5f0d7cb5cc574549dab148d555e3b16c6dadb0602fb78a
+
+Package: diaspora-installer-mysql
+Source: diaspora-installer
+Version: 0.7.15.0+debian1~bpo10+1
+Installed-Size: 15
+Maintainer: Debian Ruby Extras Maintainers <pkg-ruby-extras-maintainers@lists.alioth.debian.org>
+Architecture: all
+Depends: dbconfig-mysql | dbconfig-no-thanks, default-libmysqlclient-dev, default-mysql-server | virtual-mysql-server, diaspora-installer (= 0.7.15.0+debian1~bpo10+1)
+Description: distributed social networking service - installer (with MySQL)
+Homepage: https://wiki.debian.org/Diaspora
+Description-md5: c18a155ca94ebb0900ab3ea2aa77e4b9
+Section: contrib/ruby
+Priority: optional
+Filename: pool/contrib/d/diaspora-installer/diaspora-installer-mysql_0.7.15.0+debian1~bpo10+1_all.deb
+Size: 8592
+SHA256: e671173b8a3f9ac6abbc6f4757f311da3e943db2b24da64552452dfdd06cad75
+
+Package: cpp-doc
+Source: gcc-doc-defaults (5:18~bpo10+1)
+Version: 5:8.3.0-1~bpo10+1
+Installed-Size: 24
+Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Architecture: armhf
+Replaces: cpp (<< 4:4.1.1-7)
+Depends: cpp-8-doc (>= 8.3.0-1~)
+Breaks: cpp (<< 4:4.1.1-7)
+Description: documentation for the GNU C preprocessor (cpp)
+Homepage: http://gcc.gnu.org/
+Description-md5: 9214885ed7215843bb04315d3a252cb5
+Section: contrib/doc
+Priority: optional
+Filename: pool/contrib/g/gcc-doc-defaults/cpp-doc_8.3.0-1~bpo10+1_armhf.deb
+Size: 6048
+SHA256: a733958d96ee8d4c1852eaa1d66e2bd286b9063324b957f6b5a28b708e2f5b81
+
+Package: gcc-doc
+Source: gcc-doc-defaults (5:18~bpo10+1)
+Version: 5:8.3.0-1~bpo10+1
+Installed-Size: 30
+Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Architecture: armhf
+Replaces: g++ (<< 4:4.1.1-7), gcc (<< 4:4.1.1-7)
+Depends: gcc-8-doc (>= 8.3.0-1~)
+Breaks: g++ (<< 4:4.1.1-7), gcc (<< 4:4.1.1-7)
+Description: documentation for the GNU compilers (gcc, gobjc, g++)
+Homepage: http://gcc.gnu.org/
+Description-md5: 5c7b4ceecbb8f4546afea54849cba957
+Section: contrib/doc
+Priority: optional
+Filename: pool/contrib/g/gcc-doc-defaults/gcc-doc_8.3.0-1~bpo10+1_armhf.deb
+Size: 6256
+SHA256: 0237903d6c4d05243d0aa535d46f1d324fa33ca6373ff81de4abbf7508f31bcb
+
+Package: gcc-doc-base
+Source: gcc-doc-defaults (5:18~bpo10+1)
+Version: 8.3.0-1~bpo10+1
+Installed-Size: 42
+Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Architecture: all
+Description: several GNU manual pages
+Homepage: http://gcc.gnu.org/
+Description-md5: a3908a0b6cd1c3869235d28e3ac2ca01
+Section: contrib/doc
+Priority: optional
+Filename: pool/contrib/g/gcc-doc-defaults/gcc-doc-base_8.3.0-1~bpo10+1_all.deb
+Size: 32904
+SHA256: 5c01e796798f09ed70b357942d2368e66ee898a8b47ebc15c1a3897780535170
+
+Package: gccgo-doc
+Source: gcc-doc-defaults (5:18~bpo10+1)
+Version: 5:8.3.0-1~bpo10+1
+Installed-Size: 22
+Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Architecture: armhf
+Depends: gccgo-8-doc (>= 8.3.0-1~)
+Description: documentation for the GNU Go compiler (gccgo)
+Homepage: http://gcc.gnu.org/
+Description-md5: 506744bcc4ca12e7561be814c9ef4da9
+Section: contrib/doc
+Priority: optional
+Filename: pool/contrib/g/gcc-doc-defaults/gccgo-doc_8.3.0-1~bpo10+1_armhf.deb
+Size: 5876
+SHA256: ca6cdca02d3d13eec3695bc30c27829c07f021bfe43d51c466e5159634c0d9d4
+
+Package: gfortran-doc
+Source: gcc-doc-defaults (5:18~bpo10+1)
+Version: 5:8.3.0-1~bpo10+1
+Installed-Size: 23
+Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Architecture: armhf
+Replaces: gfortran (<< 4:4.1.1-7)
+Depends: gfortran-8-doc (>= 8.3.0-1~)
+Breaks: gfortran (<< 4:4.1.1-7)
+Description: documentation for the GNU Fortran Compiler (gfortran)
+Homepage: http://gcc.gnu.org/
+Description-md5: 19f6059939e948fad2f88eca70ddb7fc
+Section: contrib/doc
+Priority: optional
+Filename: pool/contrib/g/gcc-doc-defaults/gfortran-doc_8.3.0-1~bpo10+1_armhf.deb
+Size: 6016
+SHA256: f8c0e779a3e82b7038c83b3b319836bb9c51939ec62a7659d89fdd70bc6ecd25
+
+Package: gnat-doc
+Source: gcc-doc-defaults (5:18~bpo10+1)
+Version: 5:8.3.0-1~bpo10+1
+Installed-Size: 22
+Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Architecture: armhf
+Depends: gnat-8-doc (>= 8.3.0-1~)
+Description: documentation for the GNU Ada Compiler (gnat)
+Homepage: http://gcc.gnu.org/
+Description-md5: 5b644ec82e0c0c89da6803e4917b819a
+Section: contrib/doc
+Priority: optional
+Filename: pool/contrib/g/gcc-doc-defaults/gnat-doc_8.3.0-1~bpo10+1_armhf.deb
+Size: 6024
+SHA256: c0635e5483ea02444caca5c764d82122498897fc24957e0900e8fb81bcf4e608
+
+Package: glx-alternative-mesa
+Source: glx-alternatives
+Version: 1.2.1~deb11u1~bpo10+1
+Installed-Size: 37
+Maintainer: Debian NVIDIA Maintainers <pkg-nvidia-devel@lists.alioth.debian.org>
+Architecture: armhf
+Depends: update-glx (= 1.2.1~deb11u1~bpo10+1)
+Pre-Depends: dpkg (>= 1.17.21)
+Recommends: glx-diversions
+Suggests: libgl1-mesa-glx | libgl1
+Breaks: nvidia-alternative (<< 390.67-3~)
+Description: allows the selection of MESA as GLX provider
+Multi-Arch: foreign
+Description-md5: 1daacf66b51fd438667e93a67d9e2770
+Section: contrib/libs
+Priority: optional
+Filename: pool/contrib/g/glx-alternatives/glx-alternative-mesa_1.2.1~deb11u1~bpo10+1_armhf.deb
+Size: 10024
+SHA256: e5ee2b68118ba96b04d97647d94cffef9e589b1cf88fd50bf6c08f27f92fcafa
+
+Package: glx-alternative-nvidia
+Source: glx-alternatives
+Version: 1.2.1~deb11u1~bpo10+1
+Installed-Size: 48
+Maintainer: Debian NVIDIA Maintainers <pkg-nvidia-devel@lists.alioth.debian.org>
+Architecture: armhf
+Depends: update-glx (= 1.2.1~deb11u1~bpo10+1), glx-diversions (= 1.2.1~deb11u1~bpo10+1), glx-alternative-mesa
+Pre-Depends: dpkg (>= 1.17.21)
+Suggests: nvidia-driver | nvidia-driver-any
+Breaks: bumblebee-nvidia (<< 3.2.1-10~), nvidia-alternative (<< 390.67-3~), nvidia-alternative-legacy-173xx (<< 304), nvidia-alternative-legacy-71xx (<< 304), nvidia-alternative-legacy-96xx (<< 304), nvidia-legacy-304xx-alternative (<< 304.137-7~), nvidia-legacy-304xx-driver (<< 304.137-7~), nvidia-legacy-340xx-alternative (<< 340.93-2~), xserver-xorg-video-nvidia-legacy-304xx (<< 304.137-7~)
+Description: allows the selection of NVIDIA as GLX provider
+Multi-Arch: foreign
+Description-md5: 4980cfbba830657e456159c5314cc55f
+Section: contrib/libs
+Priority: optional
+Filename: pool/contrib/g/glx-alternatives/glx-alternative-nvidia_1.2.1~deb11u1~bpo10+1_armhf.deb
+Size: 11024
+SHA256: 625e0fe3244a1e88d95cbbd5416abec7f642ed8bbda35d7acbb39a43b9ad3128
+
+Package: glx-diversions
+Source: glx-alternatives
+Version: 1.2.1~deb11u1~bpo10+1
+Installed-Size: 40
+Maintainer: Debian NVIDIA Maintainers <pkg-nvidia-devel@lists.alioth.debian.org>
+Architecture: armhf
+Depends: glx-alternative-mesa (= 1.2.1~deb11u1~bpo10+1)
+Pre-Depends: nvidia-installer-cleanup
+Conflicts: libgl1-mesa-swx11
+Description: prepare for using accelerated GLX implementations from GPU vendors
+Multi-Arch: foreign
+Description-md5: 11d73a2c74770f5f3371f8803595735d
+Section: contrib/libs
+Priority: optional
+Filename: pool/contrib/g/glx-alternatives/glx-diversions_1.2.1~deb11u1~bpo10+1_armhf.deb
+Size: 12708
+SHA256: 0d949d96a2a25637c7494fe50a20f58b1b6773bda30c6c9ebf576340081b4201
+
+Package: update-glx
+Source: glx-alternatives
+Version: 1.2.1~deb11u1~bpo10+1
+Installed-Size: 33
+Maintainer: Debian NVIDIA Maintainers <pkg-nvidia-devel@lists.alioth.debian.org>
+Architecture: armhf
+Pre-Depends: dpkg (>= 1.17.21)
+Description: utility for switching the GLX implementation
+Multi-Arch: foreign
+Description-md5: a3f586907729f883c31ef79c909f860f
+Section: contrib/x11
+Priority: optional
+Filename: pool/contrib/g/glx-alternatives/update-glx_1.2.1~deb11u1~bpo10+1_armhf.deb
+Size: 10744
+SHA256: d8d2e64bb9239c21244144c477ed4a557860bd0d99af9688104b10c5c7eb1571
+
+Package: gnome-shell-extension-xrdesktop
+Version: 0.13.2-1~bpo10+1
+Installed-Size: 22
+Maintainer: Andrew Lee (李健秋) <ajqlee@debian.org>
+Architecture: all
+Depends: gnome-shell
+Recommends: gnome-tweak-tool
+Description: GNOME Shell extension to control XR desktop.
+Homepage: https://gitlab.freedesktop.org/xrdesktop/gnome-shell-extension-xrdesktop
+Description-md5: bbe4bb3c768be963a6e3ab26e6790f43
+Section: contrib/gnome
+Priority: optional
+Filename: pool/contrib/g/gnome-shell-extension-xrdesktop/gnome-shell-extension-xrdesktop_0.13.2-1~bpo10+1_all.deb
+Size: 5080
+SHA256: 48efd05761953ef775ac640fe9283be20ba9bd731c207434d3d0b890031f2655
+
+Package: janus-demos
+Source: janus
+Version: 0.9.2-1~bpo10+1
+Installed-Size: 5120
+Maintainer: Debian VoIP Team <pkg-voip-maintainers@lists.alioth.debian.org>
+Architecture: all
+Depends: fonts-font-awesome, libjs-bootbox, libjs-bootstrap, libjs-bootswatch, libjs-janus, libjs-jquery, libjs-jquery-blockui, libjs-spin.js, libjs-webrtc-adapter
+Suggests: gstreamer1.0-plugins-good, gstreamer1.0-tools, gstreamer1.0-x, janus
+Description: general purpose WebRTC server/gateway - demos
+Homepage: https://janus.conf.meetecho.com
+Description-md5: 1fa2328371d957eba974fefcebf78c93
+Section: contrib/comm
+Priority: optional
+Filename: pool/contrib/j/janus/janus-demos_0.9.2-1~bpo10+1_all.deb
+Size: 3870708
+SHA256: e21e81b2eace73a5198743588e87f2610a30d3e8a94e1a8f140e6878b78ed877
+
+Package: lutris
+Version: 0.5.8.3-1~bpo10+1
+Installed-Size: 2127
+Maintainer: Debian Games Team <pkg-games-devel@lists.alioth.debian.org>
+Architecture: all
+Depends: python3:any, python3-yaml, python3-lxml, python3-requests, python3-pil, python3-gi, python3-setproctitle, python3-magic, python3-distro, python3-dbus, gir1.2-gtk-3.0, gir1.2-gnomedesktop-3.0, gir1.2-webkit2-4.0, gir1.2-notify-0.7, psmisc, cabextract, unzip, p7zip, curl, fluid-soundfont-gs, x11-xserver-utils, mesa-utils
+Recommends: python3-evdev, gvfs-backends, libwine-development, winetricks
+Suggests: gamemode
+Description: open source gaming platform
+Homepage: https://lutris.net
+Description-md5: b5d348c06e71fcae02acb85bacdea558
+Section: contrib/games
+Priority: optional
+Filename: pool/contrib/l/lutris/lutris_0.5.8.3-1~bpo10+1_all.deb
+Size: 573900
+SHA256: e3ccd7e6dbb7b54c2eb387d9ebf3e10e81c869252d3abcdb5d131e023eba5eae
+
+Package: mbrola
+Version: 3.3+dfsg-4+deb11u1~bpo10+1
+Installed-Size: 297
+Maintainer: Samuel Thibault <sthibault@debian.org>
+Architecture: armhf
+Depends: libc6 (>= 2.4)
+Suggests: mbrola-voice, espeak-ng | espeak, cicero
+Description: Multilingual software speech synthesizer
+Multi-Arch: foreign
+Homepage: https://github.com/numediart/MBROLA
+Description-md5: ec127a8485012c20e1be3f87d968badb
+Section: contrib/sound
+Priority: optional
+Filename: pool/contrib/m/mbrola/mbrola_3.3+dfsg-4+deb11u1~bpo10+1_armhf.deb
+Size: 167464
+SHA256: abd4a6bb5ca92adacbd2f902e8b59c676fd07015a6118f5c770c21cd19ff9028
+
+Package: nvidia-modprobe
+Version: 470.103.01-1~deb11u1~bpo10+1
+Installed-Size: 45
+Maintainer: Debian NVIDIA Maintainers <pkg-nvidia-devel@lists.alioth.debian.org>
+Architecture: armhf
+Depends: libc6 (>= 2.7)
+Description: utility to load NVIDIA kernel modules and create device nodes
+Multi-Arch: foreign
+Homepage: https://github.com/NVIDIA/nvidia-modprobe
+Description-md5: 681d2ef8dc157284d3ffc1ee5f3b75f7
+Section: contrib/utils
+Priority: optional
+Filename: pool/contrib/n/nvidia-modprobe/nvidia-modprobe_470.103.01-1~deb11u1~bpo10+1_armhf.deb
+Size: 17816
+SHA256: 0abd19d13c90456c06d7ea5a8db7c38403c40f25584f4b02d27eefce68acae37
+
+Package: nvidia-settings
+Version: 440.64-1~bpo10+1
+Installed-Size: 34
+Maintainer: Debian NVIDIA Maintainers <pkg-nvidia-devel@lists.alioth.debian.org>
+Architecture: armhf
+Depends: nvidia-settings-legacy-390xx
+Pre-Depends: nvidia-installer-cleanup
+Description: tool for configuring the NVIDIA graphics driver
+Homepage: https://download.nvidia.com/XFree86/nvidia-settings/
+Description-md5: 3ffa050620c90555dbf58d2a6bebfd10
+Section: contrib/x11
+Priority: optional
+Filename: pool/contrib/n/nvidia-settings/nvidia-settings_440.64-1~bpo10+1_armhf.deb
+Size: 19976
+SHA256: b565ac841135105f6956b15b5335764788ae5ee0c7491d3bec5e21cb701ffa0e
+
+Package: nvidia-installer-cleanup
+Source: nvidia-support
+Version: 20151021+12~bpo10+1
+Installed-Size: 52
+Maintainer: Debian NVIDIA Maintainers <pkg-nvidia-devel@lists.alioth.debian.org>
+Architecture: armhf
+Depends: debconf (>= 0.5) | debconf-2.0
+Conflicts: cuda-repo-ubuntu1204, nvidia-current, nvidia-current-updates, nvidia-driver-binary
+Description: cleanup after driver installation with the nvidia-installer
+Multi-Arch: foreign
+Description-md5: a7e93baeef316d8ae4a7474c8bcd35d5
+Section: contrib/misc
+Priority: optional
+Filename: pool/contrib/n/nvidia-support/nvidia-installer-cleanup_20151021+12~bpo10+1_armhf.deb
+Size: 19352
+SHA256: ca3af04ee4e30f1bdf8ad949c88ca0d800d2303c873b78c19cf7a4ab573eab77
+
+Package: nvidia-kernel-common
+Source: nvidia-support
+Version: 20151021+12~bpo10+1
+Installed-Size: 37
+Maintainer: Debian NVIDIA Maintainers <pkg-nvidia-devel@lists.alioth.debian.org>
+Architecture: armhf
+Description: NVIDIA binary kernel module support files
+Description-md5: 08e163be5ed51d6f89e7d5dda78f4651
+Section: contrib/kernel
+Priority: optional
+Filename: pool/contrib/n/nvidia-support/nvidia-kernel-common_20151021+12~bpo10+1_armhf.deb
+Size: 11008
+SHA256: 937c5e688b1dde03318f32c9defaccd8c1668dd36cf7c3656182130e95985c1d
+
+Package: nvidia-support
+Version: 20151021+12~bpo10+1
+Installed-Size: 55
+Maintainer: Debian NVIDIA Maintainers <pkg-nvidia-devel@lists.alioth.debian.org>
+Architecture: armhf
+Depends: debconf (>= 0.5) | debconf-2.0
+Description: NVIDIA binary graphics driver support files
+Multi-Arch: foreign
+Description-md5: 943d1592a97e18d9a44c62914b34b0c1
+Section: contrib/misc
+Priority: optional
+Filename: pool/contrib/n/nvidia-support/nvidia-support_20151021+12~bpo10+1_armhf.deb
+Size: 20208
+SHA256: 3c6fc8e743cf3cbda0b7760ed5947dfc51491c3f2b36869f7bfc44404b647f72
+
+Package: libopenvr-api1
+Source: openvr
+Version: 1.10.30~ds1-1~bpo10+1
+Installed-Size: 80
+Maintainer: Andrew Lee (李健秋) <ajqlee@debian.org>
+Architecture: armhf
+Depends: libc6 (>= 2.4), libgcc1 (>= 1:3.5), libjsoncpp1 (>= 1.7.4), libstdc++6 (>= 5.2)
+Description: OpenVR SDK
+Multi-Arch: same
+Homepage: https://github.com/ValveSoftware/openvr
+Description-md5: 8b9f036b3dab4388fb641015ae878839
+Section: contrib/libs
+Priority: optional
+Filename: pool/contrib/o/openvr/libopenvr-api1_1.10.30~ds1-1~bpo10+1_armhf.deb
+Size: 30104
+SHA256: c0a7000b54870c18582f85b509867f3c0b43fd7f6ea554e86e2eefda786ff726
+
+Package: libopenvr-dev
+Source: openvr
+Version: 1.10.30~ds1-1~bpo10+1
+Installed-Size: 590
+Maintainer: Andrew Lee (李健秋) <ajqlee@debian.org>
+Architecture: armhf
+Replaces: libopenvr-api-dev (<< 1.8.19~ds1-2)
+Depends: libopenvr-api1 (= 1.10.30~ds1-1~bpo10+1)
+Breaks: libopenvr-api-dev (<< 1.8.19~ds1-2)
+Description: OpenVR SDK -- development files
+Homepage: https://github.com/ValveSoftware/openvr
+Description-md5: 43d69fe8a6bab1bd3ebd382932b93130
+Section: contrib/libdevel
+Priority: optional
+Filename: pool/contrib/o/openvr/libopenvr-dev_1.10.30~ds1-1~bpo10+1_armhf.deb
+Size: 83456
+SHA256: ba55f4a4d91a4784664204d31d3f1bc84da69ea57f1f6b3684ec26deaffd56cb
+
+Package: primus-nvidia
+Source: primus
+Version: 0~20150328-12~bpo10+1
+Installed-Size: 11
+Maintainer: Debian NVIDIA Maintainers <pkg-nvidia-devel@lists.alioth.debian.org>
+Architecture: armhf
+Depends: nvidia-legacy-390xx-driver-libs | nvidia-legacy-390xx-driver-libs-nonglvnd | nvidia-driver-libs-any | bumblebee-nvidia, primus
+Recommends: nvidia-primus-vk-wrapper
+Description: NVIDIA Primus support using the proprietary NVIDIA driver
+Homepage: https://github.com/amonakov/primus
+Description-md5: 47ebdd2f5f4085bfde25afb56ffc6f5a
+Section: contrib/utils
+Priority: optional
+Filename: pool/contrib/p/primus/primus-nvidia_0~20150328-12~bpo10+1_armhf.deb
+Size: 4864
+SHA256: 494b7e879e451d3617fdd94954524012eac06e140c2bf76a9c9eadeafdc3b135
+
+Package: repo
+Version: 2.15.4-1~bpo10+1
+Installed-Size: 369
+Maintainer: Android tools Maintainer <android-tools-devel@lists.alioth.debian.org>
+Architecture: all
+Depends: python3:any, git (>= 1:2.20.0), gnupg, python3-kerberos
+Recommends: git (>= 1:2.28.0)
+Description: repository management tool built on top of git
+Homepage: https://source.android.com/source/developing.html
+Description-md5: 1496a967d4bcbc0d6ebc3348869abf22
+Section: contrib/devel
+Priority: optional
+Filename: pool/contrib/r/repo/repo_2.15.4-1~bpo10+1_all.deb
+Size: 118576
+SHA256: e0a8e713800c038755df7206119ac63c23eea42b95bc0607e07830ac5d5226c3
+
+Package: translate-shell
+Version: 0.9.6.11-1~bpo10+1
+Installed-Size: 227
+Maintainer: Andreas Tille <tille@debian.org>
+Architecture: all
+Replaces: google-translate-cli
+Provides: google-translate-cli
+Depends: gawk, libfribidi-bin
+Recommends: curl, rlwrap, aspell | hunspell, less | most
+Suggests: mplayer | mpv | mpg123 | espeak
+Conflicts: google-translate-cli
+Description: Command-line translator using Google Translate, etc.
+Homepage: https://github.com/soimort/translate-shell
+Description-md5: 6274e3ebce5a25870856e592a7b97025
+Section: contrib/misc
+Priority: optional
+Filename: pool/contrib/t/translate-shell/translate-shell_0.9.6.11-1~bpo10+1_all.deb
+Size: 57040
+SHA256: 98961ac74efae4d0aecaf5ee30425c53040c7fb10865e1e840b1be9c1d74b68a
+
+Package: libnvpair3linux
+Source: zfs-linux
+Version: 2.0.3-9~bpo10+1
+Installed-Size: 151
+Maintainer: Debian ZFS on Linux maintainers <pkg-zfsonlinux-devel@alioth-lists.debian.net>
+Architecture: armhf
+Replaces: libnvpair1, libnvpair3
+Depends: libc6 (>= 2.4)
+Breaks: libnvpair1, libnvpair3
+Description: Solaris name-value library for Linux
+Homepage: https://zfsonlinux.org/
+Description-md5: dff01db1623b4ac78db22bcc089d9e49
+Section: contrib/libs
+Priority: optional
+Filename: pool/contrib/z/zfs-linux/libnvpair3linux_2.0.3-9~bpo10+1_armhf.deb
+Size: 55792
+SHA256: 07d86a68e352d51e78ea4fc1a06af472c7dc8c73f21ed9621bbf6bd3e9d611fe
+
+Package: libpam-zfs
+Source: zfs-linux
+Version: 2.0.3-9~bpo10+1
+Installed-Size: 90
+Maintainer: Debian ZFS on Linux maintainers <pkg-zfsonlinux-devel@alioth-lists.debian.net>
+Architecture: armhf
+Depends: libpam-runtime, libc6 (>= 2.4), libnvpair3linux (>= 0.8.2), libpam0g (>= 1.1.0), libssl1.1 (>= 1.1.0), libuutil3linux (>= 0.8.2), libzfs4linux (>= 0.8.2)
+Description: PAM module for managing encryption keys for ZFS
+Homepage: https://zfsonlinux.org/
+Description-md5: 22667c0f995168539097f168459e100b
+Section: contrib/admin
+Priority: optional
+Filename: pool/contrib/z/zfs-linux/libpam-zfs_2.0.3-9~bpo10+1_armhf.deb
+Size: 32568
+SHA256: e7d92eef724f7f13ce74122f04017f9f08d3738c1826ca59847cc900db888d91
+
+Package: libuutil3linux
+Source: zfs-linux
+Version: 2.0.3-9~bpo10+1
+Installed-Size: 158
+Maintainer: Debian ZFS on Linux maintainers <pkg-zfsonlinux-devel@alioth-lists.debian.net>
+Architecture: armhf
+Replaces: libuutil1, libuutil3
+Depends: libc6 (>= 2.17)
+Breaks: libuutil1, libuutil3
+Description: Solaris userland utility library for Linux
+Homepage: https://zfsonlinux.org/
+Description-md5: 9bf9c128615174d04a0bb25b39d60322
+Section: contrib/libs
+Priority: optional
+Filename: pool/contrib/z/zfs-linux/libuutil3linux_2.0.3-9~bpo10+1_armhf.deb
+Size: 57020
+SHA256: a37423189a1ea597d2c45e1df94ea77834e59519572335800f9d954fdbcfea83
+
+Package: libzfs4linux
+Source: zfs-linux
+Version: 2.0.3-9~bpo10+1
+Installed-Size: 527
+Maintainer: Debian ZFS on Linux maintainers <pkg-zfsonlinux-devel@alioth-lists.debian.net>
+Architecture: armhf
+Replaces: libzfs2, libzfs4
+Depends: libblkid1 (>= 2.16), libc6 (>= 2.28), libnvpair3linux (>= 0.8.2), libssl1.1 (>= 1.1.0), libudev1 (>= 183), libuuid1 (>= 2.16), libuutil3linux (>= 0.8.2), zlib1g (>= 1:1.1.4)
+Breaks: libzfs2, libzfs4
+Description: OpenZFS filesystem library for Linux
+Homepage: https://zfsonlinux.org/
+Description-md5: 3dbcadce6b253d93a93ded3426097393
+Section: contrib/libs
+Priority: optional
+Filename: pool/contrib/z/zfs-linux/libzfs4linux_2.0.3-9~bpo10+1_armhf.deb
+Size: 240612
+SHA256: ad2f62d4fb58b959bab69a43ed38bb36ebf91d06f283d71cc4500520878e3948
+
+Package: libzfsbootenv1linux
+Source: zfs-linux
+Version: 2.0.3-9~bpo10+1
+Installed-Size: 96
+Maintainer: Debian ZFS on Linux maintainers <pkg-zfsonlinux-devel@alioth-lists.debian.net>
+Architecture: armhf
+Replaces: libzfs2, libzfs4
+Depends: libc6 (>= 2.8), libnvpair3linux (>= 0.8.2), libzfs4linux (>= 2.0)
+Breaks: libzfs2, libzfs4
+Description: OpenZFS filesystem library for Linux
+Homepage: https://zfsonlinux.org/
+Description-md5: 033e45a4dedd0db668ec92f43aae9278
+Section: contrib/libs
+Priority: optional
+Filename: pool/contrib/z/zfs-linux/libzfsbootenv1linux_2.0.3-9~bpo10+1_armhf.deb
+Size: 37832
+SHA256: 51d68f3ccfe5309844421db337f17b96f80282c52f5a130b71c5eb70848e2c4a
+
+Package: libzfslinux-dev
+Source: zfs-linux
+Version: 2.0.3-9~bpo10+1
+Installed-Size: 7853
+Maintainer: Debian ZFS on Linux maintainers <pkg-zfsonlinux-devel@alioth-lists.debian.net>
+Architecture: armhf
+Provides: libnvpair-dev, libuutil-dev
+Depends: libssl-dev | libssl1.0-dev, libnvpair3linux (= 2.0.3-9~bpo10+1), libuutil3linux (= 2.0.3-9~bpo10+1), libzfs4linux (= 2.0.3-9~bpo10+1), libzfsbootenv1linux (= 2.0.3-9~bpo10+1), libzpool4linux (= 2.0.3-9~bpo10+1)
+Description: OpenZFS filesystem development files for Linux
+Homepage: https://zfsonlinux.org/
+Description-md5: 36330eae0e407f6e37fbfb835804f36b
+Section: contrib/libdevel
+Priority: optional
+Filename: pool/contrib/z/zfs-linux/libzfslinux-dev_2.0.3-9~bpo10+1_armhf.deb
+Size: 1843788
+SHA256: c4050ac629a828426ad170e07bd39d127492325cf2de0c86634d3b2bd896feaf
+
+Package: libzpool4linux
+Source: zfs-linux
+Version: 2.0.3-9~bpo10+1
+Installed-Size: 2802
+Maintainer: Debian ZFS on Linux maintainers <pkg-zfsonlinux-devel@alioth-lists.debian.net>
+Architecture: armhf
+Replaces: libzpool2, libzpool4
+Depends: libc6 (>= 2.28), libnvpair3linux (>= 0.8.2), libzfs4linux (>= 2.0), zlib1g (>= 1:1.1.4)
+Breaks: libzpool2, libzpool4
+Description: OpenZFS pool library for Linux
+Homepage: https://zfsonlinux.org/
+Description-md5: 5411b703c1dae8e2c3f38bbe7330f01d
+Section: contrib/libs
+Priority: optional
+Filename: pool/contrib/z/zfs-linux/libzpool4linux_2.0.3-9~bpo10+1_armhf.deb
+Size: 1206608
+SHA256: 3b5c0675f79b73dc8949efef28d49f1b2107ed9c834d03226e5e0177c5c4f9f2
+
+Package: python3-pyzfs
+Source: zfs-linux
+Version: 2.0.3-9~bpo10+1
+Installed-Size: 425
+Maintainer: Debian ZFS on Linux maintainers <pkg-zfsonlinux-devel@alioth-lists.debian.net>
+Architecture: armhf
+Depends: python3-cffi, zfsutils-linux (= 2.0.3-9~bpo10+1), python3-cffi-backend-api-min (<= 9729), python3-cffi-backend-api-max (>= 9729), python3:any
+Description: wrapper for libzfs_core C library
+Homepage: https://zfsonlinux.org/
+Description-md5: cc3c162e8790777a7a60f39c29c8ee89
+Section: contrib/python
+Priority: optional
+Filename: pool/contrib/z/zfs-linux/python3-pyzfs_2.0.3-9~bpo10+1_armhf.deb
+Size: 70300
+SHA256: 81814917675075be1d60816980bda7dff57e16345aab1fb4c939c970de68c0fb
+
+Package: pyzfs-doc
+Source: zfs-linux
+Version: 2.0.3-9~bpo10+1
+Installed-Size: 408
+Maintainer: Debian ZFS on Linux maintainers <pkg-zfsonlinux-devel@alioth-lists.debian.net>
+Architecture: all
+Depends: libjs-sphinxdoc (>= 1.0)
+Recommends: python3-pyzfs
+Description: wrapper for libzfs_core C library (documentation)
+Homepage: https://zfsonlinux.org/
+Description-md5: 18d5a3ceb2ed973459a34b4af3cc06cc
+Section: contrib/doc
+Priority: optional
+Filename: pool/contrib/z/zfs-linux/pyzfs-doc_2.0.3-9~bpo10+1_all.deb
+Size: 64168
+SHA256: e34b710e68098d97a5de3d3ff0bfdb79942ad308cc288f35b7095252cbe8f763
+
+Package: spl
+Source: zfs-linux
+Version: 2.0.3-9~bpo10+1
+Installed-Size: 69
+Maintainer: Debian ZFS on Linux maintainers <pkg-zfsonlinux-devel@alioth-lists.debian.net>
+Architecture: all
+Suggests: zfs-test
+Description: Solaris Porting Layer user-space utilities for Linux (dummy)
+Homepage: https://zfsonlinux.org/
+Description-md5: b410e0ffa9fce7c3fe01d4e78150bb07
+Section: contrib/metapackages
+Priority: optional
+Filename: pool/contrib/z/zfs-linux/spl_2.0.3-9~bpo10+1_all.deb
+Size: 27256
+SHA256: 570036c252961a80eaecd2c7ee65933dbf81a422af8b80c295b720b6d94c6d71
+
+Package: spl-dkms
+Source: zfs-linux
+Version: 2.0.3-9~bpo10+1
+Installed-Size: 72
+Maintainer: Debian ZFS on Linux maintainers <pkg-zfsonlinux-devel@alioth-lists.debian.net>
+Architecture: all
+Depends: zfs-dkms
+Description: Solaris Porting Layer kernel modules for Linux (dummy)
+Homepage: https://zfsonlinux.org/
+Description-md5: 71853a88d424d6856a437f2a601d0de0
+Section: contrib/metapackages
+Priority: optional
+Filename: pool/contrib/z/zfs-linux/spl-dkms_2.0.3-9~bpo10+1_all.deb
+Size: 27456
+SHA256: ff0ddc97106328dac2fecf90134d3378b99f8992ef96162e6fd47511fd764187
+
+Package: zfs-dkms
+Source: zfs-linux
+Version: 2.0.3-9~bpo10+1
+Installed-Size: 16898
+Maintainer: Debian ZFS on Linux maintainers <pkg-zfsonlinux-devel@alioth-lists.debian.net>
+Architecture: all
+Replaces: spl-dkms
+Provides: zfs-modules
+Depends: dkms (>> 2.1.1.2-5), file, libc6-dev | libc-dev, lsb-release, python3-distutils | libpython3-stdlib (<< 3.6.4), debconf (>= 0.5) | debconf-2.0, perl:any
+Recommends: zfs-zed, zfsutils-linux (>= 2.0.3-9~bpo10+1), linux-libc-dev (<< 5.11~), linux-libc-dev (>= 3.10~)
+Suggests: debhelper
+Breaks: spl-dkms (<< 0.8.0~rc1)
+Description: OpenZFS filesystem kernel modules for Linux
+Homepage: https://zfsonlinux.org/
+Description-md5: 39e75ed3c1d3a5bc9c23ff32d0b5bbe1
+Section: contrib/kernel
+Priority: optional
+Filename: pool/contrib/z/zfs-linux/zfs-dkms_2.0.3-9~bpo10+1_all.deb
+Size: 2233620
+SHA256: 18d07da58378ccfde2c7e9b02ec668b1cb1e2934b9a59a9b9cb27a76ccccaeb1
+
+Package: zfs-dracut
+Source: zfs-linux
+Version: 2.0.3-9~bpo10+1
+Installed-Size: 104
+Maintainer: Debian ZFS on Linux maintainers <pkg-zfsonlinux-devel@alioth-lists.debian.net>
+Architecture: all
+Depends: dracut, zfs-modules | zfs-dkms, zfsutils-linux (>= 2.0.3-9~bpo10+1)
+Description: OpenZFS root filesystem capabilities for Linux - dracut
+Homepage: https://zfsonlinux.org/
+Description-md5: 965d2232071aa7eaad3e0a3ca11764b0
+Section: contrib/kernel
+Priority: optional
+Filename: pool/contrib/z/zfs-linux/zfs-dracut_2.0.3-9~bpo10+1_all.deb
+Size: 34728
+SHA256: a33a657044cce24b28850f6d45e8c7061c6b33a74922016ed745d0a94d5efdf4
+
+Package: zfs-initramfs
+Source: zfs-linux
+Version: 2.0.3-9~bpo10+1
+Installed-Size: 116
+Maintainer: Debian ZFS on Linux maintainers <pkg-zfsonlinux-devel@alioth-lists.debian.net>
+Architecture: all
+Replaces: zfsutils-linux (<= 0.7.11-2)
+Depends: busybox-initramfs | busybox-static | busybox, initramfs-tools, zfs-modules | zfs-dkms, zfsutils-linux (>= 2.0.3-9~bpo10+1)
+Breaks: zfsutils-linux (<= 0.7.11-2)
+Description: OpenZFS root filesystem capabilities for Linux - initramfs
+Homepage: https://zfsonlinux.org/
+Description-md5: ed136876804c562cd1f81b87863a33a9
+Section: contrib/kernel
+Priority: optional
+Filename: pool/contrib/z/zfs-linux/zfs-initramfs_2.0.3-9~bpo10+1_all.deb
+Size: 37796
+SHA256: c6d16e30fc47f1a3a7455dabf6a196126f31452656f814048b7b251bd05fae4e
+
+Package: zfs-test
+Source: zfs-linux
+Version: 2.0.3-9~bpo10+1
+Installed-Size: 10665
+Maintainer: Debian ZFS on Linux maintainers <pkg-zfsonlinux-devel@alioth-lists.debian.net>
+Architecture: armhf
+Replaces: zfsutils-linux (<= 0.7.9-2)
+Depends: acl, attr, bc, fio, ksh, lsscsi, mdadm, parted, python3, python3-pyzfs, sudo, sysstat, zfs-modules | zfs-dkms, zfsutils-linux (>= 2.0.3-9~bpo10+1), libaio1 (>= 0.3.93), libc6 (>= 2.17), libnvpair3linux (>= 0.8.2), libudev1 (>= 183), libzfs4linux (>= 2.0), libzpool4linux (>= 2.0)
+Recommends: nfs-kernel-server
+Conflicts: zutils
+Breaks: zfsutils-linux (<= 0.7.9-2)
+Description: OpenZFS test infrastructure and support scripts
+Homepage: https://zfsonlinux.org/
+Description-md5: 626efba8698ac960b7fa793abb13e6d2
+Section: contrib/admin
+Priority: optional
+Filename: pool/contrib/z/zfs-linux/zfs-test_2.0.3-9~bpo10+1_armhf.deb
+Size: 5387284
+SHA256: 69afbc9ee29130895052365c2041ec0756df1814eda0610138d613f9cb963ec0
+
+Package: zfs-zed
+Source: zfs-linux
+Version: 2.0.3-9~bpo10+1
+Installed-Size: 225
+Maintainer: Debian ZFS on Linux maintainers <pkg-zfsonlinux-devel@alioth-lists.debian.net>
+Architecture: armhf
+Depends: zfs-modules | zfs-dkms, zfsutils-linux (>= 2.0.3-9~bpo10+1), libc6 (>= 2.28), libnvpair3linux (>= 0.8.2), libudev1 (>= 183), libuuid1 (>= 2.16), libuutil3linux (>= 0.8.2), libzfs4linux (>= 2.0)
+Pre-Depends: init-system-helpers (>= 1.54~)
+Description: OpenZFS Event Daemon
+Homepage: https://zfsonlinux.org/
+Description-md5: 371f25433afc0f13d827a77c432615a1
+Section: contrib/admin
+Priority: optional
+Filename: pool/contrib/z/zfs-linux/zfs-zed_2.0.3-9~bpo10+1_armhf.deb
+Size: 72648
+SHA256: 356a03de27342892cd40a5eef0e28807618d7cff36c5998f2e112bfc4eb81245
+
+Package: zfsutils-linux
+Source: zfs-linux
+Version: 2.0.3-9~bpo10+1
+Installed-Size: 1304
+Maintainer: Debian ZFS on Linux maintainers <pkg-zfsonlinux-devel@alioth-lists.debian.net>
+Architecture: armhf
+Replaces: spl (<< 0.7.9-2), spl-dkms
+Provides: zfsutils
+Depends: libnvpair3linux (= 2.0.3-9~bpo10+1), libuutil3linux (= 2.0.3-9~bpo10+1), libzfs4linux (= 2.0.3-9~bpo10+1), libzpool4linux (= 2.0.3-9~bpo10+1), python3, libblkid1 (>= 2.16), libc6 (>= 2.17), libuuid1 (>= 2.16)
+Pre-Depends: init-system-helpers (>= 1.54~)
+Recommends: lsb-base, zfs-modules | zfs-dkms, zfs-zed
+Suggests: nfs-kernel-server, samba-common-bin (>= 3.0.23), zfs-initramfs | zfs-dracut
+Conflicts: zfs, zfs-fuse
+Breaks: openrc, spl (<< 0.7.9-2), spl-dkms (<< 0.8.0~rc1), zfs-dkms (>> 2.0.3-9~bpo10+1...), zfs-dkms (<< 2.0.3-9~bpo10+1)
+Description: command-line tools to manage OpenZFS filesystems
+Homepage: https://zfsonlinux.org/
+Description-md5: e0d1624ff402201471b9a32e9cb71f16
+Section: contrib/admin
+Priority: optional
+Filename: pool/contrib/z/zfs-linux/zfsutils-linux_2.0.3-9~bpo10+1_armhf.deb
+Size: 476776
+SHA256: 5e58f5aa38e4d1d258a543f4444849c67b278150e2ed9e37dbdffd783c4f556c
+

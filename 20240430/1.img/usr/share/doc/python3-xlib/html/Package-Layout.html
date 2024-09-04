@@ -1,0 +1,156 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<!-- Created by GNU Texinfo 6.5, http://www.gnu.org/software/texinfo/ -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Package Layout (The Python X Library)</title>
+
+<meta name="description" content="Package Layout (The Python X Library)">
+<meta name="keywords" content="Package Layout (The Python X Library)">
+<meta name="resource-type" content="document">
+<meta name="distribution" content="global">
+<meta name="Generator" content="makeinfo">
+<link href="index.html#Top" rel="start" title="Top">
+<link href="index.html#SEC_Contents" rel="contents" title="Table of Contents">
+<link href="index.html#Top" rel="up" title="Top">
+<link href="Connect-to-a-Display.html#Connect-to-a-Display" rel="next" title="Connect to a Display">
+<link href="Basic-X-Concepts.html#Basic-X-Concepts" rel="prev" title="Basic X Concepts">
+<style type="text/css">
+<!--
+a.summary-letter {text-decoration: none}
+blockquote.indentedblock {margin-right: 0em}
+blockquote.smallindentedblock {margin-right: 0em; font-size: smaller}
+blockquote.smallquotation {font-size: smaller}
+div.display {margin-left: 3.2em}
+div.example {margin-left: 3.2em}
+div.lisp {margin-left: 3.2em}
+div.smalldisplay {margin-left: 3.2em}
+div.smallexample {margin-left: 3.2em}
+div.smalllisp {margin-left: 3.2em}
+kbd {font-style: oblique}
+pre.display {font-family: inherit}
+pre.format {font-family: inherit}
+pre.menu-comment {font-family: serif}
+pre.menu-preformatted {font-family: serif}
+pre.smalldisplay {font-family: inherit; font-size: smaller}
+pre.smallexample {font-size: smaller}
+pre.smallformat {font-family: inherit; font-size: smaller}
+pre.smalllisp {font-size: smaller}
+span.nolinebreak {white-space: nowrap}
+span.roman {font-family: initial; font-weight: normal}
+span.sansserif {font-family: sans-serif; font-weight: normal}
+ul.no-bullet {list-style: none}
+-->
+</style>
+
+
+</head>
+
+<body lang="en">
+<a name="Package-Layout"></a>
+<div class="header">
+<p>
+Next: <a href="Connect-to-a-Display.html#Connect-to-a-Display" accesskey="n" rel="next">Connect to a Display</a>, Previous: <a href="Basic-X-Concepts.html#Basic-X-Concepts" accesskey="p" rel="prev">Basic X Concepts</a>, Up: <a href="index.html#Top" accesskey="u" rel="up">Top</a> &nbsp; [<a href="index.html#SEC_Contents" title="Table of contents" rel="contents">Contents</a>]</p>
+</div>
+<hr>
+<a name="Package-Layout-1"></a>
+<h2 class="chapter">2 Package Layout</h2>
+
+<p>The Python X Library is distributed as a Python package, named
+<code>Xlib</code>.  It contains a number of modules providing the main
+library interface:
+</p>
+<dl compact="compact">
+<dt><code>display</code></dt>
+<dd>
+<p>Contains the <code>Display</code> class, providing the X connection and access
+to all other X objects and operations.
+</p>
+</dd>
+<dt><code>error</code></dt>
+<dd>
+<p>Contains all <code>Xlib</code> exception classes.
+</p>
+</dd>
+<dt><code>threaded</code></dt>
+<dd>
+<p>Imported to set up the library to be thread-safe.
+</p>
+</dd>
+<dt><code>rdb</code></dt>
+<dd>
+<p>Contains <code>ResourceDB</code>, an X resource database class, and related
+code.
+</p>
+</dd>
+<dt><code>X</code></dt>
+<dd>
+<p>Contains symbolic names for all basic X protocol constants.
+</p>
+</dd>
+<dt><code>Xutil</code></dt>
+<dd>
+<p>Contains additional constants for mainly the ICCCM standard.
+</p>
+</dd>
+<dt><code>XK</code></dt>
+<dd>
+<p>Contains symbolic names for all X keysyms.
+</p>
+</dd>
+<dt><code>Xatom</code></dt>
+<dd>
+<p>Contains symbolic names for all standard X atoms.
+</p>
+</dd>
+<dt><code>Xcursorfont</code></dt>
+<dd>
+<p>Contains symbolic names for all standard X fonts.
+</p>
+</dd>
+</dl>
+
+
+<p>There is also a number of subpackages, but they will mainly be of
+interest to developers of the Xlib itself:
+</p>
+<dl compact="compact">
+<dt><code>protocol</code></dt>
+<dd>
+<p>The low-level protocol implementation.  Contains definitions of all X
+request, responses, events and errors, in addition to the core network
+code.  The high-level object oriented interface provided by
+<code>Xlib.display</code> is merely a wrapper around this package.
+</p>
+</dd>
+<dt><code>support</code></dt>
+<dd>
+<p>Miscellaneous supporting code for handling threads and operating
+system-specific features.
+</p>
+</dd>
+<dt><code>xobject</code></dt>
+<dd>
+<p>Contains classes for all X objects, which are returned by various
+display operations.
+</p>
+</dd>
+<dt><code>ext</code></dt>
+<dd>
+<p>Contains various X protocol extensions.  Extensions supported by the
+server are loaded automatically at the display connection.
+</p>
+</dd>
+</dl>
+
+
+<hr>
+<div class="header">
+<p>
+Next: <a href="Connect-to-a-Display.html#Connect-to-a-Display" accesskey="n" rel="next">Connect to a Display</a>, Previous: <a href="Basic-X-Concepts.html#Basic-X-Concepts" accesskey="p" rel="prev">Basic X Concepts</a>, Up: <a href="index.html#Top" accesskey="u" rel="up">Top</a> &nbsp; [<a href="index.html#SEC_Contents" title="Table of contents" rel="contents">Contents</a>]</p>
+</div>
+
+
+
+</body>
+</html>

@@ -1,0 +1,6 @@
+auto
+/usr/lib/arm-none-eabi/lib
+
+/usr/lib/arm-none-eabi/newlib
+30
+

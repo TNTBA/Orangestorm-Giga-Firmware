@@ -1,0 +1,10 @@
+1a1bfe103613d3d0199076c2c35334c6  usr/lib/aarch64-linux-gnu/atlas/libblas.so.3.10.3
+7a3793117cf8f04e107d7230bfe20fc6  usr/lib/aarch64-linux-gnu/atlas/liblapack.so.3.10.3
+74426ae41002f6675cfad3860ca7b45d  usr/lib/aarch64-linux-gnu/libatlas.so.3.10.3
+fd43cae92454945ac8ab8b03a92dcdb8  usr/lib/aarch64-linux-gnu/libcblas.so.3.10.3
+48d591fa78b28ad703e2837c1d302be4  usr/lib/aarch64-linux-gnu/libf77blas.so.3.10.3
+50323960d727b0c7be060a330a021755  usr/lib/aarch64-linux-gnu/liblapack_atlas.so.3.10.3
+57ccb90b97931b180c033435402d1307  usr/share/doc/libatlas3-base/README.Debian
+736bdd2412d015450b8f3b692749c037  usr/share/doc/libatlas3-base/changelog.Debian.gz
+daae9f47def63335a6b27c5837669b26  usr/share/doc/libatlas3-base/changelog.gz
+757cfc477dd6db2e7503294a4c5491fe  usr/share/doc/libatlas3-base/copyright

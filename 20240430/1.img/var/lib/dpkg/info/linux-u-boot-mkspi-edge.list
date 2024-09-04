@@ -1,0 +1,11 @@
+/.
+/usr
+/usr/lib
+/usr/lib/linux-u-boot-edge-mkspi_22.05.0-trunk_arm64
+/usr/lib/linux-u-boot-edge-mkspi_22.05.0-trunk_arm64/idbloader.bin
+/usr/lib/linux-u-boot-edge-mkspi_22.05.0-trunk_arm64/trust.bin
+/usr/lib/linux-u-boot-edge-mkspi_22.05.0-trunk_arm64/uboot.img
+/usr/lib/u-boot
+/usr/lib/u-boot/LICENSE
+/usr/lib/u-boot/platform_install.sh
+/usr/lib/u-boot/roc-cc-rk3328_defconfig

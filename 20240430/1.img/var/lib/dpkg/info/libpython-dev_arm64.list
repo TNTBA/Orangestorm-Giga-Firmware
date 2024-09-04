@@ -1,0 +1,13 @@
+/.
+/usr
+/usr/bin
+/usr/share
+/usr/share/doc
+/usr/share/doc/libpython-dev
+/usr/share/doc/libpython-dev/README.Debian
+/usr/share/doc/libpython-dev/changelog.Debian.gz
+/usr/share/doc/libpython-dev/copyright
+/usr/share/man
+/usr/share/man/man1
+/usr/bin/aarch64-linux-gnu-python-config
+/usr/share/man/man1/aarch64-linux-gnu-python-config.1.gz

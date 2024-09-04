@@ -1,0 +1,9 @@
+/var/log.hdd/chrony/*.log {
+compress
+    missingok
+    nocreate
+    sharedscripts
+    postrotate
+        /usr/bin/chronyc cyclelogs > /dev/null 2>&1 || true
+    endscript
+}

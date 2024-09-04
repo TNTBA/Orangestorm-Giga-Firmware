@@ -1,0 +1,39 @@
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: pasystray
+Source: https://github.com/christophgysin/pasystray
+
+Files: *
+Copyright: 2011-2016 Christoph Gysin <christoph.gysin@gmail.com>
+           2012-2013, 2015 Christoph Gysin <christoph.gysin@ericsson.com>
+           2012 pataquets <amontero@tinet.org>
+           2013 Fredrick <copypaste@bitlegend.com>
+           2013 Lukas Schneiderbauer <lukas.schneiderbauer@gmail.com>
+           2013 Volodymyr Medvid <vmmedvid@gmail.com>
+           2015 Andres Manz <manz.andres@gmail.com>
+           2015 quentin <quentin@minster.io>
+           2015 theGeekPirate <thegeekpirate@gmail.com>
+           2016 Michael Ilsaas <mikeri@mikeri.net>
+           2016 Michael Niewoehner <mniewoeh@stud.hs-offenburg.de>
+           2016 mniewoeh@stud.hs-offenburg.de <Michael Niewoehner>
+License: LGPL-2.1+
+
+Files: debian/*
+Copyright: 2013-2016 Scott Leggett <scott@sl.id.au>
+License: LGPL-2.1+
+
+License: LGPL-2.1+
+ This package is free software; you can redistribute it and/or
+ modify it under the terms of the GNU Lesser General Public
+ License as published by the Free Software Foundation; either
+ version 2 of the License, or (at your option) any later version.
+ .
+ This package is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+ Lesser General Public License for more details.
+ .
+ You should have received a copy of the GNU General Public License
+ along with this program. If not, see <http://www.gnu.org/licenses/>.
+ .
+ On Debian systems, the complete text of the GNU Lesser General
+ Public License can be found in "/usr/share/common-licenses/LGPL-2".

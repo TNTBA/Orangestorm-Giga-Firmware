@@ -1,0 +1,100 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<!-- Created by GNU Texinfo 6.5, http://www.gnu.org/software/texinfo/ -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Fontable (The Python X Library)</title>
+
+<meta name="description" content="Fontable (The Python X Library)">
+<meta name="keywords" content="Fontable (The Python X Library)">
+<meta name="resource-type" content="document">
+<meta name="distribution" content="global">
+<meta name="Generator" content="makeinfo">
+<link href="index.html#Top" rel="start" title="Top">
+<link href="index.html#SEC_Contents" rel="contents" title="Table of Contents">
+<link href="X-Objects.html#X-Objects" rel="up" title="X Objects">
+<link href="GC.html#GC" rel="next" title="GC">
+<link href="Pixmap.html#Pixmap" rel="prev" title="Pixmap">
+<style type="text/css">
+<!--
+a.summary-letter {text-decoration: none}
+blockquote.indentedblock {margin-right: 0em}
+blockquote.smallindentedblock {margin-right: 0em; font-size: smaller}
+blockquote.smallquotation {font-size: smaller}
+div.display {margin-left: 3.2em}
+div.example {margin-left: 3.2em}
+div.lisp {margin-left: 3.2em}
+div.smalldisplay {margin-left: 3.2em}
+div.smallexample {margin-left: 3.2em}
+div.smalllisp {margin-left: 3.2em}
+kbd {font-style: oblique}
+pre.display {font-family: inherit}
+pre.format {font-family: inherit}
+pre.menu-comment {font-family: serif}
+pre.menu-preformatted {font-family: serif}
+pre.smalldisplay {font-family: inherit; font-size: smaller}
+pre.smallexample {font-size: smaller}
+pre.smallformat {font-family: inherit; font-size: smaller}
+pre.smalllisp {font-size: smaller}
+span.nolinebreak {white-space: nowrap}
+span.roman {font-family: initial; font-weight: normal}
+span.sansserif {font-family: sans-serif; font-weight: normal}
+ul.no-bullet {list-style: none}
+-->
+</style>
+
+
+</head>
+
+<body lang="en">
+<a name="Fontable"></a>
+<div class="header">
+<p>
+Next: <a href="GC.html#GC" accesskey="n" rel="next">GC</a>, Previous: <a href="Pixmap.html#Pixmap" accesskey="p" rel="prev">Pixmap</a>, Up: <a href="X-Objects.html#X-Objects" accesskey="u" rel="up">X Objects</a> &nbsp; [<a href="index.html#SEC_Contents" title="Table of contents" rel="contents">Contents</a>]</p>
+</div>
+<hr>
+<a name="Fontable-1"></a>
+<h3 class="section">6.8 Fontable</h3>
+
+<p><code>Fontable</code> is a base class of <code>GC</code> and <code>Font</code>
+objects.  See <a href="GC.html#GC">GC</a>, and <a href="Font.html#Font">Font</a>.
+</p>
+<p>See <a href="Resource.html#Resource">Resource</a>, for additional methods.
+</p>
+<dl>
+<dt><a name="index-query-on-Fontable"></a>Method on Fontable: <strong>query</strong> <em>( )</em></dt>
+<dd><p>Returns
+Object(&rsquo;min_bounds&rsquo;, structs.CharInfo),
+Object(&rsquo;max_bounds&rsquo;, structs.CharInfo),
+Card16(&rsquo;min_char_or_byte2&rsquo;),
+Card16(&rsquo;max_char_or_byte2&rsquo;),
+Card16(&rsquo;default_char&rsquo;),
+Card8(&rsquo;draw_direction&rsquo;),
+Card8(&rsquo;min_byte1,&rsquo;),
+Card8(&rsquo;max_byte1,&rsquo;),
+Card8(&rsquo;all_chars_exist&rsquo;),
+Int16(&rsquo;font_ascent&rsquo;),
+Int16(&rsquo;font_descent&rsquo;),
+List(&rsquo;properties&rsquo;, structs.FontProp),
+List(&rsquo;char_infos&rsquo;, structs.CharInfo),
+</p></dd></dl>
+
+<dl>
+<dt><a name="index-query_005ftext_005fextents-on-Fontable"></a>Method on Fontable: <strong>query_text_extents</strong> <em>( string )</em></dt>
+<dd><p>Returns
+Card8(&rsquo;draw_direction&rsquo;),
+Int16(&rsquo;font_ascent&rsquo;),
+Int16(&rsquo;font_descent&rsquo;),
+Int16(&rsquo;overall_ascent&rsquo;),
+Int16(&rsquo;overall_descent&rsquo;),
+Int32(&rsquo;overall_width&rsquo;),
+Int32(&rsquo;overall_left&rsquo;),
+Int32(&rsquo;overall_right&rsquo;),
+</p></dd></dl>
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="group__avr__assert" kind="group">
+    <compoundname>avr_assert</compoundname>
+    <title>&lt;assert.h&gt;: Diagnostics</title>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="group__avr__assert_1ga0041af519e0e7d47c9bcc83760c4669e" prot="public" static="no">
+        <name>assert</name>
+        <param><defname>expression</defname></param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>expression</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Expression to test for.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+The <ref refid="group__avr__assert_1ga0041af519e0e7d47c9bcc83760c4669e" kindref="member">assert()</ref> macro tests the given expression and if it is false, the calling process is terminated. A diagnostic message is written to stderr and the function <ref refid="group__avr__stdlib_1ga63e28bec3592384b44606f011634c5a8" kindref="member">abort()</ref> is called, effectively terminating the program.</para><para>If expression is true, the <ref refid="group__avr__assert_1ga0041af519e0e7d47c9bcc83760c4669e" kindref="member">assert()</ref> macro does nothing.</para><para>The <ref refid="group__avr__assert_1ga0041af519e0e7d47c9bcc83760c4669e" kindref="member">assert()</ref> macro may be removed at compile time by defining NDEBUG as a macro (e.g., by using the compiler option -DNDEBUG). </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/build/avr-libc-2.0.0+Atmel3.6.1/libc/avr-libc/include/assert.h" line="82" column="11" bodyfile="/build/avr-libc-2.0.0+Atmel3.6.1/libc/avr-libc/include/assert.h" bodystart="82" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><programlisting><codeline><highlight class="normal">#include<sp/>&lt;assert.h&gt;<sp/></highlight></codeline>
+</programlisting></para><para>This header file defines a debugging aid.</para><para>As there is no standard error output stream available for many applications using this library, the generation of a printable error message is not enabled by default. These messages will only be generated if the application defines the macro</para><para><programlisting><codeline><highlight class="normal">__ASSERT_USE_STDERR<sp/></highlight></codeline>
+</programlisting></para><para>before including the <computeroutput>&lt;<ref refid="assert_8h" kindref="compound">assert.h</ref>&gt;</computeroutput> header file. By default, only <ref refid="group__avr__stdlib_1ga63e28bec3592384b44606f011634c5a8" kindref="member">abort()</ref> will be called to halt the application. </para>    </detaileddescription>
+  </compounddef>
+</doxygen>

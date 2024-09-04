@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="deprecated" kind="page">
+    <compoundname>deprecated</compoundname>
+    <title>Deprecated List</title>
+    <detaileddescription>
+<para><variablelist>
+<varlistentry><term><anchor id="deprecated_1_deprecated000011"/>Global <ref refid="group__deprecated__items_1ga08ee265dc07048dbb5a8b6c84551d520" kindref="member">cbi</ref>  (port, bit)</term></varlistentry>
+<listitem><para></para></listitem>
+<varlistentry><term><anchor id="deprecated_1_deprecated000003"/>Global <ref refid="group__deprecated__items_1ga9a3fe82a7199e9e84f7be6a5f23127bc" kindref="member">enable_external_int</ref>  (mask)</term></varlistentry>
+<listitem><para></para></listitem>
+<varlistentry><term><anchor id="deprecated_1_deprecated000008"/>Global <ref refid="group__deprecated__items_1gad6488a48837d179b1833e2f48dac9665" kindref="member">inb</ref>  (port)</term></varlistentry>
+<listitem><para></para></listitem>
+<varlistentry><term><anchor id="deprecated_1_deprecated000006"/>Global <ref refid="group__deprecated__items_1ga5cfa4750a0633c34c7a361d8fd62c042" kindref="member">inp</ref>  (port)</term></varlistentry>
+<listitem><para></para></listitem>
+<varlistentry><term><anchor id="deprecated_1_deprecated000005"/>Global <ref refid="group__deprecated__items_1gaa0b2d3a87492967c01615f32f30d06d5" kindref="member">INTERRUPT</ref>  (signame)</term></varlistentry>
+<listitem><para></para></listitem>
+<varlistentry><term><anchor id="deprecated_1_deprecated000002"/>Global <ref refid="group__avr__interrupts_1gade46eb4e42cc9d56c19b1f91448f1b76" kindref="member">ISR_ALIAS</ref>  (vector, target_vector)</term></varlistentry>
+<listitem><para>For new code, the use of ISR(..., ISR_ALIASOF(...)) is recommended. </para></listitem>
+<varlistentry><term><anchor id="deprecated_1_deprecated000009"/>Global <ref refid="group__deprecated__items_1ga3a3b4c1ddf0c05701f933d70de330f08" kindref="member">outb</ref>  (port, val)</term></varlistentry>
+<listitem><para></para></listitem>
+<varlistentry><term><anchor id="deprecated_1_deprecated000007"/>Global <ref refid="group__deprecated__items_1gaab324bd721e821e275f00c3478e240c9" kindref="member">outp</ref>  (val, port)</term></varlistentry>
+<listitem><para></para></listitem>
+<varlistentry><term><anchor id="deprecated_1_deprecated000010"/>Global <ref refid="group__deprecated__items_1ga014ef751e83f97569c06f3cdd888f3f7" kindref="member">sbi</ref>  (port, bit)</term></varlistentry>
+<listitem><para></para></listitem>
+<varlistentry><term><anchor id="deprecated_1_deprecated000001"/>Global <ref refid="group__avr__interrupts_1ga67cd0dea412157775c2f2a3ffe9fb8ff" kindref="member">SIGNAL</ref>  (vector)</term></varlistentry>
+<listitem><para>Do not use <ref refid="group__avr__interrupts_1ga67cd0dea412157775c2f2a3ffe9fb8ff" kindref="member">SIGNAL()</ref> in new code. Use <ref refid="group__avr__interrupts_1gad28590624d422cdf30d626e0a506255f" kindref="member">ISR()</ref> instead.  </para></listitem>
+<varlistentry><term><anchor id="deprecated_1_deprecated000004"/>Global <ref refid="group__deprecated__items_1ga46f0b87ccc2ab63dea1ff28207270b82" kindref="member">timer_enable_int</ref>  (unsigned char ints)</term></varlistentry>
+<listitem><para></para></listitem>
+</variablelist>
+</para>    </detaileddescription>
+  </compounddef>
+</doxygen>

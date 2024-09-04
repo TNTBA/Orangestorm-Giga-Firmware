@@ -1,0 +1,9 @@
+05bb27a5c0fab46d9e5c8c6134e58376  usr/bin/fping
+784f6a5bf9fb997cd9019948ab778680  usr/share/bug/fping
+4fc4048d5715721f7272eb4ab017d6ae  usr/share/doc/fping/NEWS.Debian.gz
+d65cf31f8df410d9890f4602265ad415  usr/share/doc/fping/changelog.Debian.gz
+252f4eb38b61aca337e4cc09d47587ee  usr/share/doc/fping/changelog.gz
+4dd8b8ae367147155b2686b1bacf7872  usr/share/doc/fping/copyright
+8b1c244ab4f31f02304462b7b14d47af  usr/share/lintian/overrides/fping
+cc2d5c49a6f1c52d0a839a1fdf26412e  usr/share/man/man8/fping.8.gz
+035d84cfc97bdd4b8b7a9c421705568c  usr/share/man/man8/fping6.8.gz

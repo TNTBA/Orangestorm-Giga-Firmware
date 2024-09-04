@@ -1,0 +1,16 @@
+[Unit]
+Description=ELEGOOFIXSERVICE
+After=syslog.service
+StartLimitIntervalSec=0
+
+[Service]
+Type=simple
+Restart=always
+RestartSec=1
+ExecStart=/root/fix-service.sh
+
+[Install]
+WantedBy=multi-user.target
+
+
+

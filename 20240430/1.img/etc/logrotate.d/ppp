@@ -1,0 +1,9 @@
+/var/log.hdd/ppp-connect-errors {
+	weekly
+	rotate 4
+	missingok
+	notifempty
+	compress
+	nocreate
+}
+

@@ -1,0 +1,9 @@
+Document: sysstat-faq
+Section: System/Monitoring
+Title: Sysstat FAQ
+Author: Sebatien Godard
+Abstract: Frequently Asked Questions about sysstat.
+ Be sure to read this carefully before asking for help...
+
+Format: Text
+Files: /usr/share/doc/sysstat/FAQ.md.gz

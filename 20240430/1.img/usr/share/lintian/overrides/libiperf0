@@ -1,0 +1,4 @@
+# this seems to be a false positive
+libiperf0: spelling-error-in-binary usr/lib/*/libiperf.so.0.0.0 pacH patch
+# false positive, only debian/* is GPL
+libiperf0: possible-gpl-code-linked-with-openssl

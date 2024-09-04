@@ -1,0 +1,13 @@
+#!/bin/sh
+set -e
+# Automatically added by dh_installudev
+if [ "$1" = configure ]; then
+	if [ -e "/etc/udev/rules.d/z60_dfu-util.rules" ]; then
+		echo "Preserving user changes to /etc/udev/rules.d/60-dfu-util.rules ..."
+		if [ -e "/etc/udev/rules.d/60-dfu-util.rules" ]; then
+			mv -f "/etc/udev/rules.d/60-dfu-util.rules" "/etc/udev/rules.d/60-dfu-util.rules.dpkg-new"
+		fi
+		mv -f "/etc/udev/rules.d/z60_dfu-util.rules" "/etc/udev/rules.d/60-dfu-util.rules"
+	fi
+fi
+# End automatically added section

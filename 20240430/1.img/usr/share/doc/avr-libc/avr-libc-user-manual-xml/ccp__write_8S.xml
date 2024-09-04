@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="ccp__write_8S" kind="file" language="C++">
+    <compoundname>ccp_write.S</compoundname>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline><highlight class="normal">#ifndef<sp/>__DOXYGEN__</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#include<sp/>&lt;avr/io.h&gt;</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#if<sp/>__AVR_XMEGA__</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>ifndef<sp/>CCP_IOREG_gc</highlight></codeline>
+<codeline><highlight class="normal">#<sp/><sp/>define<sp/>CCP_IOREG_gc<sp/><sp/>0xD8<sp/><sp/><sp/><sp/>/*<sp/>IO<sp/>Register<sp/>Protection<sp/><sp/><sp/>*/</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>endif</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#include<sp/>&quot;asmdef.h&quot;</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">/*<sp/><sp/>void<sp/>ccp_write_io<sp/>(uint8_t<sp/>*__ioaddr,<sp/>uint8_t<sp/>__value)</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*/</highlight></codeline>
+<codeline><highlight class="normal">ENTRY<sp/><sp/><sp/>ccp_write_io</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>;<sp/>r24,25<sp/>-<sp/>__ioaddr</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>;<sp/>r22<sp/><sp/><sp/><sp/>-<sp/>__value</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>X_movw<sp/><sp/>r26,<sp/>r24<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>;<sp/>load<sp/>io<sp/>addr<sp/>into<sp/>X</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>ldi<sp/><sp/><sp/><sp/><sp/>r18,<sp/>CCP_IOREG_gc<sp/><sp/><sp/>;<sp/>load<sp/>IO<sp/>reg<sp/>change<sp/>protection<sp/>signature</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>sts<sp/><sp/><sp/><sp/><sp/>CCP,<sp/>r18</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>st<sp/><sp/><sp/><sp/><sp/><sp/>x,<sp/>r22<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>;<sp/>write<sp/>__value<sp/>to<sp/>__ioaddr</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>ret</highlight></codeline>
+<codeline><highlight class="normal">ENDFUNC</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#endif<sp/><sp/>/*<sp/>__AVR_XMEGA__<sp/>&amp;&amp;<sp/>CCP_IOREG_gc<sp/>*/<sp/></highlight></codeline>
+<codeline><highlight class="normal">#endif<sp/><sp/>/*<sp/>!__DOXYGEN__<sp/>*/</highlight></codeline>
+<codeline></codeline>
+    </programlisting>
+    <location file="/build/avr-libc-2.0.0+Atmel3.6.1/libc/avr-libc/libc/misc/ccp_write.S"/>
+  </compounddef>
+</doxygen>

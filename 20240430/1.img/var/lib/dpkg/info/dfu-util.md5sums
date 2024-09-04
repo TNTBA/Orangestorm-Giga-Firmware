@@ -1,0 +1,12 @@
+020257bc870699b11c25a2ab6bc7c394  lib/udev/rules.d/60-dfu-util.rules
+97c9834c3729e7cdc95297cb7ce08652  usr/bin/dfu-prefix
+c5e2ba52906fbf3e8c8cb80ddd704e03  usr/bin/dfu-suffix
+6a7897c6ecb0f980418e1d0d8f47e2c5  usr/bin/dfu-util
+2d1eb6f8eaa92b427529ddf69153bd12  usr/share/doc/dfu-util/DEVICES.txt
+f3a6bb5bbac2c81f89d793fed01b5eaf  usr/share/doc/dfu-util/README
+d41c4db7e5ad0186a289273c6f11661b  usr/share/doc/dfu-util/TODO
+17b85e3c1276a885f6ca74706f0f3eb5  usr/share/doc/dfu-util/changelog.Debian.gz
+7a6ca9f5279045d97babd2644901c4d2  usr/share/doc/dfu-util/changelog.gz
+a7a61b89e4493f0d5200f35f0863f9c6  usr/share/doc/dfu-util/copyright
+1341519b7bfd47bc1a168288d8a696ce  usr/share/doc/dfu-util/examples/dfuse-pack.py.gz
+9d47309ee583ebadc3acb0b8a4b8a1b4  usr/share/man/man1/dfu-util.1.gz

@@ -1,0 +1,22 @@
+#Systemd Klipper Service
+
+[Unit]
+Description=Systemd Klipper Service
+Documentation=https://www.klipper3d.org/
+After=network.target
+Wants=udev.target
+
+[Install]
+WantedBy=multi-user.target
+
+[Service]
+Environment=KLIPPER_CONFIG=/home/mks/klipper_config/printer.cfg
+Environment=KLIPPER_LOG=/home/mks/klipper_logs/klippy.log
+Environment=KLIPPER_SOCKET=/tmp/klippy_uds
+Environment=KLIPPER_PRINTER=/tmp/printer
+Type=simple
+User=elegoo
+RemainAfterExit=yes
+ExecStart=/home/mks/klippy-env/bin/python /home/mks/klipper/klippy/klippy.py ${KLIPPER_CONFIG} -I ${KLIPPER_PRINTER} -l ${KLIPPER_LOG} -a ${KLIPPER_SOCKET}
+Restart=always
+RestartSec=10

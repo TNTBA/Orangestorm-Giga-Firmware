@@ -1,0 +1,15 @@
+2484c5bef94d49cb070b0e7fb5bfa735  usr/bin/matchbox-keyboard
+cb6fa2c24cec91a80d17a79734ea2918  usr/share/applications/inputmethods/matchbox-keyboard.desktop
+4b950670590af0f77d92af871300db89  usr/share/doc/matchbox-keyboard/README.gz
+fdd6cffb836d3d4c3802b49a266d986d  usr/share/doc/matchbox-keyboard/changelog.Debian.gz
+969aab64fc60b6bfad810661c67bf3b2  usr/share/doc/matchbox-keyboard/changelog.gz
+e2105650e597783a11aea989cbb5d58a  usr/share/doc/matchbox-keyboard/copyright
+11d01812730102ea2861c19ac22f76ab  usr/share/man/man1/matchbox-keyboard.1.gz
+55c910adbdbbf549d0fcd0bb1d9c7c84  usr/share/matchbox-keyboard/keyboard-dvorak.xml
+dde218dcd694995ebd9be00c38737e18  usr/share/matchbox-keyboard/keyboard-extended.xml
+5b7f59daf90a905b602a833e3602cde7  usr/share/matchbox-keyboard/keyboard-fi.xml
+fadd1eeea8044b77524945cf139f245f  usr/share/matchbox-keyboard/keyboard-numpad.xml
+d0d54f065f3a0ce76bb9f093ccfa645e  usr/share/matchbox-keyboard/keyboard-ru.xml
+ed4beab4b4333f9b65232294205f2524  usr/share/matchbox-keyboard/keyboard-us.xml
+ffc38be749916bde075f45c3d8cd254a  usr/share/matchbox-keyboard/keyboard.xml
+3289ff6ddaf5395f38841821957a4bef  usr/share/pixmaps/matchbox-keyboard.png

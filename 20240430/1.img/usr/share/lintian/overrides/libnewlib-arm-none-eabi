@@ -1,0 +1,7 @@
+# These are not runtime libraries. They are used as part of a building
+# environment which will produce a firmware binary as output. So it's not host
+# architecture dependent.
+libnewlib-arm-none-eabi: arch-independent-package-contains-binary-or-object
+# The resulting firmware binaries must be stripped in the building environment
+libnewlib-arm-none-eabi: unstripped-static-library
+libnewlib-arm-none-eabi: static-library-has-unneeded-section

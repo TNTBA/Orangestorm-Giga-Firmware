@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="dir_d44c64559bbebec7f509842c48db8b23" kind="dir">
+    <compoundname>include</compoundname>
+    <innerdir refid="dir_74edb07caae428933d09e0931d8b44f5">avr</innerdir>
+    <innerdir refid="dir_6902457ea614a53d7355b44f7513f695">compat</innerdir>
+    <innerdir refid="dir_586ad3c2f85d776b984733890d824e3e">util</innerdir>
+    <innerfile refid="alloca_8h">alloca.h</innerfile>
+    <innerfile refid="assert_8h">assert.h</innerfile>
+    <innerfile refid="ctype_8h">ctype.h</innerfile>
+    <innerfile refid="errno_8h">errno.h</innerfile>
+    <innerfile refid="inttypes_8h">inttypes.h</innerfile>
+    <innerfile refid="math_8h">math.h</innerfile>
+    <innerfile refid="setjmp_8h">setjmp.h</innerfile>
+    <innerfile refid="stdint_8h">stdint.h</innerfile>
+    <innerfile refid="stdio_8h">stdio.h</innerfile>
+    <innerfile refid="stdlib_8h">stdlib.h</innerfile>
+    <innerfile refid="string_8h">string.h</innerfile>
+    <innerfile refid="time_8h">time.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/build/avr-libc-2.0.0+Atmel3.6.1/libc/avr-libc/include/"/>
+  </compounddef>
+</doxygen>

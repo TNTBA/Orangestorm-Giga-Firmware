@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="group__compat__ina90" kind="group">
+    <compoundname>compat_ina90</compoundname>
+    <title>&lt;compat/ina90.h&gt;: Compatibility with IAR EWB 3.x</title>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><programlisting><codeline><highlight class="normal">#include<sp/>&lt;compat/ina90.h&gt;<sp/></highlight></codeline>
+</programlisting></para><para>This is an attempt to provide some compatibility with header files that come with IAR C, to make porting applications between different compilers easier. No 100% compatibility though.</para><para><simplesect kind="note"><para>For actual documentation, please see the IAR manual. </para></simplesect>
+</para>    </detaileddescription>
+  </compounddef>
+</doxygen>

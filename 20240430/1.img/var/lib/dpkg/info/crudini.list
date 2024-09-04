@@ -1,0 +1,13 @@
+/.
+/usr
+/usr/share
+/usr/share/man
+/usr/share/man/man1
+/usr/share/man/man1/crudini.1.gz
+/usr/share/doc
+/usr/share/doc/crudini
+/usr/share/doc/crudini/NEWS.gz
+/usr/share/doc/crudini/changelog.Debian.gz
+/usr/share/doc/crudini/copyright
+/usr/bin
+/usr/bin/crudini

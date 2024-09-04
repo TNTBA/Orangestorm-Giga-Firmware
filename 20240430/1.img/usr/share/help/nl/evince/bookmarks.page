@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<page xmlns="http://projectmallard.org/1.0/" xmlns:its="http://www.w3.org/2005/11/its" type="topic" style="task" id="bookmarks" xml:lang="nl">
+
+  <info>
+    <link type="guide" xref="index#annotations"/>
+
+    <revision pkgversion="3.2" version="0.1" date="2011-09-05" status="final"/>
+    <revision pkgversion="3.10" date="2013-11-04" status="final"/>
+
+    <credit type="author">
+      <name>Tiffany Antopolski</name>
+      <email its:translate="no">tiffany@antopolski.com</email>
+    </credit>
+    <credit type="editor">
+      <name>Ekaterina Gerasimova</name>
+      <email its:translate="no">kittykat3756@gmail.com</email>
+    </credit>
+
+    <license>
+      <p>Creative Commons GelijkDelen 3.0</p>
+    </license>
+
+    <desc>U kunt annotaties als bladwijzers gebruiken.</desc>
+  
+    <mal:credit xmlns:mal="http://projectmallard.org/1.0/" type="translator copyright">
+      <mal:name>Justin van Steijn</mal:name>
+      <mal:email>jvs@fsfe.org</mal:email>
+      <mal:years>2016, 2017, 2018.</mal:years>
+    </mal:credit>
+  </info>
+
+<title>Bladwijzers</title>
+
+  <p>U kunt bladwijzers toevoegen, hernoemen en verwijderen met de <app>Documentenweergave</app>.</p>
+
+  <p>Als u een bestand opent, zou u een zijpaneel moeten zien aan de linkerkant van het venster. Als u geen zichtbaar zijpaneel heeft, druk dan op de <key>F9</key>-toets.</p>
+
+  <p>Aan de bovenkant van dit zijpaneel is een keuzemenu. Om te werken met bladwijzers, selecteer de <gui>Bladwijzers</gui>-optie vanuit dit keuzemenu.</p>
+
+  <links type="section"/>
+
+<section id="create">
+  <title>Een bladwijzer maken</title>
+
+  <steps>
+    <item>
+      <p>In het PDF-document zelf, blader naar de pagina waar u de bladwijzer wilt toevoegen.</p>
+    </item>
+    <item>
+      <p>In het zijpaneel, selecteer <gui>Bladwijzers</gui> vanuit het keuzemenu.</p>
+    </item>
+    <item>
+      <p>Klik de <gui>Toevoegen</gui>-knop aan de onderkant van het zijpaneel. De standaardnaam van de bladwijzer die u zojuist heeft toegevoegd is het paginanummer van het document.</p>
+    </item>
+    <item>
+      <p>De bladwijzer staat nu in de bladwijzerlijst.</p>
+    </item>
+  </steps>
+
+</section>
+
+<section id="rename">
+  <title>Een bladwijzer hernoemen</title>
+
+  <steps>
+    <item><p>Selecteer de bladwijzer in het zijpaneel.</p></item>
+    <item><p>Klik op de bladwijzernaam.</p></item>
+    <item><p>Voer de nieuwe naam in.</p></item>
+    <item><p>Druk op <key>Enter</key>.</p></item>
+  </steps>
+
+</section>
+
+<section id="delete">
+  <title>Een bladwijzer verwijderen</title>
+
+  <steps>
+   <item><p>Selecteer de bladwijzer in het zijpaneel.</p></item>
+   <item><p>Klik op de <gui>Verwijderen</gui>-knop aan de onderkant van het zijpaneel.</p></item>
+  </steps>
+
+</section>
+
+</page>

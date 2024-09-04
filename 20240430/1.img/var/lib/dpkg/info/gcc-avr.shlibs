@@ -1,0 +1,3 @@
+liblto_plugin 0 gcc-avr
+libcc1plugin 0 gcc-avr
+libcc1 0 gcc-avr

@@ -1,0 +1,142 @@
+---
+/internal/sc-status: '0'
+automake-1.16:
+  CF:
+    /usr/share/doc-base/automake-1.16: ~
+  SD: {}
+bc:
+  CF:
+    /usr/share/doc-base/bc: ~
+  SD: {}
+cracklib-runtime:
+  CF:
+    /usr/share/doc-base/cracklib-runtime: ~
+  SD: {}
+cups:
+  CF:
+    /usr/share/doc-base/cups: ~
+  SD: {}
+doc-base:
+  CF:
+    /usr/share/doc-base/doc-base: ~
+  SD: {}
+dtc-manual:
+  CF:
+    /usr/share/doc-base/dtc-manual: ~
+  SD: {}
+dtc-paper:
+  CF:
+    /usr/share/doc-base/dtc-paper: ~
+  SD: {}
+expat:
+  CF:
+    /usr/share/doc-base/expat: ~
+  SD: {}
+findutils:
+  CF:
+    /usr/share/doc-base/findutils: ~
+  SD: {}
+flex:
+  CF:
+    /usr/share/doc-base/flex: ~
+  SD: {}
+fontconfig-devel:
+  CF:
+    /usr/share/doc-base/fontconfig-devel: ~
+  SD: {}
+fontconfig-user:
+  CF:
+    /usr/share/doc-base/fontconfig-user: ~
+  SD: {}
+gdisk:
+  CF:
+    /usr/share/doc-base/gdisk: ~
+  SD: {}
+install-docs-man:
+  CF:
+    /usr/share/doc-base/install-docs-man: ~
+  SD: {}
+kbd-font-formats:
+  CF:
+    /usr/share/doc-base/kbd-font-formats: ~
+  SD: {}
+libcrack2:
+  CF:
+    /usr/share/doc-base/libcrack2: ~
+  SD: {}
+libffi:
+  CF:
+    /usr/share/doc-base/libffi: ~
+  SD: {}
+libpng16:
+  CF:
+    /usr/share/doc-base/libpng16: ~
+  SD: {}
+libusb-1.0-doc:
+  CF:
+    /usr/share/doc-base/libusb-1.0-doc: ~
+  SD: {}
+libusb-dev:
+  CF:
+    /usr/share/doc-base/libusb-dev: ~
+  SD: {}
+libwebsocketpp:
+  CF:
+    /usr/share/doc-base/libwebsocketpp: ~
+  SD: {}
+man-db:
+  CF:
+    /usr/share/doc-base/man-db: ~
+  SD: {}
+mc-faq:
+  CF:
+    /usr/share/doc-base/mc-faq: ~
+  SD: {}
+nano:
+  CF:
+    /usr/share/doc-base/nano: ~
+  SD: {}
+nano-faq:
+  CF:
+    /usr/share/doc-base/nano-faq: ~
+  SD: {}
+nlohmann-json3:
+  CF:
+    /usr/share/doc-base/nlohmann-json3: ~
+  SD: {}
+ocl-icd-libopencl1:
+  CF:
+    /usr/share/doc-base/ocl-icd-libopencl1: ~
+  SD: {}
+p7zip-full:
+  CF:
+    /usr/share/doc-base/p7zip-full: ~
+  SD: {}
+python-iniparse:
+  CF:
+    /usr/share/doc-base/python-iniparse: ~
+  SD: {}
+shared-mime-info:
+  CF:
+    /usr/share/doc-base/shared-mime-info: ~
+  SD: {}
+sysstat-faq:
+  CF:
+    /usr/share/doc-base/sysstat-faq: ~
+  SD: {}
+users-and-groups:
+  CF:
+    /usr/share/doc-base/users-and-groups: ~
+  SD: {}
+xarchiver:
+  CF:
+    /usr/share/doc-base/xarchiver: ~
+  SD: {}
+xterm-ctlseqs:
+  CF:
+    /usr/share/doc-base/xterm-ctlseqs: ~
+  SD: {}
+xterm-faq:
+  CF:
+    /usr/share/doc-base/xterm-faq: ~
+  SD: {}

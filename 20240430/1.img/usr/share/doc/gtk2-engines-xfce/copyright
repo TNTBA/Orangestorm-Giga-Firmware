@@ -1,0 +1,68 @@
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: gtk2-engines-xfce
+Upstream-Contact: Xfce development team
+
+Files: *
+Copyright: Xfce development team
+License: GPL-2+
+
+Files: gtk-2.0/xfce_theme_draw.c
+ gtk-3.0/xfce_engine.c
+ gtk-3.0/xfce_engine.h
+ gtk-3.0/xfce_style_types.h
+ gtk-3.0/xfce_theme_main.c
+Copyright: 1999-2004, Olivier Fourdan (fourdan@xfce.org)
+  2011, Peter de Ridder (peter@xfce.org)
+  2011-2012, Peter de Ridder (peter@xfce.org)
+License: GPL-2+
+
+Files: gtk-2.0/xfce_rc_style.c
+ gtk-2.0/xfce_rc_style.h
+ gtk-2.0/xfce_style.h
+ gtk-2.0/xfce_theme_main.c
+Copyright: 1999-2004, Olivier Fourdan (fourdan@xfce.org)
+License: GPL-2+
+
+Files: gtk-2.0/cairo-support.c
+ gtk-2.0/cairo-support.h
+Copyright: 2006, Andrew Johnson <acjgenius@earthlink.net>
+  2006, Thomas Wood <thos@gnome.org>
+  2006-2007, Benjamin Berg <benjamin@sipsolutions.net>
+  2007, Andrea Cimitan <andrea.cimitan@gmail.com>
+  2011, Peter de Ridder <peter@xfce.org>
+License: GPL-2+
+
+Files: gtk-2.0/gradient_draw.c
+ gtk-2.0/gradient_draw.h
+Copyright: 1999-2004, Olivier Fourdan (fourdan@xfce.org)
+  2011, Peter de Ridder <peter@xfce.org>
+License: GPL-2+
+
+Files: gtk-2.0/general-support.h
+Copyright: 2006, Andrew Johnson <acjgenius@earthlink.net>
+  2006-2007, Benjamin Berg <benjamin@sipsolutions.net>
+  2011, Peter de Ridder <peter@xfce.org>
+License: GPL-2+
+
+Files: gtk-2.0/ge-support.h
+Copyright: 2006, Benjamin Berg <benjamin@sipsolutions.net>
+  2011, Peter de Ridder <peter@xfce.org>
+License: GPL-2+
+
+Files: ltmain.sh
+Copyright: 1996-2015, Free Software Foundation, Inc.
+License: GPL-2+
+
+Files: debian/*
+Copyright: 2009-2018, Debian Xfce Maintainer (pkg-xfce-devel@lists.alioth.debian.org)
+License: GPL-2
+
+License: GPL-2
+ On Debian systems, the complete text of the GNU General
+ Public License version 2 can be found in
+ `/usr/share/common-licenses/GPL-2'.
+
+License: GPL-2+
+ On Debian systems, the complete text of the GNU General
+ Public License (version 2 or later) can be found in
+ `/usr/share/common-licenses/GPL'.

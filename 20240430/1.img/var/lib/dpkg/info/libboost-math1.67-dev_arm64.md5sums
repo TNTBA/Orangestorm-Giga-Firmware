@@ -1,0 +1,6 @@
+cc078f443e50478ebc45032706496593  usr/lib/aarch64-linux-gnu/libboost_math_c99.a
+b6d60a6f0f2380bb876e24697ce3e2b3  usr/lib/aarch64-linux-gnu/libboost_math_c99f.a
+8e3c30d3e0b63ad3df26ce10a05143a7  usr/lib/aarch64-linux-gnu/libboost_math_tr1.a
+4578d1c262abf67f9a9efa498db8e4ff  usr/lib/aarch64-linux-gnu/libboost_math_tr1f.a
+fd9fd87aca681e8911194b0265a932bd  usr/share/doc/libboost-math1.67-dev/changelog.Debian.gz
+190563c1ac07e6b6ab3c1b872d584bfe  usr/share/doc/libboost-math1.67-dev/copyright

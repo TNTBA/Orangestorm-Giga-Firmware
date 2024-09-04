@@ -1,0 +1,14 @@
+/.
+/usr
+/usr/bin
+/usr/bin/xtermcontrol
+/usr/share
+/usr/share/doc
+/usr/share/doc/xtermcontrol
+/usr/share/doc/xtermcontrol/changelog.Debian.gz
+/usr/share/doc/xtermcontrol/changelog.gz
+/usr/share/doc/xtermcontrol/copyright
+/usr/share/doc/xtermcontrol/ctlseqs.txt.gz
+/usr/share/man
+/usr/share/man/man1
+/usr/share/man/man1/xtermcontrol.1.gz

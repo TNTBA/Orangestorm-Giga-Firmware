@@ -1,0 +1,3 @@
+liblto_plugin 0 gcc-arm-none-eabi
+libcc1plugin 0 gcc-arm-none-eabi
+libcp1plugin 0 gcc-arm-none-eabi

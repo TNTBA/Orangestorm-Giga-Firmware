@@ -1,0 +1,1358 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Chapter 2. The packages interface</title>
+    <meta name="generator" content="DocBook XSL Stylesheets V1.79.1" />
+    <link rel="home" href="index.html" title="Debian doc-base Manual" />
+    <link rel="up" href="index.html" title="Debian doc-base Manual" />
+    <link rel="prev" href="about.html" title="Chapter 1. About doc-base" />
+    <link rel="next" href="informations.html" title="Chapter 3. Getting information about installed documents" />
+  </head>
+  <body>
+    <div class="navheader">
+      <table width="100%" summary="Navigation header">
+        <tr>
+          <th colspan="3" align="center">Chapter 2. The packages interface</th>
+        </tr>
+        <tr>
+          <td width="20%" align="left"><a accesskey="p" href="about.html">Prev</a> </td>
+          <th width="60%" align="center"> </th>
+          <td width="20%" align="right"> <a accesskey="n" href="informations.html">Next</a></td>
+        </tr>
+      </table>
+      <hr />
+    </div>
+    <div class="chapter">
+      <div class="titlepage">
+        <div>
+          <div>
+            <h1 class="title"><a id="interface"></a>Chapter 2. The packages interface</h1>
+          </div>
+        </div>
+      </div>
+      <div class="toc">
+        <p>
+          <strong>Table of Contents</strong>
+        </p>
+        <dl class="toc">
+          <dt>
+            <span class="section">
+              <a href="interface.html#s2.1">2.1. Introduction</a>
+            </span>
+          </dt>
+          <dt>
+            <span class="section">
+              <a href="interface.html#document-ids">2.2. Document IDs</a>
+            </span>
+          </dt>
+          <dt>
+            <span class="section">
+              <a href="interface.html#control-files">2.3. Control Files</a>
+            </span>
+          </dt>
+          <dd>
+            <dl>
+              <dt>
+                <span class="section">
+                  <a href="interface.html#s2.3.1">2.3.1. Example</a>
+                </span>
+              </dt>
+              <dt>
+                <span class="section">
+                  <a href="interface.html#s2.3.2">2.3.2. Syntax of the control file</a>
+                </span>
+              </dt>
+              <dt>
+                <span class="section">
+                  <a href="interface.html#section-field">2.3.3. The <code class="literal">section</code> field</a>
+                </span>
+              </dt>
+            </dl>
+          </dd>
+          <dt>
+            <span class="section">
+              <a href="interface.html#registering-documents">2.4. Registering Documents With <span class="command"><strong>doc-base</strong></span></a>
+            </span>
+          </dt>
+          <dt>
+            <span class="section">
+              <a href="interface.html#s2.5">2.5. doc-base 0.8.x features and incompatibilities</a>
+            </span>
+          </dt>
+          <dd>
+            <dl>
+              <dt>
+                <span class="section">
+                  <a href="interface.html#s2.5.1">2.5.1. Splitting control files over multiple binary packages</a>
+                </span>
+              </dt>
+              <dt>
+                <span class="section">
+                  <a href="interface.html#s2.5.2">2.5.2. Registering local documents</a>
+                </span>
+              </dt>
+              <dt>
+                <span class="section">
+                  <a href="interface.html#s2.5.3">2.5.3. dpkg triggers</a>
+                </span>
+              </dt>
+            </dl>
+          </dd>
+          <dt>
+            <span class="section">
+              <a href="interface.html#checking-syntax">2.6. Checking Syntax of <span class="emphasis"><em>Control Files</em></span></a>
+            </span>
+          </dt>
+        </dl>
+      </div>
+      <div class="section">
+        <div class="titlepage">
+          <div>
+            <div>
+              <h2 class="title" style="clear: both"><a id="s2.1"></a>2.1. Introduction</h2>
+            </div>
+          </div>
+        </div>
+        <p>
+      Each Debian package that installs online manuals (in any format) should
+      register its manuals to <code class="systemitem">doc-base</code>.  This
+      is done by installing a <code class="systemitem">doc-base</code>
+      <span class="emphasis"><em>control file</em></span> (see <a class="xref" href="interface.html#control-files" title="2.3. Control Files">Section 2.3, “Control Files”</a>) and
+      calling <span class="command"><strong>install-docs</strong></span> from the <span class="command"><strong>postinst</strong></span>
+      script (see <a class="xref" href="interface.html#registering-documents" title="2.4. Registering Documents With doc-base">Section 2.4, “Registering Documents With <span class="command"><strong>doc-base</strong></span>”</a>).
+    </p>
+      </div>
+      <div class="section">
+        <div class="titlepage">
+          <div>
+            <div>
+              <h2 class="title" style="clear: both"><a id="document-ids"></a>2.2. Document IDs</h2>
+            </div>
+          </div>
+        </div>
+        <p>
+      Each document that is registered to <code class="systemitem">doc-base</code> must have a unique <span class="emphasis"><em>document
+      ID</em></span>.
+    </p>
+        <p>
+      The document ID is usually taken from the document's title or from the package
+      name.  Here are a few examples:
+    </p>
+        <pre class="screen">
+DOCID                  Title
+---------------------- ----------------------------
+debian-policy          Debian Policy Manual
+developers-reference   Debian Developers Reference
+doc-base               Debian doc-base Manual
+emacs-manual           GNU Emacs Manual
+    </pre>
+        <p>
+      Legal characters for the document ID are lower case letters (a-z), digits
+      (0-9), plus (+) or minus (-) signs, and dots (.) (the same characters allowed
+      in package names).
+    </p>
+      </div>
+      <div class="section">
+        <div class="titlepage">
+          <div>
+            <div>
+              <h2 class="title" style="clear: both"><a id="control-files"></a>2.3. Control Files</h2>
+            </div>
+          </div>
+        </div>
+        <p>
+      For each piece online documentation, <code class="systemitem">doc-base</code> needs a <span class="emphasis"><em>control file</em></span>
+      that describes the documentation and the documentation file formats that are
+      provided initially.
+    </p>
+        <div class="section">
+          <div class="titlepage">
+            <div>
+              <div>
+                <h3 class="title"><a id="s2.3.1"></a>2.3.1. Example</h3>
+              </div>
+            </div>
+          </div>
+          <p>
+        Here is an example of a <span class="emphasis"><em>control file</em></span>:
+      </p>
+          <pre class="screen">
+Document: doc-base
+Title: Debian doc-base Manual
+Author: Christian Schwarz
+Abstract: This manual describes what doc-base is
+ and how it can be used to
+ manage online manuals on Debian systems.
+Section: Debian
+
+Format: DebianDoc-SGML
+Files: /usr/share/doc/doc-base/doc-base.sgml.gz
+
+Format: Text
+Files: /usr/share/doc/doc-base/doc-base.txt.gz
+
+Format: HTML
+Index: /usr/share/doc/doc-base/doc-base.html/index.html
+Files: /usr/share/doc/doc-base/doc-base.html/*.html
+      </pre>
+          <p>
+        If the <code class="systemitem">doc-base</code> package provided
+        necessary files in other formats, it would be possible to add more sections at
+        the end of the <span class="emphasis"><em>control file</em></span>:
+      </p>
+          <pre class="screen">
+Format: PDF
+Files: /usr/share/doc-base/doc-base.pdf
+
+Format: PostScript
+Files: /usr/share/doc-base/doc-base.ps.gz
+
+Format: DVI
+Files: /usr/share/doc-base/doc-base.dvi.gz
+
+Format: Info
+Index: /usr/share/info/doc-base.info.gz
+Files: /usr/share/info/doc-base.info*.gz
+      </pre>
+        </div>
+        <div class="section">
+          <div class="titlepage">
+            <div>
+              <div>
+                <h3 class="title"><a id="s2.3.2"></a>2.3.2. Syntax of the control file</h3>
+              </div>
+            </div>
+          </div>
+          <p>
+        As you can see from the above example, the syntax -- as is the whole design of
+        <code class="systemitem">doc-base</code> -- is heavily influenced by
+        dpkg.  This is important since every maintainer will have to work with
+        <code class="systemitem">doc-base</code> and thus, it should be simple
+        to remember the basic ideas.
+      </p>
+          <p>The syntax of the control file is simple:</p>
+          <div class="itemizedlist">
+            <ul class="itemizedlist" style="list-style-type: disc; ">
+              <li class="listitem">
+                <p>
+            The file consist of
+          </p>
+                <div class="itemizedlist">
+                  <ul class="itemizedlist" style="list-style-type: circle; ">
+                    <li class="listitem">
+                      <p>
+                exactly one main section providing base information about the registered manual
+                (see <a class="xref" href="interface.html#main-section" title="2.3.2.1. The main section">Section 2.3.2.1, “The main section”</a> below);
+              </p>
+                    </li>
+                    <li class="listitem">
+                      <p>
+                one or more format sections (see <a class="xref" href="interface.html#format-sections" title="2.3.2.2. Format sections">Section 2.3.2.2, “<span class="emphasis"><em>Format</em></span> sections”</a>) containing
+                pointers to the registered documentation files.
+              </p>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="listitem">
+                <p>
+            Successive sections must be separated with empty lines.
+          </p>
+              </li>
+              <li class="listitem">
+                <p>
+            Non-empty lines use a `<code class="literal">field-name: value</code>' syntax.
+          </p>
+              </li>
+              <li class="listitem">
+                <p>
+            The field names are case-insensitive.
+          </p>
+              </li>
+              <li class="listitem">
+                <p>
+            The field values are case-sensitive (except for the <span class="emphasis"><em>Format</em></span>
+            field).
+          </p>
+              </li>
+              <li class="listitem">
+                <p>
+            Field values may be wrapped over several lines by making the first character of
+            subsequent lines a space.
+          </p>
+                <div class="itemizedlist">
+                  <ul class="itemizedlist" style="list-style-type: circle; ">
+                    <li class="listitem">
+                      <p>
+                If a multi-line value should contain an empty line, a single dot (.) must be
+                placed in the second column.
+              </p>
+                    </li>
+                    <li class="listitem">
+                      <p>
+                If the <span class="emphasis"><em>Abstract</em></span> field value should contain lines displayed
+                verbatim, the lines must begin with two spaces.
+              </p>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="listitem">
+                <p>
+            The file should be encoded in UTF-8.
+          </p>
+              </li>
+            </ul>
+          </div>
+          <div class="section">
+            <div class="titlepage">
+              <div>
+                <div>
+                  <h4 class="title"><a id="main-section"></a>2.3.2.1. The main section</h4>
+                </div>
+              </div>
+            </div>
+            <p>The first section of the control file describes the document.  The following
+          fields are available:</p>
+            <div class="variablelist">
+              <dl class="variablelist">
+                <dt>
+                  <span class="term">
+                    <span class="emphasis">
+                      <em>Document</em>
+                    </span>
+                  </span>
+                </dt>
+                <dd>
+                  <p><a class="link" href="interface.html#document-ids" title="2.2. Document IDs">Document ID</a>, required field;
+                should be the first field.</p>
+                </dd>
+                <dt>
+                  <span class="term">
+                    <span class="emphasis">
+                      <em>Title</em>
+                    </span>
+                  </span>
+                </dt>
+                <dd>
+                  <p>Title of the document; required field.</p>
+                </dd>
+                <dt>
+                  <span class="term">
+                    <span class="emphasis">
+                      <em>Author</em>
+                    </span>
+                  </span>
+                </dt>
+                <dd>
+                  <p>Author(s) of the document; optional field.</p>
+                </dd>
+                <dt>
+                  <span class="term">
+                    <span class="emphasis">
+                      <em>Abstract</em>
+                    </span>
+                  </span>
+                </dt>
+                <dd>
+                  <p>Short paragraph giving an overview of the document;
+                optional but recommended field.</p>
+                </dd>
+                <dt>
+                  <span class="term">
+                    <span class="emphasis">
+                      <em>Section</em>
+                    </span>
+                  </span>
+                </dt>
+                <dd>
+                  <p>Section where the document belongs;
+                see <a class="xref" href="interface.html#section-field" title="2.3.3. The section field">Section 2.3.3, “The <code class="literal">section</code> field”</a>.  Required field.</p>
+                </dd>
+              </dl>
+            </div>
+          </div>
+          <div class="section">
+            <div class="titlepage">
+              <div>
+                <div>
+                  <h4 class="title"><a id="format-sections"></a>2.3.2.2. <span class="emphasis"><em>Format</em></span> sections</h4>
+                </div>
+              </div>
+            </div>
+            <p>The next sections describe the different formats for the provided document
+          which is described in the first section.  The following fields are available:</p>
+            <div class="variablelist">
+              <dl class="variablelist">
+                <dt>
+                  <span class="term">
+                    <span class="emphasis">
+                      <em>Format</em>
+                    </span>
+                  </span>
+                </dt>
+                <dd>
+                  <p>Format for the document.  Required field.  The following formats are
+                recognised:</p>
+                  <div class="itemizedlist">
+                    <ul class="itemizedlist" style="list-style-type: disc; ">
+                      <li class="listitem">
+                        <p><code class="literal">HTML</code>,</p>
+                      </li>
+                      <li class="listitem">
+                        <p><code class="literal">Text</code>,</p>
+                      </li>
+                      <li class="listitem">
+                        <p><code class="literal">PDF</code>,</p>
+                      </li>
+                      <li class="listitem">
+                        <p><code class="literal">PostScript</code>,</p>
+                      </li>
+                      <li class="listitem">
+                        <p><code class="literal">Info</code>,</p>
+                      </li>
+                      <li class="listitem">
+                        <p><code class="literal">DVI</code>,</p>
+                      </li>
+                      <li class="listitem">
+                        <p>and <code class="literal">DebianDoc-SGML</code>.</p>
+                      </li>
+                    </ul>
+                  </div>
+                  <p>The values of this field are case-insensitive (e.g.  both
+                <code class="literal">Text</code> and <code class="literal">text</code> are valid).</p>
+                </dd>
+                <dt>
+                  <span class="term">
+                    <span class="emphasis">
+                      <em>Index</em>
+                    </span>
+                  </span>
+                </dt>
+                <dd>
+                  <p>Index or top-level file for this document format.  Only applies
+                to document formats <code class="literal">HTML</code> and <code class="literal">Info</code>,
+                and required if the format is <code class="literal">HTML</code> or
+                <code class="literal">Info</code>.</p>
+                  <p>This field has to contain the absolute file name of the main page
+                of the document.  This file will be specified as the front page link when
+                the document is registered.</p>
+                </dd>
+                <dt>
+                  <span class="term">
+                    <span class="emphasis">
+                      <em>Files</em>
+                    </span>
+                  </span>
+                </dt>
+                <dd>
+                  <p>Space separated list of filenames or POSIX shell globs (i.e.
+                <code class="literal">*</code>, <code class="literal">?</code>, and <code class="literal">[]</code>
+                meta-characters) representing the files which constitute the documentation in
+                this format.  Required field.</p>
+                </dd>
+              </dl>
+            </div>
+            <p>There must be at least one such a section.  If there are more, each of them
+          must register files in different formats (e.g.  having two <code class="literal">Format:
+          HTML</code> sections in one <span class="emphasis"><em>control file</em></span> is not
+          allowed).</p>
+            <p>Except for the <code class="literal">Info</code> format the files referred in both
+          <span class="emphasis"><em>Index</em></span> and <span class="emphasis"><em>Files</em></span> fields should be
+          placed somewhere under the <code class="filename">/usr/share/doc</code> hierarchy.  If
+          for some reason it's not possible, then the registering package should provide
+          a symbolic link pointing from the above hierarchy to the real files and
+          register its documentation through the link, allowing <code class="systemitem">doc-base</code>, <code class="systemitem">dhelp</code>, or <code class="systemitem">dwww</code> packages to actually handle the documentation.
+          Of course, files in the <code class="literal">Info</code> format should be located in the
+          <code class="filename">/usr/share/info</code> directory.
+        </p>
+          </div>
+        </div>
+        <div class="section">
+          <div class="titlepage">
+            <div>
+              <div>
+                <h3 class="title"><a id="section-field"></a>2.3.3. The <code class="literal">section</code> field</h3>
+              </div>
+            </div>
+          </div>
+          <p>The <code class="literal">section</code> field holds a slash-separated list of
+        hierarchical sections components.  The hierarchy is mostly based on the
+        sections outlined in chapter 2.1 of the <a class="ulink" href="http://www.debian.org/doc/packaging-manuals/menu-policy/ch2.html#s2.1" target="_top">Debian
+        Menu Policy</a>, however the top-level <code class="literal">Applications</code>
+        component was removed and a few <code class="systemitem">doc-base</code>-specific sections were added.</p>
+          <p>The full section list is presented below.</p>
+          <div class="variablelist">
+            <dl class="variablelist">
+              <dt>
+                <span class="term">
+                  <code class="literal">Accessibility</code>
+                </span>
+              </dt>
+              <dd>
+                <p>Documentation of tools to aid people with disabilities or
+              for machines lacking usual input devices.</p>
+              </dd>
+              <dt>
+                <span class="term">
+                  <code class="literal">Amateur Radio</code>
+                </span>
+              </dt>
+              <dd>
+                <p>Anything relating to HAM radio.</p>
+              </dd>
+              <dt>
+                <span class="term">
+                  <code class="literal">Data Management</code>
+                </span>
+              </dt>
+              <dd>
+                <p>Interactive database programs, collection managers,
+              address books, bibliography tools, etc.</p>
+              </dd>
+              <dt>
+                <span class="term">
+                  <code class="literal">Debian</code>
+                </span>
+              </dt>
+              <dd>
+                <p>Documentation of Debian specific tools, policies, etc.</p>
+              </dd>
+              <dt>
+                <span class="term">
+                  <code class="literal">Editors</code>
+                </span>
+              </dt>
+              <dd>
+                <p>Documentation of editors, other than office word processors,
+              for text-based information.</p>
+              </dd>
+              <dt>
+                <span class="term">
+                  <code class="literal">Education</code>
+                </span>
+              </dt>
+              <dd>
+                <p>Educational and training softwares.</p>
+              </dd>
+              <dt>
+                <span class="term">
+                  <code class="literal">Emulators</code>
+                </span>
+              </dt>
+              <dd>
+                <p>Software that allows you to run non-native software
+              or more than one OS at a time.</p>
+              </dd>
+              <dt>
+                <span class="term">
+                  <code class="literal">File Management</code>
+                </span>
+              </dt>
+              <dd>
+                <p>Tools for file management, archiving, searching,
+              CD/DVD burning, backup, etc.</p>
+              </dd>
+              <dt>
+                <span class="term">
+                  <code class="literal">Games</code>
+                </span>
+              </dt>
+              <dd>
+                <p>Games and recreations.  Entries should be placed in
+              appropriate subsection.</p>
+                <div class="variablelist">
+                  <dl class="variablelist">
+                    <dt>
+                      <span class="term">
+                        <code class="literal">Games/Action</code>
+                      </span>
+                    </dt>
+                    <dd>
+                      <p>Games that involve a lot of action and require
+                    fast reflexes.</p>
+                    </dd>
+                    <dt>
+                      <span class="term">
+                        <code class="literal">Games/Adventure</code>
+                      </span>
+                    </dt>
+                    <dd>
+                      <p>Role playing and adventure games, interactive movies
+                    and stories, etc.</p>
+                    </dd>
+                    <dt>
+                      <span class="term">
+                        <code class="literal">Games/Blocks</code>
+                      </span>
+                    </dt>
+                    <dd>
+                      <p>Tetris-like games involving falling blocks.</p>
+                    </dd>
+                    <dt>
+                      <span class="term">
+                        <code class="literal">Games/Board</code>
+                      </span>
+                    </dt>
+                    <dd>
+                      <p>Games played on a board.</p>
+                    </dd>
+                    <dt>
+                      <span class="term">
+                        <code class="literal">Games/Card</code>
+                      </span>
+                    </dt>
+                    <dd>
+                      <p>Games involving a deck of cards.</p>
+                    </dd>
+                    <dt>
+                      <span class="term">
+                        <code class="literal">Games/Puzzles</code>
+                      </span>
+                    </dt>
+                    <dd>
+                      <p>Tests of ingenuity and logic.</p>
+                    </dd>
+                    <dt>
+                      <span class="term">
+                        <code class="literal">Games/Simulation</code>
+                      </span>
+                    </dt>
+                    <dd>
+                      <p>Simulations of the real world in all detail
+                    and complexity.</p>
+                    </dd>
+                    <dt>
+                      <span class="term">
+                        <code class="literal">Games/Strategy</code>
+                      </span>
+                    </dt>
+                    <dd>
+                      <p>Games involving long-term strategic thinking.</p>
+                    </dd>
+                    <dt>
+                      <span class="term">
+                        <code class="literal">Games/Tools</code>
+                      </span>
+                    </dt>
+                    <dd>
+                      <p>Server browsers, configurators, editors, and other
+                    game-related tools that are not games themselves.</p>
+                    </dd>
+                    <dt>
+                      <span class="term">
+                        <code class="literal">Games/Toys</code>
+                      </span>
+                    </dt>
+                    <dd>
+                      <p>Amusements, eye-candy, entertaining demos, screen hacks
+                    (screen-savers), etc.</p>
+                    </dd>
+                  </dl>
+                </div>
+              </dd>
+              <dt>
+                <span class="term">
+                  <code class="literal">Graphics</code>
+                </span>
+              </dt>
+              <dd>
+                <p>2D and 3D graphics manipulation software.</p>
+              </dd>
+              <dt>
+                <span class="term">
+                  <code class="literal">Help</code>
+                </span>
+              </dt>
+              <dd>
+                <p>Documentation of programs that provide user documentation.</p>
+                <div class="variablelist">
+                  <dl class="variablelist">
+                    <dt>
+                      <span class="term">
+                        <code class="literal">Help/Books</code>
+                      </span>
+                    </dt>
+                    <dd>
+                      <p>Books.</p>
+                    </dd>
+                    <dt>
+                      <span class="term">
+                        <code class="literal">Help/FAQ</code>
+                      </span>
+                    </dt>
+                    <dd>
+                      <p>Frequently Asked Questions.</p>
+                    </dd>
+                    <dt>
+                      <span class="term">
+                        <code class="literal">Help/HOWTO</code>
+                      </span>
+                    </dt>
+                    <dd>
+                      <p>Various HOWTOs.</p>
+                    </dd>
+                    <dt>
+                      <span class="term">
+                        <code class="literal">Help/RFC</code>
+                      </span>
+                    </dt>
+                    <dd>
+                      <p>RFCs</p>
+                    </dd>
+                    <dt>
+                      <span class="term">
+                        <code class="literal">Help/Standards</code>
+                      </span>
+                    </dt>
+                    <dd>
+                      <p>Standards</p>
+                    </dd>
+                  </dl>
+                </div>
+              </dd>
+              <dt>
+                <span class="term">
+                  <code class="literal">Mobile Devices</code>
+                </span>
+              </dt>
+              <dd>
+                <p>Software that allows you to interface with mobile
+              devices (phones, PDAs, etc.).</p>
+              </dd>
+              <dt>
+                <span class="term">
+                  <code class="literal">Network</code>
+                </span>
+              </dt>
+              <dd>
+                <p>Network related software.  This is a two-level section, do not put entries
+              directly here.</p>
+                <div class="variablelist">
+                  <dl class="variablelist">
+                    <dt>
+                      <span class="term">
+                        <code class="literal">Network/Communication</code>
+                      </span>
+                    </dt>
+                    <dd>
+                      <p>Mail, USENET news, chat, instant messaging, IP telephony,
+                    video conferencing software, etc.</p>
+                    </dd>
+                    <dt>
+                      <span class="term">
+                        <code class="literal">Network/File Transfer</code>
+                      </span>
+                    </dt>
+                    <dd>
+                      <p>File transfer software such as download managers,
+                    FTP clients, P2P clients, etc.</p>
+                    </dd>
+                    <dt>
+                      <span class="term">
+                        <code class="literal">Network/Monitoring</code>
+                      </span>
+                    </dt>
+                    <dd>
+                      <p>Network monitoring software.</p>
+                    </dd>
+                    <dt>
+                      <span class="term">
+                        <code class="literal">Network/Remote Access</code>
+                      </span>
+                    </dt>
+                    <dd>
+                      <p>Tools for remotely managing of computer.</p>
+                    </dd>
+                    <dt>
+                      <span class="term">
+                        <code class="literal">Network/Web Browsing</code>
+                      </span>
+                    </dt>
+                    <dd>
+                      <p>Web browsers, tools for offline browsing, etc.</p>
+                    </dd>
+                    <dt>
+                      <span class="term">
+                        <code class="literal">Network/Web News</code>
+                      </span>
+                    </dt>
+                    <dd>
+                      <p>Web feed (RSS, Atom, etc.) and podcast aggregators.</p>
+                    </dd>
+                  </dl>
+                </div>
+              </dd>
+              <dt>
+                <span class="term">
+                  <code class="literal">Office</code>
+                </span>
+              </dt>
+              <dd>
+                <p>Office suites, word processors, spreadsheets, CRM, ERP,
+              financial software, etc.</p>
+              </dd>
+              <dt>
+                <span class="term">
+                  <code class="literal">Programming</code>
+                </span>
+              </dt>
+              <dd>
+                <p>IDEs, debuggers, compilers, APIs, libraries, programming languages.
+              Documentation related to only one specific language should be put in
+              subsection named like the language, for example:</p>
+                <div class="itemizedlist">
+                  <ul class="itemizedlist" style="list-style-type: disc; ">
+                    <li class="listitem">
+                      <p>
+                        <code class="literal">Programming/C</code>
+                      </p>
+                    </li>
+                    <li class="listitem">
+                      <p>
+                        <code class="literal">Programming/C++</code>
+                      </p>
+                    </li>
+                    <li class="listitem">
+                      <p>
+                        <code class="literal">Programming/Java</code>
+                      </p>
+                    </li>
+                    <li class="listitem">
+                      <p>
+                        <code class="literal">Programming/OCaml</code>
+                      </p>
+                    </li>
+                    <li class="listitem">
+                      <p>
+                        <code class="literal">Programming/Perl</code>
+                      </p>
+                    </li>
+                    <li class="listitem">
+                      <p>
+                        <code class="literal">Programming/Python</code>
+                      </p>
+                    </li>
+                    <li class="listitem">
+                      <p>
+                        <code class="literal">Programming/Ruby</code>
+                      </p>
+                    </li>
+                  </ul>
+                </div>
+              </dd>
+              <dt>
+                <span class="term">
+                  <code class="literal">Project Management</code>
+                </span>
+              </dt>
+              <dd>
+                <p>Timetable managers, group task trackers, bug
+              tracking software, etc.</p>
+              </dd>
+              <dt>
+                <span class="term">
+                  <code class="literal">Science</code>
+                </span>
+              </dt>
+              <dd>
+                <p>Documentation of scientific and engineering-related
+              software.  Please use appropriate subsection.</p>
+                <div class="variablelist">
+                  <dl class="variablelist">
+                    <dt>
+                      <span class="term">
+                        <code class="literal">Science/Astronomy</code>
+                      </span>
+                    </dt>
+                    <dd>
+                      <p>Astronomy-related software.</p>
+                    </dd>
+                    <dt>
+                      <span class="term">
+                        <code class="literal">Science/Biology</code>
+                      </span>
+                    </dt>
+                    <dd>
+                      <p>Biology-related software.</p>
+                    </dd>
+                    <dt>
+                      <span class="term">
+                        <code class="literal">Science/Chemistry</code>
+                      </span>
+                    </dt>
+                    <dd>
+                      <p>Chemistry-related software.</p>
+                    </dd>
+                    <dt>
+                      <span class="term">
+                        <code class="literal">Science/Data Analysis</code>
+                      </span>
+                    </dt>
+                    <dd>
+                      <p>Software designed for processing, extracting, and presenting
+                    generic scientific data.</p>
+                    </dd>
+                    <dt>
+                      <span class="term">
+                        <code class="literal">Science/Electronics</code>
+                      </span>
+                    </dt>
+                    <dd>
+                      <p>Circuit design tools, simulators and assemblers for microprocessors, etc.</p>
+                    </dd>
+                    <dt>
+                      <span class="term">
+                        <code class="literal">Science/Engineering</code>
+                      </span>
+                    </dt>
+                    <dd>
+                      <p>CAD, UML tools, diagram-drawing and other engineering-related software.</p>
+                    </dd>
+                    <dt>
+                      <span class="term">
+                        <code class="literal">Science/Geoscience</code>
+                      </span>
+                    </dt>
+                    <dd>
+                      <p>Geoscience-related software.</p>
+                    </dd>
+                    <dt>
+                      <span class="term">
+                        <code class="literal">Science/Mathematics</code>
+                      </span>
+                    </dt>
+                    <dd>
+                      <p>Mathematics-related software.</p>
+                    </dd>
+                    <dt>
+                      <span class="term">
+                        <code class="literal">Science/Medicine</code>
+                      </span>
+                    </dt>
+                    <dd>
+                      <p>Medicine-related software.</p>
+                    </dd>
+                    <dt>
+                      <span class="term">
+                        <code class="literal">Science/Physics</code>
+                      </span>
+                    </dt>
+                    <dd>
+                      <p>Physics-related software.</p>
+                    </dd>
+                    <dt>
+                      <span class="term">
+                        <code class="literal">Science/Social</code>
+                      </span>
+                    </dt>
+                    <dd>
+                      <p>Social sciences-related software.</p>
+                    </dd>
+                  </dl>
+                </div>
+              </dd>
+              <dt>
+                <span class="term">
+                  <code class="literal">Screen</code>
+                </span>
+              </dt>
+              <dd>
+                <p>Programs that affect the whole screen.</p>
+                <div class="variablelist">
+                  <dl class="variablelist">
+                    <dt>
+                      <span class="term">
+                        <code class="literal">Screen/Saving</code>
+                      </span>
+                    </dt>
+                    <dd>
+                      <p>Tools for blanking the screen.  Entries of screen hacks
+                    and configuration GUIs should go to other appropriate sections.</p>
+                    </dd>
+                    <dt>
+                      <span class="term">
+                        <code class="literal">Screen/Locking</code>
+                      </span>
+                    </dt>
+                    <dd>
+                      <p>Tools for locking the screen.</p>
+                    </dd>
+                  </dl>
+                </div>
+              </dd>
+              <dt>
+                <span class="term">
+                  <code class="literal">Shells</code>
+                </span>
+              </dt>
+              <dd>
+                <p>Various shells to be used inside a terminal emulator.</p>
+              </dd>
+              <dt>
+                <span class="term">
+                  <code class="literal">Sound</code>
+                </span>
+              </dt>
+              <dd>
+                <p>Sound players, editors, and rippers/recorders.</p>
+              </dd>
+              <dt>
+                <span class="term">
+                  <code class="literal">System</code>
+                </span>
+              </dt>
+              <dd>
+                <p>System related software.  Place entries in one of she subsections.</p>
+                <div class="variablelist">
+                  <dl class="variablelist">
+                    <dt>
+                      <span class="term">
+                        <code class="literal">System/Administration</code>
+                      </span>
+                    </dt>
+                    <dd>
+                      <p>Administrative and system configuration utilities,
+                    also tools for personal user settings.</p>
+                    </dd>
+                    <dt>
+                      <span class="term">
+                        <code class="literal">System/Hardware</code>
+                      </span>
+                    </dt>
+                    <dd>
+                      <p>Tools for manipulating specific hardware, especially
+                    non-standard laptop hardware.</p>
+                    </dd>
+                    <dt>
+                      <span class="term">
+                        <code class="literal">System/Language Environment</code>
+                      </span>
+                    </dt>
+                    <dd>
+                      <p>This section is reserved for language-env as a special case.</p>
+                    </dd>
+                    <dt>
+                      <span class="term">
+                        <code class="literal">System/Monitoring</code>
+                      </span>
+                    </dt>
+                    <dd>
+                      <p>System information and monitoring tools, log viewers, etc.</p>
+                    </dd>
+                    <dt>
+                      <span class="term">
+                        <code class="literal">System/Package Management</code>
+                      </span>
+                    </dt>
+                    <dd>
+                      <p>Package managers and related tools.</p>
+                    </dd>
+                    <dt>
+                      <span class="term">
+                        <code class="literal">System/Security</code>
+                      </span>
+                    </dt>
+                    <dd>
+                      <p>Security, cryptography and privacy related software,
+                    antiviruses, tools to track and report bugs, etc.</p>
+                    </dd>
+                  </dl>
+                </div>
+              </dd>
+              <dt>
+                <span class="term">
+                  <code class="literal">Terminal Emulators</code>
+                </span>
+              </dt>
+              <dd>
+                <p>Graphical terminal emulators.</p>
+              </dd>
+              <dt>
+                <span class="term">
+                  <code class="literal">Text</code>
+                </span>
+              </dt>
+              <dd>
+                <p>Text oriented tools like dictionaries, OCR, translation,
+              text analysis software, etc.</p>
+              </dd>
+              <dt>
+                <span class="term">
+                  <code class="literal">TV and Radio</code>
+                </span>
+              </dt>
+              <dd>
+                <p>TV-in, TV-out, FM radio, teletext browsers, etc.</p>
+              </dd>
+              <dt>
+                <span class="term">
+                  <code class="literal">Typesetting</code>
+                </span>
+              </dt>
+              <dd>
+                <p>Software for typesetting text and graphics from structured
+              input files like LaTeX or docbook sources, database exports etc.</p>
+              </dd>
+              <dt>
+                <span class="term">
+                  <code class="literal">Viewers</code>
+                </span>
+              </dt>
+              <dd>
+                <p>Software for viewing images, documents and other (non-video) media.</p>
+              </dd>
+              <dt>
+                <span class="term">
+                  <code class="literal">Video</code>
+                </span>
+              </dt>
+              <dd>
+                <p>Video players, editors, and rippers/recorders.</p>
+              </dd>
+              <dt>
+                <span class="term">
+                  <code class="literal">Web Development</code>
+                </span>
+              </dt>
+              <dd>
+                <p>Software for web site editing, web programming, and site administration.</p>
+              </dd>
+              <dt>
+                <span class="term">
+                  <code class="literal">Window Managers</code>
+                </span>
+              </dt>
+              <dd>
+                <p>X window managers.</p>
+              </dd>
+            </dl>
+          </div>
+        </div>
+      </div>
+      <div class="section">
+        <div class="titlepage">
+          <div>
+            <div>
+              <h2 class="title" style="clear: both"><a id="registering-documents"></a>2.4. Registering Documents With <span class="command"><strong>doc-base</strong></span></h2>
+            </div>
+          </div>
+        </div>
+        <p>
+      In order to register a piece of online documentation to <code class="systemitem">doc-base</code>, all the package needs to do is installing
+      the control file (see <a class="xref" href="interface.html#control-files" title="2.3. Control Files">Section 2.3, “Control Files”</a>) as file
+      <code class="filename">/usr/share/doc-base/<em class="replaceable"><code>document-id</code></em></code>.
+    </p>
+        <p>
+      Further processing of the control file is handled by a <code class="systemitem">dpkg</code> trigger (cf.
+      <code class="filename">/usr/share/doc/dpkg/triggers.txt.gz</code>) provided by
+      <code class="systemitem">doc-base</code>.  The trigger will call
+      <span class="command"><strong>install-docs</strong></span> to generate
+      <code class="filename">/var/lib/doc-base/documents/<em class="replaceable"><code>&lt;document-id&gt;</code></em></code>
+      file and register the online manuals to <code class="systemitem">dwww</code>, <code class="systemitem">dhelp</code>, and <code class="systemitem">scrollkeeper</code> when the package is installed, and
+      de-register the manuals when the package is removed.
+    </p>
+      </div>
+      <div class="section">
+        <div class="titlepage">
+          <div>
+            <div>
+              <h2 class="title" style="clear: both"><a id="s2.5"></a>2.5. doc-base 0.8.x features and incompatibilities</h2>
+            </div>
+          </div>
+        </div>
+        <div class="section">
+          <div class="titlepage">
+            <div>
+              <div>
+                <h3 class="title"><a id="s2.5.1"></a>2.5.1. Splitting control files over multiple binary packages</h3>
+              </div>
+            </div>
+          </div>
+          <p>
+        Since version 0.8.7 is it possible to provide documents with the same
+        <span class="emphasis"><em>document-id</em></span> by more than one binary package.  All such
+        documents with be merged together and the merged document will be generated in
+        <code class="filename">/var/lib/doc-base/documents/document-id</code>
+        file.  This feature can be useful in cases when the same documentation, but in
+        different formats, is provided by two binary packages.
+      </p>
+          <p>
+        For example the <code class="systemitem">foo-text</code> package could
+        install the <code class="filename">/usr/share/doc-base/foo-text</code> file with the
+        following contents:
+      </p>
+          <pre class="screen">
+Document: foo
+Title: This is foo
+Author: John Foo &lt;foo@foo.net&gt;
+Abstract: Description of foo
+Section: Text
+
+Format: text
+Files: /usr/share/foo-text/foo.txt.gz
+      </pre>
+          <p>
+        and the <code class="systemitem">foo-html</code> package could install
+        the following <code class="filename">/usr/share/doc-base/foo-html</code> file:
+      </p>
+          <pre class="screen">
+Document: foo
+Title: This is foo
+Author: John Foo &lt;foo@foo.net&gt;
+Abstract: Description of foo
+Section: Text
+
+Format: HTML
+Index: /usr/share/foo-html/index.html
+Files: /usr/share/foo-html/*.html
+      </pre>
+          <p>
+        When both packages are installed, <span class="command"><strong>install-docs</strong></span> will merge
+        contents of the two files into
+        <code class="filename">/var/lib/doc-base/documents/foo</code>:
+      </p>
+          <pre class="screen">
+Document: foo
+Title: This is foo
+Author: John Foo &lt;foo@foo.net&gt;
+Abstract: Description of foo
+Section: Text
+
+Format: HTML
+Index: /usr/share/foo-html/index.html
+Files: /usr/share/foo-html/*.html
+
+Format: text
+Files: /usr/share/foo-text/foo.txt.gz
+      </pre>
+        </div>
+        <div class="section">
+          <div class="titlepage">
+            <div>
+              <div>
+                <h3 class="title"><a id="s2.5.2"></a>2.5.2. Registering local documents</h3>
+              </div>
+            </div>
+          </div>
+          <p>
+        Version 0.8.7 and furthers allow user to register local documentations.  In
+        order to do this local administrators need to create their own control file
+        (see <a class="xref" href="interface.html#control-files" title="2.3. Control Files">Section 2.3, “Control Files”</a>, place it in the
+        <code class="filename">/etc/doc-base/documents</code> directory, and then register it
+        with
+      </p>
+          <pre class="screen">
+install-docs -i /etc/doc-base/documents/&lt;document-id&gt;
+      </pre>
+          <p>
+        Before removing the file, it should be de-registered with
+      </p>
+          <pre class="screen">
+install-docs -r /etc/doc-base/documents/&lt;document-id&gt;
+      </pre>
+          <p>
+        Since version 0.8.12
+      </p>
+          <pre class="screen">
+install-docs --install-changed
+      </pre>
+          <p>
+        may be used instead of the two above commands.
+      </p>
+        </div>
+        <div class="section">
+          <div class="titlepage">
+            <div>
+              <div>
+                <h3 class="title"><a id="s2.5.3"></a>2.5.3. dpkg triggers</h3>
+              </div>
+            </div>
+          </div>
+          <p>
+        <code class="systemitem">doc-base</code> 0.8.11 and greater uses the
+        <code class="systemitem">dpkg</code> triggers feature to register and
+        de-register the documentation.  There is no longer need to call
+        <span class="command"><strong>install-docs</strong></span> from maintainer scripts.
+      </p>
+        </div>
+      </div>
+      <div class="section">
+        <div class="titlepage">
+          <div>
+            <div>
+              <h2 class="title" style="clear: both"><a id="checking-syntax"></a>2.6. Checking Syntax of <span class="emphasis"><em>Control Files</em></span></h2>
+            </div>
+          </div>
+        </div>
+        <p>
+      With the new <code class="literal">--check</code> (<code class="literal">-c</code>) option of
+      <span class="command"><strong>install-docs</strong></span> it is possible to check the <span class="emphasis"><em>control
+      file</em></span>:
+    </p>
+        <pre class="screen">
+$ install-docs --check /usr/share/doc-base/doc-base
+/usr/share/doc-base/doc-base: No problems found
+    </pre>
+        <pre class="screen">
+$ install-docs -c /usr/share/doc-base/xlogmaster
+Error in `/usr/share/doc-base/xlogmaster', line 15: `Index' value missing for format info
+/usr/share/doc-base/xlogmaster: Fatal error found, the file won't be registered
+    </pre>
+        <pre class="screen">
+$ install-docs -c /usr/share/doc-base/MC-FAQ /usr/share/doc-base/gnu-privacy-handbook
+/usr/share/doc-base/MC-FAQ: 1 warning(s) or non-fatal error(s) found
+/usr/share/doc-base/gnu-privacy-handbook: 1 warning(s) or non-fatal error(s) found
+    </pre>
+        <p>
+      More details about the warnings and non-fatal errors can be found using the
+      <code class="literal">--verbose</code> (<code class="literal">-v</code>) option:
+    </p>
+        <pre class="screen">
+$ install-docs -v -c /usr/share/doc-base/MC-FAQ /usr/share/doc-base/gnu-privacy-handbook
+Warning in `/usr/share/doc-base/MC-FAQ', line 1: invalid value of `Document' field
+/usr/share/doc-base/MC-FAQ: 1 warning(s) or non-fatal error(s) found
+Warning in `/usr/share/doc-base/gnu-privacy-handbook', line 12: file `/usr/share/doc/gnupg-doc/GNU_Privacy_Handbook/html/book1.html' does not exist
+/usr/share/doc-base/gnu-privacy-handbook: 1 warning(s) or non-fatal error(s) found
+    </pre>
+        <p>
+        With the <code class="literal">--rootdir</code> option is possible to check non-installed
+        packages:
+    </p>
+        <pre class="screen">
+$ dpkg-deb -x autoclass_3.3.4-6_i386.deb AUTOCLASS_UNPACKED
+$ install-docs --rootdir AUTOCLASS_UNPACKED -vc AUTOCLASS_UNPACKED/usr/share/doc-base/*
+AUTOCLASS_UNPACKED/usr/share/doc-base/autoclass-results: No problems found
+AUTOCLASS_UNPACKED/usr/share/doc-base/autoclass-theory: No problems found
+    </pre>
+        <p>
+      If the <code class="literal">--rootdir</code> option was omitted,
+      <span class="command"><strong>install-docs</strong></span> would complain:
+    </p>
+        <pre class="screen">
+Warning in `AUTOCLASS_UNPACKED/usr/share/doc-base/autoclass-results', line 20: file mask `/usr/share/doc/autoclass/kdd-95.pdf' does not match any files
+Warning in `AUTOCLASS_UNPACKED/usr/share/doc-base/autoclass-theory', line 20: file mask `/usr/share/doc/autoclass/tr-fia-90-12-7-01.pdf' does not match any files
+    </pre>
+      </div>
+    </div>
+    <div class="navfooter">
+      <hr />
+      <table width="100%" summary="Navigation footer">
+        <tr>
+          <td width="40%" align="left"><a accesskey="p" href="about.html">Prev</a> </td>
+          <td width="20%" align="center"> </td>
+          <td width="40%" align="right"> <a accesskey="n" href="informations.html">Next</a></td>
+        </tr>
+        <tr>
+          <td width="40%" align="left" valign="top">Chapter 1. About <code class="systemitem">doc-base</code> </td>
+          <td width="20%" align="center">
+            <a accesskey="h" href="index.html">Home</a>
+          </td>
+          <td width="40%" align="right" valign="top"> Chapter 3. Getting information about installed documents</td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>

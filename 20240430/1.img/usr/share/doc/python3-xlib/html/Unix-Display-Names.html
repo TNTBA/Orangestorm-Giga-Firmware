@@ -1,0 +1,102 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<!-- Created by GNU Texinfo 6.5, http://www.gnu.org/software/texinfo/ -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Unix Display Names (The Python X Library)</title>
+
+<meta name="description" content="Unix Display Names (The Python X Library)">
+<meta name="keywords" content="Unix Display Names (The Python X Library)">
+<meta name="resource-type" content="document">
+<meta name="distribution" content="global">
+<meta name="Generator" content="makeinfo">
+<link href="index.html#Top" rel="start" title="Top">
+<link href="index.html#SEC_Contents" rel="contents" title="Table of Contents">
+<link href="Connect-to-a-Display.html#Connect-to-a-Display" rel="up" title="Connect to a Display">
+<link href="OpenVMS-Display-Names.html#OpenVMS-Display-Names" rel="next" title="OpenVMS Display Names">
+<link href="Connect-to-a-Display.html#Connect-to-a-Display" rel="prev" title="Connect to a Display">
+<style type="text/css">
+<!--
+a.summary-letter {text-decoration: none}
+blockquote.indentedblock {margin-right: 0em}
+blockquote.smallindentedblock {margin-right: 0em; font-size: smaller}
+blockquote.smallquotation {font-size: smaller}
+div.display {margin-left: 3.2em}
+div.example {margin-left: 3.2em}
+div.lisp {margin-left: 3.2em}
+div.smalldisplay {margin-left: 3.2em}
+div.smallexample {margin-left: 3.2em}
+div.smalllisp {margin-left: 3.2em}
+kbd {font-style: oblique}
+pre.display {font-family: inherit}
+pre.format {font-family: inherit}
+pre.menu-comment {font-family: serif}
+pre.menu-preformatted {font-family: serif}
+pre.smalldisplay {font-family: inherit; font-size: smaller}
+pre.smallexample {font-size: smaller}
+pre.smallformat {font-family: inherit; font-size: smaller}
+pre.smalllisp {font-size: smaller}
+span.nolinebreak {white-space: nowrap}
+span.roman {font-family: initial; font-weight: normal}
+span.sansserif {font-family: sans-serif; font-weight: normal}
+ul.no-bullet {list-style: none}
+-->
+</style>
+
+
+</head>
+
+<body lang="en">
+<a name="Unix-Display-Names"></a>
+<div class="header">
+<p>
+Next: <a href="OpenVMS-Display-Names.html#OpenVMS-Display-Names" accesskey="n" rel="next">OpenVMS Display Names</a>, Up: <a href="Connect-to-a-Display.html#Connect-to-a-Display" accesskey="u" rel="up">Connect to a Display</a> &nbsp; [<a href="index.html#SEC_Contents" title="Table of contents" rel="contents">Contents</a>]</p>
+</div>
+<hr>
+<a name="Unix-Display-Names-1"></a>
+<h3 class="section">3.1 Unix Display Names</h3>
+
+<p>A display name on Unix has the following syntax:
+</p>
+<div class="example">
+<pre class="example">[hostname]:displayno[.screenno]
+</pre></div>
+
+<p>If <var>hostname</var> is omitted this refers to a display on the same
+machine as the client is running on.  A Unix socket is used to connect
+to the display identified by <code>displayno</code>, which must be an integer
+from 0 and upwards.
+</p>
+<p>If <var>hostname</var> is specified, it gives the network name or IP-number
+of the machine to contact.  A TCP socket is used, connecting to port
+6000+<var>displayno</var> on <var>hostname</var>.
+</p>
+<p>If the display contains more than one screen, <var>screenno</var> can be
+specified to make another screen than 0 the default screen.  If the
+number is larger than the available maximum screen number, it will be
+set to the maximum.
+</p>
+<p>A few examples:
+</p>
+<div class="example">
+<pre class="example">:0           Display 0 on this host, connects to the Unix socket
+             /tmp/.X11-unix/X0
+:0.1         Same as above, but specifying a different default screen
+
+myhost:0     Display 0 on myhost, connects to TCP port 6000
+myhost:10    Display 10 on myhost, connects to TCP port 6010
+
+localhost:0  Display 0 on localhost, i.e. the same host as the client
+             runs on.  Uses a TCP socket, while :0 uses a Unix socket
+</pre></div>
+
+<p>The default display name is stored in the environmental variable
+<code>DISPLAY</code>.  If that isn&rsquo;t set, <code>error.DisplayNameError</code> is
+raised. 
+</p>
+
+
+
+
+</body>
+</html>

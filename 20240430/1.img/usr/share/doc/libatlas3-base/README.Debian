@@ -1,0 +1,113 @@
+ATLAS for Debian
+================
+
+Why are optimized packages no longer available?
+-----------------------------------------------
+
+Before version 3.8.3-25, optimized binary packages were provided.  However, due
+to the fact that most Atlas optimisations are done at build time, it has been
+decided to remove them and give priority to locally built packages.
+
+See section "Building Optimized Atlas Packages on your ARCH" on how to rebuild
+Atlas for best performances.
+
+For more information about linear algebra libraries, see also:
+
+ http://people.debian.org/~sylvestre/presentation-linear-algebra.pdf
+
+
+How to switch between BLAS/LAPACK implementations
+-------------------------------------------------
+
+It is trivial to switch between the various BLAS/LAPACK implementations.
+
+- BLAS:
+
+ $ sudo update-alternatives --config libblas.so.3-<multiarch>
+
+- LAPACK:
+
+ $ sudo update-alternatives --config liblapack.so.3-<multiarch>
+
+where <multiarch> is the multiarch path for you architecture (e.g.
+x86_64-linux-gnu for amd64).
+
+More information is available here:
+
+ http://wiki.debian.org/DebianScience/LinearAlgebraLibraries
+
+
+Building Optimized Atlas Packages on your ARCH
+----------------------------------------------
+
+Building your own optimized packages of Atlas is straightforward.
+
+1) Get the sources of the package and its build-dependencies:
+
+ $ apt-get source atlas
+ $ sudo apt-get build-dep atlas
+
+2) Disable CPU throttling if it is enabled. Otherwise Atlas cannot get reliable
+timings and therefore the optimization will be suboptimal. This can easily be
+done using the tools from the cpufrequtils package.
+
+The state of your CPUs can be checked with:
+
+ $ cpufreq-info
+
+If for any CPU, the governor is not set to "performance", then you can do so
+by issuing the following command for each of your CPU cores:
+
+ $ sudo cpufreq-set -g performance -c <cpu#>
+
+where <cpu#> is the CPU core number (the first has number zero).
+
+See INSTALL.txt from the libatlas-doc package for more details on this issue.
+
+3) Build the package by running the following:
+
+ $ cd atlas-<UPSTREAM_VERSION>
+ $ DEB_BUILD_OPTIONS=custom dpkg-buildpackage -uc -b
+
+where <UPSTREAM_VERSION> is replaced with the appropriate value.
+
+If the Atlas build system still complains about CPU throttling issues, despite
+having set the governors to performance, then you can force Atlas by
+uncommenting the following line in debian/rules:
+
+ CONFIGURE_FLAGS += --cripple-atlas-performance
+
+4) When the build finishes (it will take a long time), it should produce a .deb
+file, whose precise name you can figure out using:
+
+ $ ls ../libatlas3-base_*.deb
+
+Install it using:
+
+ $ sudo dpkg -i ../libatlas3-base_<VERSION>_<ARCH>.deb>
+
+replacing <VERSION> and <ARCH> with the appropriate values.
+
+5) If you don't want the Debian package manager to overwrite your optimized
+package with a generic one on system upgrades, you can mark the Atlas package
+to be on hold, with the following command:
+
+ $ sudo aptitude hold libatlas3-base
+
+Don't forget however to periodically check whether a more recent version of the
+package is available for the Debian suite that you are tracking, in which case
+you should go again through this procedure. The version check can be performed
+using:
+
+ $ aptitude versions libatlas3-base
+
+
+Misc
+----
+
+Thanks to David Cournapeau for providing all the patches for the shared 
+libraries managements.
+
+
+ -- Sébastien Villemot <sebastien@debian.org>, Thu,  7 Sep 2017 21:50:00 +0200
+ -- Sylvestre Ledru <sylvestre@debian.org>, Tue, 15 May 2012 18:05:34 +0200

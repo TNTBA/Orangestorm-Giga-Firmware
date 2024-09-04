@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="dir_fa681866679cba32bd0036e769149148" kind="dir">
+    <compoundname>asmdemo</compoundname>
+    <innerfile refid="asmdemo_8c">asmdemo.c</innerfile>
+    <innerfile refid="isrs_8S">isrs.S</innerfile>
+    <innerfile refid="project_8h">project.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/build/avr-libc-2.0.0+Atmel3.6.1/libc/avr-libc/doc/examples/asmdemo/"/>
+  </compounddef>
+</doxygen>

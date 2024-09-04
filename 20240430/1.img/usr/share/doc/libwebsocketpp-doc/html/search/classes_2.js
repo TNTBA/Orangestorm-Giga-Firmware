@@ -1,0 +1,17 @@
+var searchData=
+[
+  ['category',['category',['../classwebsocketpp_1_1error_1_1category.html',1,'websocketpp::error::category'],['../classwebsocketpp_1_1extensions_1_1error_1_1category.html',1,'websocketpp::extensions::error::category'],['../classwebsocketpp_1_1extensions_1_1permessage__deflate_1_1error_1_1category.html',1,'websocketpp::extensions::permessage_deflate::error::category'],['../classwebsocketpp_1_1transport_1_1asio_1_1error_1_1category.html',1,'websocketpp::transport::asio::error::category'],['../classwebsocketpp_1_1transport_1_1error_1_1category.html',1,'websocketpp::transport::error::category'],['../classwebsocketpp_1_1transport_1_1debug_1_1error_1_1category.html',1,'websocketpp::transport::debug::error::category'],['../classwebsocketpp_1_1transport_1_1iostream_1_1error_1_1category.html',1,'websocketpp::transport::iostream::error::category'],['../classwebsocketpp_1_1transport_1_1stub_1_1error_1_1category.html',1,'websocketpp::transport::stub::error::category']]],
+  ['channel_5ftype_5fhint',['channel_type_hint',['../structwebsocketpp_1_1log_1_1channel__type__hint.html',1,'websocketpp::log']]],
+  ['ci_5fless',['ci_less',['../structwebsocketpp_1_1utility_1_1ci__less.html',1,'websocketpp::utility']]],
+  ['client',['client',['../classwebsocketpp_1_1client.html',1,'websocketpp']]],
+  ['client_3c_20websocketpp_3a_3aconfig_3a_3aasio_5fclient_20_3e',['client&lt; websocketpp::config::asio_client &gt;',['../classwebsocketpp_1_1client.html',1,'websocketpp']]],
+  ['code_5fconverter',['code_converter',['../unionwebsocketpp_1_1close_1_1code__converter.html',1,'websocketpp::close']]],
+  ['con_5fmsg_5fmanager',['con_msg_manager',['../classwebsocketpp_1_1message__buffer_1_1alloc_1_1con__msg__manager.html',1,'websocketpp::message_buffer::alloc::con_msg_manager&lt; message &gt;'],['../classwebsocketpp_1_1message__buffer_1_1pool_1_1con__msg__manager.html',1,'websocketpp::message_buffer::pool::con_msg_manager']]],
+  ['connection',['connection',['../classwebsocketpp_1_1connection.html',1,'websocketpp::connection&lt; config &gt;'],['../classwebsocketpp_1_1transport_1_1asio_1_1connection.html',1,'websocketpp::transport::asio::connection&lt; config &gt;'],['../classwebsocketpp_1_1transport_1_1asio_1_1basic__socket_1_1connection.html',1,'websocketpp::transport::asio::basic_socket::connection'],['../classwebsocketpp_1_1transport_1_1asio_1_1tls__socket_1_1connection.html',1,'websocketpp::transport::asio::tls_socket::connection'],['../classwebsocketpp_1_1transport_1_1debug_1_1connection.html',1,'websocketpp::transport::debug::connection&lt; config &gt;'],['../classwebsocketpp_1_1transport_1_1iostream_1_1connection.html',1,'websocketpp::transport::iostream::connection&lt; config &gt;'],['../classwebsocketpp_1_1transport_1_1stub_1_1connection.html',1,'websocketpp::transport::stub::connection&lt; config &gt;']]],
+  ['connection_5fbase',['connection_base',['../classwebsocketpp_1_1connection__base.html',1,'websocketpp']]],
+  ['connection_5fmetadata',['connection_metadata',['../classconnection__metadata.html',1,'']]],
+  ['core',['core',['../structwebsocketpp_1_1config_1_1core.html',1,'websocketpp::config']]],
+  ['core_5fclient',['core_client',['../structwebsocketpp_1_1config_1_1core__client.html',1,'websocketpp::config']]],
+  ['count_5fserver',['count_server',['../classcount__server.html',1,'']]],
+  ['custom_5falloc_5fhandler',['custom_alloc_handler',['../classwebsocketpp_1_1transport_1_1asio_1_1custom__alloc__handler.html',1,'websocketpp::transport::asio']]]
+];

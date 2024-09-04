@@ -1,0 +1,9 @@
+0efd2bbbac015b58486dbdc966401cd3  lib/udev/rules.d/60-inputattach.rules
+f03022604fa21d9984db980f5b588db5  usr/bin/inputattach
+acd9d797a9d412993b9971cc232a927c  usr/lib/pm-utils/sleep.d/40inputattach
+d77e1e30f7b0f97703981e1e074fc1a3  usr/share/doc/inputattach/NEWS.gz
+524bd2b709336f5f1613acb6c7cc3ece  usr/share/doc/inputattach/README.Debian
+3e051db24c2417169f19e42cdac577b4  usr/share/doc/inputattach/README.gz
+1c5c0c5a6b203fc3af7be46c43b18334  usr/share/doc/inputattach/changelog.Debian.gz
+44f50bf8724c1ced72b21686bf06b0e2  usr/share/doc/inputattach/copyright
+03c5acf1044f2e76370700cc8d9374dd  usr/share/man/man1/inputattach.1.gz

@@ -1,0 +1,133 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<!-- Created by GNU Texinfo 6.5, http://www.gnu.org/software/texinfo/ -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Getting Events (The Python X Library)</title>
+
+<meta name="description" content="Getting Events (The Python X Library)">
+<meta name="keywords" content="Getting Events (The Python X Library)">
+<meta name="resource-type" content="document">
+<meta name="distribution" content="global">
+<meta name="Generator" content="makeinfo">
+<link href="index.html#Top" rel="start" title="Top">
+<link href="index.html#SEC_Contents" rel="contents" title="Table of Contents">
+<link href="Event-Handling.html#Event-Handling" rel="up" title="Event Handling">
+<link href="Selecting-Events.html#Selecting-Events" rel="next" title="Selecting Events">
+<link href="Event-Handling.html#Event-Handling" rel="prev" title="Event Handling">
+<style type="text/css">
+<!--
+a.summary-letter {text-decoration: none}
+blockquote.indentedblock {margin-right: 0em}
+blockquote.smallindentedblock {margin-right: 0em; font-size: smaller}
+blockquote.smallquotation {font-size: smaller}
+div.display {margin-left: 3.2em}
+div.example {margin-left: 3.2em}
+div.lisp {margin-left: 3.2em}
+div.smalldisplay {margin-left: 3.2em}
+div.smallexample {margin-left: 3.2em}
+div.smalllisp {margin-left: 3.2em}
+kbd {font-style: oblique}
+pre.display {font-family: inherit}
+pre.format {font-family: inherit}
+pre.menu-comment {font-family: serif}
+pre.menu-preformatted {font-family: serif}
+pre.smalldisplay {font-family: inherit; font-size: smaller}
+pre.smallexample {font-size: smaller}
+pre.smallformat {font-family: inherit; font-size: smaller}
+pre.smalllisp {font-size: smaller}
+span.nolinebreak {white-space: nowrap}
+span.roman {font-family: initial; font-weight: normal}
+span.sansserif {font-family: sans-serif; font-weight: normal}
+ul.no-bullet {list-style: none}
+-->
+</style>
+
+
+</head>
+
+<body lang="en">
+<a name="Getting-Events"></a>
+<div class="header">
+<p>
+Next: <a href="Selecting-Events.html#Selecting-Events" accesskey="n" rel="next">Selecting Events</a>, Up: <a href="Event-Handling.html#Event-Handling" accesskey="u" rel="up">Event Handling</a> &nbsp; [<a href="index.html#SEC_Contents" title="Table of contents" rel="contents">Contents</a>]</p>
+</div>
+<hr>
+<a name="Getting-Events-1"></a>
+<h3 class="section">5.1 Getting Events</h3>
+
+<p>Events can be sent at any time, not necessarily when the client is ready
+to recieve an event. Therefore they must be stored temporarily from that
+they are read from the network until the client is ready to handle them.
+Read but unhandled events are stored on an event queue in the Display
+object.  There are two functions to access this queue:
+</p>
+<dl>
+<dt><a name="index-next_005fevent-on-Display"></a>Method on Display: <strong>next_event</strong> <em>( )</em></dt>
+<dd>
+<p>Return the next event in the event queue.  If the event queue is empty,
+block until an event is read from the network, and return that one.
+</p>
+</dd></dl>
+
+<dl>
+<dt><a name="index-pending_005fevents-on-Display"></a>Method on Display: <strong>pending_events</strong> <em>( )</em></dt>
+<dd>
+<p>Return the number of events which can be returned without blocking.
+</p>
+</dd></dl>
+
+
+<p>A trivial event loop would simply loop infinitely, waiting for an
+event and then handling it.  It could look like this:
+</p>
+<div class="example">
+<pre class="example">while 1:
+   event = disp.next_event()
+   handle_event(event)
+</pre></div>
+
+
+<p>However, most applications need more control, e.g. to simultaneously
+handle a network connection or at regular intervals schedule timeouts.
+The module <code>select</code> is often used for this.  <code>Display</code> objects
+can be used with <code>select</code>, since they have the required
+<code>fileno()</code> method.  When <code>select</code> indicates that a
+<code>Display</code> object is ready for reading, that means that the server
+has sent some data to the client.  That alone doesn&rsquo;t guarantee that an
+entire event has arrived, so one must first use <code>pending_events()</code>
+to make sure that <code>next_event()</code> will return without blocking.  A
+simple event loop which waits for events or a one-second timeout looks
+like this:
+</p>
+<div class="example">
+<pre class="example">while 1:
+    # Wait for display to send something, or a timeout of one second
+    readable, w, e = select.select([disp], [], [], 1)
+
+    # if no files are ready to be read, it's an timeout
+    if not readable:
+        handle_timeout()
+
+    # if display is readable, handle as many events as have been recieved
+    elif disp in readable:
+        i = disp.pending_events()
+        while i &gt; 0:
+            event = disp.next_event()
+            handle_event(event)
+            i = i - 1
+
+    # loop around to wait for more things to happen
+</pre></div>
+
+
+<hr>
+<div class="header">
+<p>
+Next: <a href="Selecting-Events.html#Selecting-Events" accesskey="n" rel="next">Selecting Events</a>, Up: <a href="Event-Handling.html#Event-Handling" accesskey="u" rel="up">Event Handling</a> &nbsp; [<a href="index.html#SEC_Contents" title="Table of contents" rel="contents">Contents</a>]</p>
+</div>
+
+
+
+</body>
+</html>

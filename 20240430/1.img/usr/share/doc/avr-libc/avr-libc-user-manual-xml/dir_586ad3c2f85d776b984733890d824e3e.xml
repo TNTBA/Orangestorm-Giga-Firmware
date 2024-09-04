@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="dir_586ad3c2f85d776b984733890d824e3e" kind="dir">
+    <compoundname>util</compoundname>
+    <innerfile refid="atomic_8h">atomic.h</innerfile>
+    <innerfile refid="crc16_8h">crc16.h</innerfile>
+    <innerfile refid="delay_8h">delay.h</innerfile>
+    <innerfile refid="delay__basic_8h">delay_basic.h</innerfile>
+    <innerfile refid="eu__dst_8h">eu_dst.h</innerfile>
+    <innerfile refid="parity_8h">parity.h</innerfile>
+    <innerfile refid="setbaud_8h">setbaud.h</innerfile>
+    <innerfile refid="util_2twi_8h">util/twi.h</innerfile>
+    <innerfile refid="usa__dst_8h">usa_dst.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/build/avr-libc-2.0.0+Atmel3.6.1/libc/avr-libc/include/util/"/>
+  </compounddef>
+</doxygen>

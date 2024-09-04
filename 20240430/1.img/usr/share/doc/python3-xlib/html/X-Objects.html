@@ -1,0 +1,103 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<!-- Created by GNU Texinfo 6.5, http://www.gnu.org/software/texinfo/ -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>X Objects (The Python X Library)</title>
+
+<meta name="description" content="X Objects (The Python X Library)">
+<meta name="keywords" content="X Objects (The Python X Library)">
+<meta name="resource-type" content="document">
+<meta name="distribution" content="global">
+<meta name="Generator" content="makeinfo">
+<link href="index.html#Top" rel="start" title="Top">
+<link href="index.html#SEC_Contents" rel="contents" title="Table of Contents">
+<link href="index.html#Top" rel="up" title="Top">
+<link href="Display.html#Display" rel="next" title="Display">
+<link href="Sending-Events.html#Sending-Events" rel="prev" title="Sending Events">
+<style type="text/css">
+<!--
+a.summary-letter {text-decoration: none}
+blockquote.indentedblock {margin-right: 0em}
+blockquote.smallindentedblock {margin-right: 0em; font-size: smaller}
+blockquote.smallquotation {font-size: smaller}
+div.display {margin-left: 3.2em}
+div.example {margin-left: 3.2em}
+div.lisp {margin-left: 3.2em}
+div.smalldisplay {margin-left: 3.2em}
+div.smallexample {margin-left: 3.2em}
+div.smalllisp {margin-left: 3.2em}
+kbd {font-style: oblique}
+pre.display {font-family: inherit}
+pre.format {font-family: inherit}
+pre.menu-comment {font-family: serif}
+pre.menu-preformatted {font-family: serif}
+pre.smalldisplay {font-family: inherit; font-size: smaller}
+pre.smallexample {font-size: smaller}
+pre.smallformat {font-family: inherit; font-size: smaller}
+pre.smalllisp {font-size: smaller}
+span.nolinebreak {white-space: nowrap}
+span.roman {font-family: initial; font-weight: normal}
+span.sansserif {font-family: sans-serif; font-weight: normal}
+ul.no-bullet {list-style: none}
+-->
+</style>
+
+
+</head>
+
+<body lang="en">
+<a name="X-Objects"></a>
+<div class="header">
+<p>
+Previous: <a href="Event-Handling.html#Event-Handling" accesskey="p" rel="prev">Event Handling</a>, Up: <a href="index.html#Top" accesskey="u" rel="up">Top</a> &nbsp; [<a href="index.html#SEC_Contents" title="Table of contents" rel="contents">Contents</a>]</p>
+</div>
+<hr>
+<a name="X-Objects-1"></a>
+<h2 class="chapter">6 X Objects</h2>
+
+<p>All X operations are performed by invoking object methods.
+</p>
+<p>The objects and their methods are listed in the following nodes, however
+with no detailed explanations.  The reader are referred to other sources
+of X documentation for details, e.g. the X protocol specification, the C
+Xlib documentation or man pages.  A vast collection of X documentation
+links can be found at <a href="http://www.rahul.net/kenton/xsites.html">http://www.rahul.net/kenton/xsites.html</a>.
+</p>
+<p>Methods returning a single value will return that directly.  Otherwise,
+an object containing attributes for each of the result values is
+returned.
+</p>
+<p>Methods returning some value will raise an exception on error.  Methods
+which does not return any value have instead an <code>on_error</code>
+parameter, which can be used to specify an error handler.
+</p>
+<table class="menu" border="0" cellspacing="0">
+<tr><td align="left" valign="top">&bull; <a href="Display.html#Display" accesskey="1">Display</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">Methods on Display objects.
+</td></tr>
+<tr><td align="left" valign="top">&bull; <a href="Resource.html#Resource" accesskey="2">Resource</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">Methods common to all the following resource objects.
+</td></tr>
+<tr><td align="left" valign="top">&bull; <a href="Colormap.html#Colormap" accesskey="3">Colormap</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">Methods on Colormap objects. 
+</td></tr>
+<tr><td align="left" valign="top">&bull; <a href="Cursor.html#Cursor" accesskey="4">Cursor</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">Methods on Cursor objects.
+</td></tr>
+<tr><td align="left" valign="top">&bull; <a href="Drawable.html#Drawable" accesskey="5">Drawable</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">Methods common to Window and Pixmap objects.
+</td></tr>
+<tr><td align="left" valign="top">&bull; <a href="Window.html#Window" accesskey="6">Window</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">Methods on Window objects.
+</td></tr>
+<tr><td align="left" valign="top">&bull; <a href="Pixmap.html#Pixmap" accesskey="7">Pixmap</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">Methods on Pixmap objects.
+</td></tr>
+<tr><td align="left" valign="top">&bull; <a href="Fontable.html#Fontable" accesskey="8">Fontable</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">Methods common to GC and Font objects.
+</td></tr>
+<tr><td align="left" valign="top">&bull; <a href="GC.html#GC" accesskey="9">GC</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">Methods on GC objects.
+</td></tr>
+<tr><td align="left" valign="top">&bull; <a href="Font.html#Font">Font</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">Methods on Font objects.
+</td></tr>
+</table>
+
+
+
+
+
+</body>
+</html>

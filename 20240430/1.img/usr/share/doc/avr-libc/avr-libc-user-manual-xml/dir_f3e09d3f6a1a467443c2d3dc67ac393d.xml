@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="dir_f3e09d3f6a1a467443c2d3dc67ac393d" kind="dir">
+    <compoundname>misc</compoundname>
+    <innerfile refid="ccp__write_8S">ccp_write.S</innerfile>
+    <innerfile refid="eedef_8h">eedef.h</innerfile>
+    <innerfile refid="eerd__block_8S">eerd_block.S</innerfile>
+    <innerfile refid="eerd__byte_8S">eerd_byte.S</innerfile>
+    <innerfile refid="eerd__dword_8S">eerd_dword.S</innerfile>
+    <innerfile refid="eerd__word_8S">eerd_word.S</innerfile>
+    <innerfile refid="eeupd__block_8S">eeupd_block.S</innerfile>
+    <innerfile refid="eeupd__byte_8S">eeupd_byte.S</innerfile>
+    <innerfile refid="eeupd__dword_8S">eeupd_dword.S</innerfile>
+    <innerfile refid="eeupd__word_8S">eeupd_word.S</innerfile>
+    <innerfile refid="eewr__block_8S">eewr_block.S</innerfile>
+    <innerfile refid="eewr__block__xmega_8c">eewr_block_xmega.c</innerfile>
+    <innerfile refid="eewr__byte_8S">eewr_byte.S</innerfile>
+    <innerfile refid="eewr__dword_8S">eewr_dword.S</innerfile>
+    <innerfile refid="eewr__word_8S">eewr_word.S</innerfile>
+    <innerfile refid="itoa_8S">itoa.S</innerfile>
+    <innerfile refid="itoa__ncheck_8S">itoa_ncheck.S</innerfile>
+    <innerfile refid="ltoa_8S">ltoa.S</innerfile>
+    <innerfile refid="ltoa__ncheck_8S">ltoa_ncheck.S</innerfile>
+    <innerfile refid="mul10_8S">mul10.S</innerfile>
+    <innerfile refid="mulsi10_8S">mulsi10.S</innerfile>
+    <innerfile refid="ultoa_8S">ultoa.S</innerfile>
+    <innerfile refid="ultoa__ncheck_8S">ultoa_ncheck.S</innerfile>
+    <innerfile refid="utoa_8S">utoa.S</innerfile>
+    <innerfile refid="utoa__ncheck_8S">utoa_ncheck.S</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/build/avr-libc-2.0.0+Atmel3.6.1/libc/avr-libc/libc/misc/"/>
+  </compounddef>
+</doxygen>

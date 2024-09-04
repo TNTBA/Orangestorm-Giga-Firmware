@@ -1,0 +1,14 @@
+[Unit]
+Description=AutoSetWebcamId
+After=crowsnest.service
+
+
+[Service]
+Type=oneshot
+ExecStart=bash /root/auto-webcam-id.sh
+
+[Install]
+WantedBy=multi-user.target
+
+
+

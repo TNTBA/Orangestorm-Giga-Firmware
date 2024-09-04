@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="dir_35b7ea7e54a176718f61677324f80a92" kind="dir">
+    <compoundname>twitest</compoundname>
+    <innerfile refid="twitest_8c">twitest.c</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/build/avr-libc-2.0.0+Atmel3.6.1/libc/avr-libc/doc/examples/twitest/"/>
+  </compounddef>
+</doxygen>

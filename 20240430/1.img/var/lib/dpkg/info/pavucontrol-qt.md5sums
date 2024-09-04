@@ -1,0 +1,8 @@
+187d3e90580bb95c16745528cf65f277  usr/bin/pavucontrol-qt
+a8e5506ce7f3210f0de4d99050fd5bae  usr/share/applications/pavucontrol-qt.desktop
+d3eae86f2d41e6a3350be9c997f5e3ef  usr/share/doc/pavucontrol-qt/AUTHORS
+b710cb28adaad0056a6a479430707eba  usr/share/doc/pavucontrol-qt/README.md
+e3d68801dccb4a76fa8e952a9977dd4a  usr/share/doc/pavucontrol-qt/changelog.Debian.gz
+656baf715ac5b350c7af494026668a8e  usr/share/doc/pavucontrol-qt/changelog.gz
+77602db889d3d22f4b4f8a0d172606dc  usr/share/doc/pavucontrol-qt/copyright
+7d2edbff2903ee18e1bf4e58b1472226  usr/share/lintian/overrides/pavucontrol-qt

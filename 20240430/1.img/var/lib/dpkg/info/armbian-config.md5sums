@@ -1,0 +1,9 @@
+e2a6113ebf28c1d82ed6f74fc24afac7  usr/bin/neofetch
+aeb844d0b39774a19cdf67dbc675100c  usr/bin/tv_grab_file
+9e767f454b0d05820924fae6196418b3  usr/bin/wireguard-manager
+a5d912e5087ad2031a7fa7e03e7ef727  usr/lib/armbian-config/functions-network.sh
+23d649a6d434c85f440ce9b485091b5f  usr/lib/armbian-config/functions.sh
+e2d65f3454143878258997506a21719c  usr/lib/armbian-config/jobs.sh
+39d63e0266e80f64b50f2ddfd2a1f2b2  usr/lib/armbian-config/submenu.sh
+3049114e90f5f0286f9b2eae8a15bf5b  usr/sbin/armbian-config
+383bcef358d009889eb5bac817d67763  usr/sbin/softy

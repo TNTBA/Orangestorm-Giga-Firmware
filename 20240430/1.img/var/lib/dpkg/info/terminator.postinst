@@ -1,0 +1,30 @@
+#!/bin/sh
+
+set -e
+
+if [ "$1" = "configure" ]; then
+        # Add an alternative for x-terminal-emulator
+        update-alternatives --install /usr/bin/x-terminal-emulator \
+                x-terminal-emulator /usr/bin/terminator 50 \
+                --slave /usr/share/man/man1/x-terminal-emulator.1.gz \
+                x-terminal-emulator.1.gz /usr/share/man/man1/terminator.1.gz
+fi
+
+
+# Automatically added by dh_python3:
+if which py3compile >/dev/null 2>&1; then
+	py3compile -p terminator /usr/share/terminator
+fi
+if which pypy3compile >/dev/null 2>&1; then
+	pypy3compile -p terminator /usr/share/terminator || true
+fi
+
+# End automatically added section
+# Automatically added by dh_icons/12.1.1
+if [ "$1" = "configure" ] || [ "$1" = "abort-upgrade" ] || [ "$1" = "abort-deconfigure" ] || [ "$1" = "abort-remove" ] ; then
+	if which update-icon-caches >/dev/null 2>&1 ; then
+		update-icon-caches /usr/share/icons/HighContrast
+	fi
+fi
+# End automatically added section
+

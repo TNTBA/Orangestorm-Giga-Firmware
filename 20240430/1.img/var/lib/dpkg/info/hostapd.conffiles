@@ -1,0 +1,4 @@
+/etc/default/hostapd
+/etc/hostapd.conf
+/etc/hostapd/ifupdown.sh
+/etc/init.d/hostapd

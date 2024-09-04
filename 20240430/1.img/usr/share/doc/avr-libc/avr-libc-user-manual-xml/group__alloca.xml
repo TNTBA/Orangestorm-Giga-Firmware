@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="group__alloca" kind="group">
+    <compoundname>alloca</compoundname>
+    <title>&lt;alloca.h&gt;: Allocate space in the stack</title>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group__alloca_1gabdd78c9d072e9d390bed0e8b79087a85" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void *</type>
+        <definition>void* alloca</definition>
+        <argsstring>(size_t __size)</argsstring>
+        <name>alloca</name>
+        <param>
+          <type>size_t</type>
+          <declname>__size</declname>
+        </param>
+        <briefdescription>
+<para>Allocate <emphasis>__size</emphasis> bytes of space in the stack frame of the caller. </para>        </briefdescription>
+        <detaileddescription>
+<para>This temporary space is automatically freed when the function that called <ref refid="group__alloca_1gabdd78c9d072e9d390bed0e8b79087a85" kindref="member">alloca()</ref> returns to its caller. Avr-libc defines the <ref refid="group__alloca_1gabdd78c9d072e9d390bed0e8b79087a85" kindref="member">alloca()</ref> as a macro, which is translated into the inlined <computeroutput>__builtin_alloca()</computeroutput> function. The fact that the code is inlined, means that it is impossible to take the address of this function, or to change its behaviour by linking with a different library.</para><para><simplesect kind="return"><para><ref refid="group__alloca_1gabdd78c9d072e9d390bed0e8b79087a85" kindref="member">alloca()</ref> returns a pointer to the beginning of the allocated space. If the allocation causes stack overflow, program behaviour is undefined.</para></simplesect>
+<simplesect kind="warning"><para>Avoid use <ref refid="group__alloca_1gabdd78c9d072e9d390bed0e8b79087a85" kindref="member">alloca()</ref> inside the list of arguments of a function call. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/build/avr-libc-2.0.0+Atmel3.6.1/libc/avr-libc/include/alloca.h" line="55" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

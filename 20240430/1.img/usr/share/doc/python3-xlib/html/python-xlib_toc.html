@@ -1,0 +1,147 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<!-- Created by GNU Texinfo 6.5, http://www.gnu.org/software/texinfo/ -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Top (The Python X Library)</title>
+
+<meta name="description" content="Top (The Python X Library)">
+<meta name="keywords" content="Top (The Python X Library)">
+<meta name="resource-type" content="document">
+<meta name="distribution" content="global">
+<meta name="Generator" content="makeinfo">
+<link href="#Top" rel="start" title="Top">
+<link href="#SEC_Contents" rel="contents" title="Table of Contents">
+<link href="../dir/index.html" rel="up" title="(dir)">
+<link href="Basic-X-Concepts.html#Basic-X-Concepts" rel="next" title="Basic X Concepts">
+<style type="text/css">
+<!--
+a.summary-letter {text-decoration: none}
+blockquote.indentedblock {margin-right: 0em}
+blockquote.smallindentedblock {margin-right: 0em; font-size: smaller}
+blockquote.smallquotation {font-size: smaller}
+div.display {margin-left: 3.2em}
+div.example {margin-left: 3.2em}
+div.lisp {margin-left: 3.2em}
+div.smalldisplay {margin-left: 3.2em}
+div.smallexample {margin-left: 3.2em}
+div.smalllisp {margin-left: 3.2em}
+kbd {font-style: oblique}
+pre.display {font-family: inherit}
+pre.format {font-family: inherit}
+pre.menu-comment {font-family: serif}
+pre.menu-preformatted {font-family: serif}
+pre.smalldisplay {font-family: inherit; font-size: smaller}
+pre.smallexample {font-size: smaller}
+pre.smallformat {font-family: inherit; font-size: smaller}
+pre.smalllisp {font-size: smaller}
+span.nolinebreak {white-space: nowrap}
+span.roman {font-family: initial; font-weight: normal}
+span.sansserif {font-family: sans-serif; font-weight: normal}
+ul.no-bullet {list-style: none}
+-->
+</style>
+
+
+</head>
+
+<body lang="en">
+<h1 class="settitle" align="center">The Python X Library</h1>
+
+
+
+
+<a name="SEC_Contents"></a>
+<h2 class="contents-heading">Table of Contents</h2>
+
+<div class="contents">
+
+<ul class="no-bullet">
+  <li><a name="toc-Basic-X-Concepts-1" href="Basic-X-Concepts.html#Basic-X-Concepts">1 Basic X Concepts</a></li>
+  <li><a name="toc-Package-Layout-1" href="Package-Layout.html#Package-Layout">2 Package Layout</a></li>
+  <li><a name="toc-Connect-to-a-Display-1" href="Connect-to-a-Display.html#Connect-to-a-Display">3 Connect to a Display</a>
+  <ul class="no-bullet">
+    <li><a name="toc-Unix-Display-Names-1" href="Unix-Display-Names.html#Unix-Display-Names">3.1 Unix Display Names</a></li>
+    <li><a name="toc-OpenVMS-Display-Names-1" href="OpenVMS-Display-Names.html#OpenVMS-Display-Names">3.2 OpenVMS Display Names</a></li>
+  </ul></li>
+  <li><a name="toc-Error-Handling-1" href="Error-Handling.html#Error-Handling">4 Error Handling</a>
+  <ul class="no-bullet">
+    <li><a name="toc-X-Error-Classes-1" href="X-Error-Classes.html#X-Error-Classes">4.1 X Error Classes</a></li>
+    <li><a name="toc-CatchError-1" href="CatchError.html#CatchError">4.2 CatchError</a></li>
+  </ul></li>
+  <li><a name="toc-Event-Handling-1" href="Event-Handling.html#Event-Handling">5 Event Handling</a>
+  <ul class="no-bullet">
+    <li><a name="toc-Getting-Events-1" href="Getting-Events.html#Getting-Events">5.1 Getting Events</a></li>
+    <li><a name="toc-Selecting-Events-1" href="Selecting-Events.html#Selecting-Events">5.2 Selecting Events</a></li>
+    <li><a name="toc-Event-Types-1" href="Event-Types.html#Event-Types">5.3 Event Types</a></li>
+    <li><a name="toc-Sending-Events-1" href="Sending-Events.html#Sending-Events">5.4 Sending Events</a></li>
+  </ul></li>
+  <li><a name="toc-X-Objects-1" href="X-Objects.html#X-Objects">6 X Objects</a>
+  <ul class="no-bullet">
+    <li><a name="toc-Display-1" href="Display.html#Display">6.1 Display</a></li>
+    <li><a name="toc-Resource-1" href="Resource.html#Resource">6.2 Resource</a></li>
+    <li><a name="toc-Colormap-1" href="Colormap.html#Colormap">6.3 Colormap</a></li>
+    <li><a name="toc-Cursor-1" href="Cursor.html#Cursor">6.4 Cursor</a></li>
+    <li><a name="toc-Drawable-1" href="Drawable.html#Drawable">6.5 Drawable</a></li>
+    <li><a name="toc-Window-1" href="Window.html#Window">6.6 Window</a></li>
+    <li><a name="toc-Pixmap-1" href="Pixmap.html#Pixmap">6.7 Pixmap</a></li>
+    <li><a name="toc-Fontable-1" href="Fontable.html#Fontable">6.8 Fontable</a></li>
+    <li><a name="toc-GC-1" href="GC.html#GC">6.9 GC</a></li>
+    <li><a name="toc-Font-1" href="Font.html#Font">6.10 Font</a></li>
+  </ul></li>
+</ul>
+</div>
+
+
+<a name="Top"></a>
+<div class="header">
+<p>
+Next: <a href="Basic-X-Concepts.html#Basic-X-Concepts" accesskey="n" rel="next">Basic X Concepts</a>, Up: <a href="../dir/index.html" accesskey="u" rel="up">(dir)</a> &nbsp; [<a href="#SEC_Contents" title="Table of contents" rel="contents">Contents</a>]</p>
+</div>
+<hr>
+<a name="Introduction"></a>
+<h1 class="top">Introduction</h1>
+
+<p>The Python X Library is a complete library for writing X Windows client
+applications in Python.  It implements the entire X11R6 protocol and
+some extensions, and also some supplementary functionality such as a
+resource database.  It is written entirely in Python, and is therefore
+entirely independent of the traditional C Xlib; it only requires a
+Python installation with network support.
+</p>
+<p>Although the X11R6 protocol is the basis of all X client applications,
+it is a little too low-level to be useful for writing advanced graphical
+interfaces.  To this end, many different widget sets has been developed,
+a few of the more popular are Motif, Qt and Gtk.  The Python X Library
+is not compatible with any of these, as they are based on the C Xlib.
+As a result the Python X Library isn&rsquo;t in itself very useful for writing
+GUIs, but is eminent for writing small X applications with no advanced
+GUI, e.g. simple monitor programs, or for that matter more advanced
+background applications such as window managers.
+</p>
+<table class="menu" border="0" cellspacing="0">
+<tr><td align="left" valign="top">&bull; <a href="Basic-X-Concepts.html#Basic-X-Concepts" accesskey="1">Basic X Concepts</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">The fundamental X Windows concepts.
+</td></tr>
+<tr><td align="left" valign="top">&bull; <a href="Package-Layout.html#Package-Layout" accesskey="2">Package Layout</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">The layout of the Python Xlib package.
+</td></tr>
+<tr><td align="left" valign="top">&bull; <a href="Connect-to-a-Display.html#Connect-to-a-Display" accesskey="3">Connect to a Display</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">Connecting to a X server display.
+</td></tr>
+<tr><td align="left" valign="top">&bull; <a href="Error-Handling.html#Error-Handling" accesskey="4">Error Handling</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">Handling X errors.
+</td></tr>
+<tr><td align="left" valign="top">&bull; <a href="Event-Handling.html#Event-Handling" accesskey="5">Event Handling</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">Handling X events.
+</td></tr>
+<tr><td align="left" valign="top">&bull; <a href="X-Objects.html#X-Objects" accesskey="6">X Objects</a>:</td><td>&nbsp;&nbsp;</td><td align="left" valign="top">X objects and their operations.
+</td></tr>
+</table>
+
+
+<hr>
+<div class="header">
+<p>
+Next: <a href="Basic-X-Concepts.html#Basic-X-Concepts" accesskey="n" rel="next">Basic X Concepts</a>, Up: <a href="../dir/index.html" accesskey="u" rel="up">(dir)</a> &nbsp; [<a href="#SEC_Contents" title="Table of contents" rel="contents">Contents</a>]</p>
+</div>
+
+
+
+</body>
+</html>

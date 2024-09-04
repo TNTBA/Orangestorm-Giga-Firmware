@@ -1,0 +1,4 @@
+# libdigest-sha-perl installs /usr/bin/shasum but the package is
+# primarly a library
+libdigest-sha-perl: library-package-name-for-application usr/bin/shasum
+libdigest-sha-perl: application-in-library-section perl usr/bin/shasum

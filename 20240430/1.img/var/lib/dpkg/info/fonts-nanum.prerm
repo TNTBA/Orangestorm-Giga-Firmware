@@ -1,0 +1,6 @@
+#!/bin/sh
+set -e
+# Automatically added by dh_installdeb/11.3.3
+dpkg-maintscript-helper rm_conffile /etc/fonts/conf.avail/90-ttf-nanum.conf 3.010-2\~ ttf-nanum -- "$@"
+dpkg-maintscript-helper rm_conffile /etc/fonts/conf.avail/90-fonts-nanum.conf 20131007-4\~ -- "$@"
+# End automatically added section

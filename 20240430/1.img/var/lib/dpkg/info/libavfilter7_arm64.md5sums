@@ -1,0 +1,5 @@
+48c5be1927a1c06caea2bdbf070dd688  usr/lib/aarch64-linux-gnu/libavfilter.so.7.40.101
+4aee8536adec12f24b4ccf36bfdcba02  usr/share/doc/libavfilter7/changelog.Debian.gz
+02d2d998fff09e8aba40a651debd6003  usr/share/doc/libavfilter7/changelog.gz
+61af5f05179be74293344b58d088a393  usr/share/doc/libavfilter7/copyright
+8854be2f4d8739594a35081c104e59b3  usr/share/lintian/overrides/libavfilter7

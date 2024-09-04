@@ -1,0 +1,53 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="dir_4172b9c0d0fab59de5df39beb506ecc6" kind="dir">
+    <compoundname>pmstring</compoundname>
+    <innerfile refid="memccpy__P_8S">memccpy_P.S</innerfile>
+    <innerfile refid="memchr__P_8S">memchr_P.S</innerfile>
+    <innerfile refid="memcmp__P_8S">memcmp_P.S</innerfile>
+    <innerfile refid="memcmp__PF_8S">memcmp_PF.S</innerfile>
+    <innerfile refid="memcpy__P_8S">memcpy_P.S</innerfile>
+    <innerfile refid="memcpy__PF_8S">memcpy_PF.S</innerfile>
+    <innerfile refid="memrchr__P_8S">memrchr_P.S</innerfile>
+    <innerfile refid="strcasecmp__P_8S">strcasecmp_P.S</innerfile>
+    <innerfile refid="strcasecmp__PF_8S">strcasecmp_PF.S</innerfile>
+    <innerfile refid="strcat__P_8S">strcat_P.S</innerfile>
+    <innerfile refid="strcat__PF_8S">strcat_PF.S</innerfile>
+    <innerfile refid="strchr__P_8S">strchr_P.S</innerfile>
+    <innerfile refid="strchrnul__P_8S">strchrnul_P.S</innerfile>
+    <innerfile refid="strcmp__P_8S">strcmp_P.S</innerfile>
+    <innerfile refid="strcmp__PF_8S">strcmp_PF.S</innerfile>
+    <innerfile refid="strcpy__P_8S">strcpy_P.S</innerfile>
+    <innerfile refid="strcpy__PF_8S">strcpy_PF.S</innerfile>
+    <innerfile refid="strcspn__P_8S">strcspn_P.S</innerfile>
+    <innerfile refid="strlcat__P_8S">strlcat_P.S</innerfile>
+    <innerfile refid="strlcat__PF_8S">strlcat_PF.S</innerfile>
+    <innerfile refid="strlcpy__P_8S">strlcpy_P.S</innerfile>
+    <innerfile refid="strlcpy__PF_8S">strlcpy_PF.S</innerfile>
+    <innerfile refid="strlen__P_8S">strlen_P.S</innerfile>
+    <innerfile refid="strlen__PF_8S">strlen_PF.S</innerfile>
+    <innerfile refid="strncasecmp__P_8S">strncasecmp_P.S</innerfile>
+    <innerfile refid="strncasecmp__PF_8S">strncasecmp_PF.S</innerfile>
+    <innerfile refid="strncat__P_8S">strncat_P.S</innerfile>
+    <innerfile refid="strncat__PF_8S">strncat_PF.S</innerfile>
+    <innerfile refid="strncmp__P_8S">strncmp_P.S</innerfile>
+    <innerfile refid="strncmp__PF_8S">strncmp_PF.S</innerfile>
+    <innerfile refid="strncpy__P_8S">strncpy_P.S</innerfile>
+    <innerfile refid="strncpy__PF_8S">strncpy_PF.S</innerfile>
+    <innerfile refid="strnlen__P_8S">strnlen_P.S</innerfile>
+    <innerfile refid="strnlen__PF_8S">strnlen_PF.S</innerfile>
+    <innerfile refid="strpbrk__P_8S">strpbrk_P.S</innerfile>
+    <innerfile refid="strrchr__P_8S">strrchr_P.S</innerfile>
+    <innerfile refid="strsep__P_8S">strsep_P.S</innerfile>
+    <innerfile refid="strspn__P_8S">strspn_P.S</innerfile>
+    <innerfile refid="strstr__P_8S">strstr_P.S</innerfile>
+    <innerfile refid="strstr__PF_8S">strstr_PF.S</innerfile>
+    <innerfile refid="strtok__P_8c">strtok_P.c</innerfile>
+    <innerfile refid="strtok__rP_8S">strtok_rP.S</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/build/avr-libc-2.0.0+Atmel3.6.1/libc/avr-libc/libc/pmstring/"/>
+  </compounddef>
+</doxygen>

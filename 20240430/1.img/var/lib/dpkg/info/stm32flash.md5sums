@@ -1,0 +1,9 @@
+b22c6300c2febaf4aa500b668d192744  usr/bin/stm32flash
+5874cebdae24e565b9fe0125ae7e4752  usr/share/doc/stm32flash/AUTHORS
+a9a83614d9e298e4eb00e6a9dbb1c887  usr/share/doc/stm32flash/HOWTO
+f9baaba58146e28a6f6952d78bfab1d7  usr/share/doc/stm32flash/I2C.txt
+4ca18ee563fb7e72c4995fe703e2da9d  usr/share/doc/stm32flash/changelog.Debian.arm64.gz
+ef9f6676271e43e030492ed3b6243afb  usr/share/doc/stm32flash/changelog.Debian.gz
+e523fe9d2638f3f5e03201eb8472e80f  usr/share/doc/stm32flash/copyright
+f6daf4ad6400dd56c291d9bd454187fe  usr/share/doc/stm32flash/protocol.txt
+c701cf9a576c844b334009405bbca60f  usr/share/man/man1/stm32flash.1.gz

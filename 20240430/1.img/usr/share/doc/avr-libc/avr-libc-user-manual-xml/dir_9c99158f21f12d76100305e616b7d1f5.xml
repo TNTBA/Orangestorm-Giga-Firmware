@@ -1,0 +1,53 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="dir_9c99158f21f12d76100305e616b7d1f5" kind="dir">
+    <compoundname>string</compoundname>
+    <innerfile refid="ffs_8S">ffs.S</innerfile>
+    <innerfile refid="ffsl_8S">ffsl.S</innerfile>
+    <innerfile refid="ffsll_8S">ffsll.S</innerfile>
+    <innerfile refid="memccpy_8S">memccpy.S</innerfile>
+    <innerfile refid="memchr_8S">memchr.S</innerfile>
+    <innerfile refid="memcmp_8S">memcmp.S</innerfile>
+    <innerfile refid="memcpy_8S">memcpy.S</innerfile>
+    <innerfile refid="memmem_8S">memmem.S</innerfile>
+    <innerfile refid="memmem__P_8S">memmem_P.S</innerfile>
+    <innerfile refid="memmove_8S">memmove.S</innerfile>
+    <innerfile refid="memrchr_8S">memrchr.S</innerfile>
+    <innerfile refid="memset_8S">memset.S</innerfile>
+    <innerfile refid="strcasecmp_8S">strcasecmp.S</innerfile>
+    <innerfile refid="strcasestr_8S">strcasestr.S</innerfile>
+    <innerfile refid="strcasestr__P_8S">strcasestr_P.S</innerfile>
+    <innerfile refid="strcat_8S">strcat.S</innerfile>
+    <innerfile refid="strchr_8S">strchr.S</innerfile>
+    <innerfile refid="strchrnul_8S">strchrnul.S</innerfile>
+    <innerfile refid="strcmp_8S">strcmp.S</innerfile>
+    <innerfile refid="strcpy_8S">strcpy.S</innerfile>
+    <innerfile refid="strcspn_8S">strcspn.S</innerfile>
+    <innerfile refid="strdup_8c">strdup.c</innerfile>
+    <innerfile refid="strlcat_8c">strlcat.c</innerfile>
+    <innerfile refid="strlcat_8S">strlcat.S</innerfile>
+    <innerfile refid="strlcpy_8c">strlcpy.c</innerfile>
+    <innerfile refid="strlcpy_8S">strlcpy.S</innerfile>
+    <innerfile refid="strlen_8S">strlen.S</innerfile>
+    <innerfile refid="strlwr_8S">strlwr.S</innerfile>
+    <innerfile refid="strncasecmp_8S">strncasecmp.S</innerfile>
+    <innerfile refid="strncat_8S">strncat.S</innerfile>
+    <innerfile refid="strncmp_8S">strncmp.S</innerfile>
+    <innerfile refid="strncpy_8S">strncpy.S</innerfile>
+    <innerfile refid="strnlen_8S">strnlen.S</innerfile>
+    <innerfile refid="strpbrk_8S">strpbrk.S</innerfile>
+    <innerfile refid="strrchr_8S">strrchr.S</innerfile>
+    <innerfile refid="strrev_8S">strrev.S</innerfile>
+    <innerfile refid="strsep_8S">strsep.S</innerfile>
+    <innerfile refid="strspn_8S">strspn.S</innerfile>
+    <innerfile refid="strstr_8S">strstr.S</innerfile>
+    <innerfile refid="strtok_8c">strtok.c</innerfile>
+    <innerfile refid="strtok__r_8S">strtok_r.S</innerfile>
+    <innerfile refid="strupr_8S">strupr.S</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/build/avr-libc-2.0.0+Atmel3.6.1/libc/avr-libc/libc/string/"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,25 @@
+Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Upstream-Name: pyewmh
+Source: https://github.com/parkouss/pyewmh/
+
+Files: *
+Copyright:
+ 2009-2016 Julien Pagès <j.parkouss@gmail.com>
+ 2014, 2016 Reuben Thomas <rrt@sc3d.org>
+ 2016 Hugo Osvaldo Barrera <hugo@barrera.io>
+License: LGPL-3+
+
+Files: debian/*
+Copyright:
+ 2016 Reuben Thomas <rrt@sc3d.org>
+ 2016 Andrew Shadura <andrewsh@debian.org>
+License: LGPL-3+
+
+License: LGPL-3+
+ pyewmh is distributed under the GNU Lesser General Public License,
+ version 3, or, at your option, any later version.
+ .
+ On Debian systems, the complete text of the GNU Lesser General
+ Public License version 3 can be found in `/usr/share/common-licenses/LGPL-3'.
+
+

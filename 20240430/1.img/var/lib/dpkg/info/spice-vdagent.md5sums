@@ -1,0 +1,14 @@
+f258b617d779268f028277a1108de37f  lib/systemd/system/spice-vdagentd.service
+d6ed74d7b96d927331dd6266f32139a4  lib/systemd/system/spice-vdagentd.socket
+ccaddf245c2bd635f9732a79ae6c8512  lib/udev/rules.d/70-spice-vdagentd.rules
+6b175897db570589ad70eb602a05cd5d  usr/bin/spice-vdagent
+60f2259291fbccace1cec9b5c43a8789  usr/lib/tmpfiles.d/spice-vdagentd.conf
+cbd89b1c4a4c1e36c2ba17531beed348  usr/sbin/spice-vdagentd
+48460baf7884bf961bec2fcfd883b916  usr/share/doc/spice-vdagent/README
+d9e5a20d2ba19c9341fbc0937e788c39  usr/share/doc/spice-vdagent/TODO
+6e04cb455d1d8fcefc258991e9f04de9  usr/share/doc/spice-vdagent/changelog.Debian.gz
+ca70af9126243b6606338bd381903240  usr/share/doc/spice-vdagent/changelog.gz
+3f5ba9d34dac669872ccc7bbb5d244e3  usr/share/doc/spice-vdagent/copyright
+5afead1041efea4b6ce0a8e793371b26  usr/share/gdm/autostart/LoginWindow/spice-vdagent.desktop
+d8cff73784ce63cb9e8a9bb8cead7681  usr/share/man/man1/spice-vdagent.1.gz
+02f3944b739836cc0777a36561369a01  usr/share/man/man1/spice-vdagentd.1.gz

@@ -1,0 +1,27 @@
+#! /bin/bash
+UPDATE_PATH="/home/mks/gcode_files/sda1/ELEGOO_UPDATE_DIR"
+
+if [ ! -e "/home/mks/fix_ready" ]; then
+    systemctl enable elegoo-fix.service && systemctl restart elegoo-fix.service
+    touch /home/mks/fix_ready
+fi
+touch /root/updated_app
+if [ -e /root/updated_app ]; then
+    echo "$(date +%Y-%m-%d_%H-%M-%S)" > /root/updated_app
+    echo "$(date +%Y-%m-%d_%H-%M-%S)_touch_update tag" >> ${UPDATE_PATH}/update.log
+fi
+
+if systemctl is-enabled --quiet klipper.service; then
+    systemctl disable klipper.service
+else
+    echo "$(date +%Y-%m-%d_%H-%M-%S)_reset_service" >> ${UPDATE_PATH}/update.log
+
+fi
+if [ -e ${UPDATE_PATH}/giga_extra_update.zip ]; then
+    rm -rf ${UPDATE_PATH}/*.gz ${UPDATE_PATH}/*.cfg ${UPDATE_PATH}/*.bak ${UPDATE_PATH}/*.ini ${UPDATE_PATH}/*.conf 
+    echo $(date +%Y-%m-%d_%H-%M-%S)_successed_clean_unzip_files >> ${UPDATE_PATH}/update.log
+else
+    echo $(date +%Y-%m-%d_%H-%M-%S)_nothing_need_to_clean >> ${UPDATE_PATH}/update.log
+fi
+
+echo "$(date +%Y-%m-%d_%H-%M-%S)_finished update" >> ${UPDATE_PATH}/update.log

@@ -1,0 +1,10 @@
+prefix=/usr
+libdir=${prefix}/lib/aarch64-linux-gnu/atlas
+includedir=${prefix}/include/aarch64-linux-gnu
+Name: atlas-blas
+Description: Automatically Tuned Linear Algebra Software, BLAS
+Version: 3.10.3
+URL: http://math-atlas.sourceforge.net/
+Libs: -L${libdir} -lblas
+Libs.private: -L${libdir} -latlas -lm
+Cflags: -I${includedir}

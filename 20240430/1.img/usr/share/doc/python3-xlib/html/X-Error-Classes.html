@@ -1,0 +1,122 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<!-- Created by GNU Texinfo 6.5, http://www.gnu.org/software/texinfo/ -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>X Error Classes (The Python X Library)</title>
+
+<meta name="description" content="X Error Classes (The Python X Library)">
+<meta name="keywords" content="X Error Classes (The Python X Library)">
+<meta name="resource-type" content="document">
+<meta name="distribution" content="global">
+<meta name="Generator" content="makeinfo">
+<link href="index.html#Top" rel="start" title="Top">
+<link href="index.html#SEC_Contents" rel="contents" title="Table of Contents">
+<link href="Error-Handling.html#Error-Handling" rel="up" title="Error Handling">
+<link href="CatchError.html#CatchError" rel="next" title="CatchError">
+<link href="Error-Handling.html#Error-Handling" rel="prev" title="Error Handling">
+<style type="text/css">
+<!--
+a.summary-letter {text-decoration: none}
+blockquote.indentedblock {margin-right: 0em}
+blockquote.smallindentedblock {margin-right: 0em; font-size: smaller}
+blockquote.smallquotation {font-size: smaller}
+div.display {margin-left: 3.2em}
+div.example {margin-left: 3.2em}
+div.lisp {margin-left: 3.2em}
+div.smalldisplay {margin-left: 3.2em}
+div.smallexample {margin-left: 3.2em}
+div.smalllisp {margin-left: 3.2em}
+kbd {font-style: oblique}
+pre.display {font-family: inherit}
+pre.format {font-family: inherit}
+pre.menu-comment {font-family: serif}
+pre.menu-preformatted {font-family: serif}
+pre.smalldisplay {font-family: inherit; font-size: smaller}
+pre.smallexample {font-size: smaller}
+pre.smallformat {font-family: inherit; font-size: smaller}
+pre.smalllisp {font-size: smaller}
+span.nolinebreak {white-space: nowrap}
+span.roman {font-family: initial; font-weight: normal}
+span.sansserif {font-family: sans-serif; font-weight: normal}
+ul.no-bullet {list-style: none}
+-->
+</style>
+
+
+</head>
+
+<body lang="en">
+<a name="X-Error-Classes"></a>
+<div class="header">
+<p>
+Next: <a href="CatchError.html#CatchError" accesskey="n" rel="next">CatchError</a>, Up: <a href="Error-Handling.html#Error-Handling" accesskey="u" rel="up">Error Handling</a> &nbsp; [<a href="index.html#SEC_Contents" title="Table of contents" rel="contents">Contents</a>]</p>
+</div>
+<hr>
+<a name="X-Error-Classes-1"></a>
+<h3 class="section">4.1 X Error Classes</h3>
+
+<p>X errors are structured in the following class hierarchy:
+</p>
+<div class="example">
+<pre class="example">Exception
+ \_ error.XError
+     \_ error.BadRequest
+     \_ error.BadValue
+     \_ error.BadAtom
+     \_ error.BadMatch
+     \_ error.BadAccess
+     \_ error.BadAlloc
+     \_ error.BadName
+     \_ error.BadLength
+     \_ error.BadImplementation
+     \_ error.XResourceError
+         \_ error.BadWindow
+         \_ error.BadPixmap
+         \_ error.BadCursor
+         \_ error.BadFont
+         \_ error.BadDrawable
+         \_ error.BadColor
+         \_ error.BadGC
+         \_ error.BadIDChoice
+</pre></div>
+
+<p>All error objects has the following attributes:
+</p>
+<dl compact="compact">
+<dt><code>code</code></dt>
+<dd>
+<p>The numeric error code
+</p>
+</dd>
+<dt><code>sequence_number</code></dt>
+<dd>
+<p>The sequence number of the failed request
+</p>
+</dd>
+<dt><code>resource_id</code></dt>
+<dd>
+<p>The bad resource id.  For all the <code>error.XResourceError</code> this is a
+X resource object.  For the other errors it is an integer, which for
+some errors might have no meaning
+</p>
+</dd>
+<dt><code>major_opcode</code></dt>
+<dd>
+<p>The major opcode for the failed request
+</p>
+</dd>
+<dt><code>minor_opcode</code></dt>
+<dd>
+<p>The minor opcode for the failed request.  This will be zero for all base
+X11R6 request, but will be interesting for extension requests
+</p>
+</dd>
+</dl>
+
+
+
+
+
+</body>
+</html>

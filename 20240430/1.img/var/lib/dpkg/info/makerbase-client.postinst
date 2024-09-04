@@ -1,0 +1,45 @@
+#! /bin/bash
+UPDATE_PATH="/home/mks/gcode_files/sda1/ELEGOO_UPDATE_DIR"
+if [ -e ${UPDATE_PATH}/toolhead.py ]; then
+    cp -f ${UPDATE_PATH}/toolhead.py /home/mks/klipper/klippy/
+    touch "${UPDATE_PATH}/successed_cp_toolhead_py$(date +%Y-%m-%d_%H-%M-%S).mark"
+else
+    touch "${UPDATE_PATH}/no_found_toolhead_py_to_cp$(date +%Y-%m-%d_%H-%M-%S).mark"
+fi
+
+systemctl disable webcamd.service
+if [ ! -e "/home/mks/fix_ready" ]; then
+    systemctl enable elegoo-fix.service && systemctl restart elegoo-fix.service
+    touch /home/mks/fix_ready
+fi
+systemctl enable makerbase-wlan0.service && systemctl restart makerbase-wlan0.service
+#systemctl disable makerbase-net-mods.service
+if [ ! -e /home/mks/moonraker_updated ]; then
+    /home/mks/update_moonraker.sh &
+    touch /home/mks/moonraker_updated
+fi
+
+# 删除掉boot下的wifi配置文件
+# if [ -f "/boot/wpa_supplicant-wlan0.conf" ]; then
+# rm -f /boot/wpa_supplicant-wlan0.conf
+# fi
+
+# echo '' > /boot/wpa_supplicant-wlan0.conf
+
+# 删除掉wifi自动挂载的配置文件
+# if [ -f "/lib/udev/rules.d/99-makerbase-automount.rules" ]; then
+#     rm -rf /lib/udev/rules.d/99-makerbase-automount.rules
+# fi
+
+# echo '' > /lib/udev/rules.d/99-makerbase-automount.rules
+    
+# echo 'ctrl_interface=/var/run/wpa_supplicant
+# ctrl_interface_group=0
+# update_config=1
+
+# network={
+#         ssid="MAKERBASE3D"
+#         psk="makerbase3d"
+# }
+# ' > /etc/wpa_supplicant/wpa_supplicant-wlan0.conf
+

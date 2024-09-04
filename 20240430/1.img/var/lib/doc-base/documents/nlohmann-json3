@@ -1,0 +1,9 @@
+Document: nlohmann-json3
+Section: Programming
+Title: JSON
+Author: Niels Lohmann
+Abstract: JSON for Modern C++
+
+Format: HTML
+Index: /usr/share/doc/nlohmann-json3-dev/html/index.html
+Files: /usr/share/doc/nlohmann-json3-dev/html/*.html

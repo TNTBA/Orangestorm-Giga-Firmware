@@ -1,0 +1,121 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<!-- Created by GNU Texinfo 6.5, http://www.gnu.org/software/texinfo/ -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Sending Events (The Python X Library)</title>
+
+<meta name="description" content="Sending Events (The Python X Library)">
+<meta name="keywords" content="Sending Events (The Python X Library)">
+<meta name="resource-type" content="document">
+<meta name="distribution" content="global">
+<meta name="Generator" content="makeinfo">
+<link href="index.html#Top" rel="start" title="Top">
+<link href="index.html#SEC_Contents" rel="contents" title="Table of Contents">
+<link href="Event-Handling.html#Event-Handling" rel="up" title="Event Handling">
+<link href="X-Objects.html#X-Objects" rel="next" title="X Objects">
+<link href="Event-Types.html#Event-Types" rel="prev" title="Event Types">
+<style type="text/css">
+<!--
+a.summary-letter {text-decoration: none}
+blockquote.indentedblock {margin-right: 0em}
+blockquote.smallindentedblock {margin-right: 0em; font-size: smaller}
+blockquote.smallquotation {font-size: smaller}
+div.display {margin-left: 3.2em}
+div.example {margin-left: 3.2em}
+div.lisp {margin-left: 3.2em}
+div.smalldisplay {margin-left: 3.2em}
+div.smallexample {margin-left: 3.2em}
+div.smalllisp {margin-left: 3.2em}
+kbd {font-style: oblique}
+pre.display {font-family: inherit}
+pre.format {font-family: inherit}
+pre.menu-comment {font-family: serif}
+pre.menu-preformatted {font-family: serif}
+pre.smalldisplay {font-family: inherit; font-size: smaller}
+pre.smallexample {font-size: smaller}
+pre.smallformat {font-family: inherit; font-size: smaller}
+pre.smalllisp {font-size: smaller}
+span.nolinebreak {white-space: nowrap}
+span.roman {font-family: initial; font-weight: normal}
+span.sansserif {font-family: sans-serif; font-weight: normal}
+ul.no-bullet {list-style: none}
+-->
+</style>
+
+
+</head>
+
+<body lang="en">
+<a name="Sending-Events"></a>
+<div class="header">
+<p>
+Previous: <a href="Event-Types.html#Event-Types" accesskey="p" rel="prev">Event Types</a>, Up: <a href="Event-Handling.html#Event-Handling" accesskey="u" rel="up">Event Handling</a> &nbsp; [<a href="index.html#SEC_Contents" title="Table of contents" rel="contents">Contents</a>]</p>
+</div>
+<hr>
+<a name="Sending-Events-1"></a>
+<h3 class="section">5.4 Sending Events</h3>
+
+<p>Clients can send events to each other.  Most often these are
+general-purpose <code>ClientMessage</code> events, but any event type can be
+sent.
+</p>
+<p>To send an event, an event object must be created.  This is done by
+instantiating an event class, providing values to all its fields as
+keyword parameters.  The event is then sent with the <code>send_event()</code>
+method:
+</p>
+<dl>
+<dt><a name="index-send_005fevent-on-Window"></a>Method on Window: <strong>send_event</strong> <em>( event, event_mask = 0, propagate = 0, onerror&nbsp;=&nbsp;None&nbsp;)<!-- /@w --></em></dt>
+<dd>
+<p>Send <var>event</var> to this window.
+</p>
+<p>If <var>event_mask</var> is 0, the event is sent to the client that created
+the window.  Otherwise the event is sent to every client selecting any
+of the event types in <var>event_mask</var>.
+</p>
+<p>If no clients have selected any of the event types and <var>propagate</var>
+is true, the X server will search for an ancestor of this window on
+which some client has selected any of the event types.  For details, see
+XSendEvent(3X11).
+</p>
+</dd></dl>
+
+<dl>
+<dt><a name="index-send_005fevent-on-Display"></a>Method on Display: <strong>send_event</strong> <em>( destination, event, <span class="nolinebreak">event_mask</span>&nbsp;=&nbsp;0,<!-- /@w --> propagate&nbsp;=&nbsp;0,<!-- /@w --> onerror&nbsp;=&nbsp;None&nbsp;)<!-- /@w --></em></dt>
+<dd>
+<p>Send <var>event</var> to <var>destination</var>, which can either be a
+<code>Window</code> object or a constant:  If <code>X.PointerWindow</code> is
+specified, send the event to the window the pointer is in. If
+<code>X.InputFocus</code> is specified and the focus window contains the
+pointer, send the event to the window that the pointer is in.
+Otherwise, send the event to the focus window.
+</p>
+</dd></dl>
+
+
+<p>As an example, this creates and sends a <code>ClientMessage</code> event of
+the client specific type <code>HELLO_WORLD</code> (an atom), to the window
+<code>dest</code> and with the 8-bitformat value <code>&quot;G'day, mate&quot;</code> (which
+must be exactly twenty bytes):
+</p>
+<div class="example">
+<pre class="example">cm_event = Xlib.protocol.event.ClientMessage(
+    window = dest,
+    client_type = HELLO_WORLD,
+    data = (8, &quot;G'day mate\0\0\0\0\0\0\0\0\0\0&quot;))
+
+dest.send_event(cm_event)
+</pre></div>
+
+
+<hr>
+<div class="header">
+<p>
+Previous: <a href="Event-Types.html#Event-Types" accesskey="p" rel="prev">Event Types</a>, Up: <a href="Event-Handling.html#Event-Handling" accesskey="u" rel="up">Event Handling</a> &nbsp; [<a href="index.html#SEC_Contents" title="Table of contents" rel="contents">Contents</a>]</p>
+</div>
+
+
+
+</body>
+</html>

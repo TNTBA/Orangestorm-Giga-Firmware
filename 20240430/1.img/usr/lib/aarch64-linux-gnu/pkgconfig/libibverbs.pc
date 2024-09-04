@@ -1,0 +1,13 @@
+prefix=/usr
+exec_prefix=${prefix}
+libdir=${prefix}/lib/aarch64-linux-gnu
+includedir=${prefix}/include
+
+Name: libibverbs
+Description: RDMA Core Userspace Library
+URL: https://github.com/linux-rdma/rdma-core
+Version: 1.5.22.1
+Libs: -L${libdir} -libverbs 
+Libs.private:  -lbnxt_re-rdmav22 -lcxgb3-rdmav22 -lcxgb4-rdmav22 -lhns-rdmav22 -li40iw-rdmav22 -lmlx4 -lmlx5 -lmthca-rdmav22 -lnes-rdmav22 -locrdma-rdmav22 -lqedr-rdmav22 -lvmw_pvrdma-rdmav22 -lhfi1verbs-rdmav22 -lipathverbs-rdmav22 -lrxe-rdmav22 -libverbs -lpthread
+Requires.private: libnl-3.0, libnl-route-3.0
+Cflags: -I${includedir}
